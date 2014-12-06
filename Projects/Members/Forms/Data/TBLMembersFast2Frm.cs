@@ -570,8 +570,8 @@ namespace Members
             if (adpPrint.ScalarQueryMemberExists(Convert.ToInt32(LUEEmp.EditValue)).ToString() == "1")
             {
                 DataSources.dsTeachersUnionTableAdapters.UserRolesTableAdapter adpRole = new DataSources.dsTeachersUnionTableAdapters.UserRolesTableAdapter();
-                
-                if (!Program.UserInfo.IsAdmin)
+
+                if (!Program.UserInfo.IsAdmin && !SQLProvider.ExEditUser(Program.UserInfo.UserId))
                 {
                     MessageBox.Show("التعديل مغلق حيث تم طبع كارنية بالبيانات الحالبة", "لم يتم العملية", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;

@@ -339,6 +339,24 @@ namespace Members
             }
             
         }
+        public static bool ExEditUser(int UserId)
+        {
+            try
+            {
+                DataTable dt = FXFW.SqlDB.LoadDataTable(@"SELECT ExEdit FROM Users WHERE UserID = " + UserId);
+                if (dt.Rows.Count == 0)
+                    return false;
+                if (dt.Rows[0][0].ToString() == string.Empty)
+                    return false;
+                return Convert.ToBoolean(dt.Rows[0][0]);
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return false;
+
+        }
 
         public static DataSources.dsTeachersUnion.PrintCardsDataTable SelectTBLPrintCard(object cardtype = null, object SyndicateId = null, object esalno = null, object Installment = null)
         {
