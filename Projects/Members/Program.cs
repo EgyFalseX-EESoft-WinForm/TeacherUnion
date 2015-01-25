@@ -25,6 +25,8 @@ namespace Members
         public static double NormalCardCost = 0;
         public static double FastCardCost = 0;
         public static Misc.Types.UserInfo UserInfo = new Misc.Types.UserInfo();
+        public static string updatePath = Application.StartupPath + @"\Members_update.exe";
+        public static string AppPath = Application.StartupPath + @"\Members.exe";
 
         public enum cardtype
         {
@@ -38,6 +40,8 @@ namespace Members
         [STAThread]
         static void Main(string[] args)
         {
+            PerfomeChangeExe();
+
             if (System.IO.File.Exists(Application.StartupPath + @"\RibbonSettings.xml"))
                 System.IO.File.Delete(Application.StartupPath + @"\RibbonSettings.xml");
 
@@ -80,6 +84,8 @@ namespace Members
                         DatabaseScripts.FireScript();//add my views
                         FrmLogin.ShowDialog();
                     }
+
+                    SQLProvider.PerformUpdate();
 
                     Application.Run(new MainFrm());
                 }
@@ -206,9 +212,22 @@ namespace Members
             if (!System.IO.Directory.Exists(MandoopImgPath))
                 System.IO.Directory.CreateDirectory(MandoopImgPath);
         }
+        private static void PerfomeChangeExe()
+        {
+            if (Program.updatePath == Application.ExecutablePath)
+            {
+                byte[] data = System.IO.File.ReadAllBytes(Application.ExecutablePath);
+                System.IO.FileStream fs = System.IO.File.Create(Program.AppPath);
+                fs.Write(data, 0, data.Length);
+                fs.Close();
+                System.Diagnostics.Process.Start(Program.AppPath);
+                System.Diagnostics.Process.GetCurrentProcess().Kill();
+                return;
+            }
+        }
         private static bool CheckExpiration()
         {
-            DateTime periodDate = new DateTime(2014, 12, 15);
+            DateTime periodDate = new DateTime(2015, 2, 9);
             bool ReturnMe = false;
             DataSources.dsTeachersUnionQuery ds = new DataSources.dsTeachersUnionQuery();
             DataSources.dsTeachersUnionQueryTableAdapters.ServerDateTimeTableAdapter adp = new DataSources.dsTeachersUnionQueryTableAdapters.ServerDateTimeTableAdapter();

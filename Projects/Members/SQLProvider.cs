@@ -90,6 +90,52 @@ namespace Members
         {
             return (DateTime)adpServerDateTime.ScalarQueryServerDateTime();
         }
+        public static void PerformUpdate()
+        {
+            int currentVersion = Convert.ToInt32(Application.ProductVersion.Replace(".", ""));
+            int? serverVersion = adpQry.AppOptions_GetAppVersion();
+
+
+
+
+            if (serverVersion == null)
+            {
+                if (!Program.UserInfo.IsAdmin)
+                    return;
+
+                if (MessageBox.Show("لا يوجد محتوي للبرنامج علي الخادم. هل ترغب في ارسال هذه النسخه للخادم؟", "تحديث", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.No)
+                    return;
+                byte[] data = File.ReadAllBytes(Application.ExecutablePath);
+                adpQry.AppOptions_UploadAppData(data, currentVersion);
+            }
+            else
+            {
+                if (serverVersion == currentVersion)
+                    return;
+                else if (serverVersion < currentVersion)
+                {
+                    if (!Program.UserInfo.IsAdmin)
+                        return;
+                    if (MessageBox.Show("هذه الاصداره جديده عن الموجوده علي الخادم, هل ترغب في تحديث الخادم؟", "تحديث", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.No)
+                        return;
+                    byte[] data = File.ReadAllBytes(Application.ExecutablePath);
+                    adpQry.AppOptions_UploadAppData(data, currentVersion);
+                }
+                else
+                {
+                    if (MessageBox.Show("يوجد اصداره جديده من البرنامج علي الخادم, هل ترغب في التحديث؟", "تحديث", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.No)
+                        return;
+                    //if (File.Exists(updatePath))
+                    //    File.Delete(updatePath);
+                    byte[] data = adpQry.AppOptions_GetAppData();
+                    FileStream fs = File.Create(Program.updatePath);
+                    fs.Write(data, 0, data.Length);
+                    fs.Close();
+                    System.Diagnostics.Process.Start(Program.updatePath);
+                    System.Diagnostics.Process.GetCurrentProcess().Kill();
+                }
+            }
+        }
 
         #region -   Selecting   -
         //Codes
