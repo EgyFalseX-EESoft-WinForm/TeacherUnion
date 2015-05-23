@@ -145,7 +145,7 @@ namespace Members
 
             if (!System.IO.File.Exists(filePath))
             {
-                using (FXFW.LicenseKeyFrm dlg = new FXFW.LicenseKeyFrm(Application.ProductName))
+                using (FXFW.License.LicenseKeyFrm dlg = new FXFW.License.LicenseKeyFrm(Application.ProductName))
                 {
                     dlg.ShowDialog();
                 }
@@ -158,7 +158,7 @@ namespace Members
                 System.IO.StreamReader sr = new System.IO.StreamReader(filePath);
                 string Key = sr.ReadToEnd();
                 sr.Close();
-                if (FXFW.LicenseKeyFrm.Compare(Key, Application.ProductName))
+                if (FXFW.License.LicenseKeyFrm.Compare(Key, Application.ProductName))
                     return true;
                 else
                 {
@@ -227,7 +227,7 @@ namespace Members
         }
         private static bool CheckExpiration()
         {
-            DateTime periodDate = new DateTime(2015, 2, 9);
+            DateTime periodDate = new DateTime(2015, 5, 29);
             bool ReturnMe = false;
             DataSources.dsTeachersUnionQuery ds = new DataSources.dsTeachersUnionQuery();
             DataSources.dsTeachersUnionQueryTableAdapters.ServerDateTimeTableAdapter adp = new DataSources.dsTeachersUnionQueryTableAdapters.ServerDateTimeTableAdapter();
