@@ -227,7 +227,7 @@ namespace Members
         }
         private static bool CheckExpiration()
         {
-            DateTime periodDate = new DateTime(2016, 03, 30);
+            DateTime periodDate = new DateTime(2016, 06, 30);
             bool ReturnMe = false;
             DataSources.dsTeachersUnionQuery ds = new DataSources.dsTeachersUnionQuery();
             DataSources.dsTeachersUnionQueryTableAdapters.ServerDateTimeTableAdapter adp = new DataSources.dsTeachersUnionQueryTableAdapters.ServerDateTimeTableAdapter();

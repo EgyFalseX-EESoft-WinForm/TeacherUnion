@@ -22,7 +22,7 @@ namespace Employee
             //DevExpress.UserSkins.OfficeSkins.Register();
             DevExpress.UserSkins.BonusSkins.Register();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
-            if (FXFW.SqlDB.LoadSqlDBPath("TeachersUnion") && Authentication())
+            if (FXFW.SqlDB.LoadSqlDBPath("TeachersUnion"))//&& Authentication()
             {
                 FXFW.SqlDB.LoadSQLReports();
                 Logger = new FXFW.Logger(FXFW.Logger.LanguageInfo.English, Application.ProductName, Properties.Resources.EESoft, false);
