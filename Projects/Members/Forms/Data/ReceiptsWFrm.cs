@@ -22,7 +22,7 @@ namespace Members
         {
             InitializeComponent();
             _row = row;
-            _Insert = insert;
+            _Insert = insert; 
             _Update = update;
             _Delete = delete;
             if (FocusOnDetails)
