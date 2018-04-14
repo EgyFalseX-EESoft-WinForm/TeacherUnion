@@ -31,10 +31,8 @@
             this.gridControlData = new DevExpress.XtraGrid.GridControl();
             this.LSMSData = new DevExpress.Data.Linq.LinqServerModeSource();
             this.gridViewData = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.repositoryItemDateEditDMY = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.btnPrintExport = new DevExpress.XtraEditors.SimpleButton();
             this.coldatesadad = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemDateEditDMY = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
             this.colsdadmony = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coldatein = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colkestenddate = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -50,6 +48,8 @@
             this.colCardtype = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colInstallment = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colfawry = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnPrintExport = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LSMSData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).BeginInit();
@@ -84,7 +84,7 @@
             // LSMSData
             // 
             this.LSMSData.ElementType = typeof(Members.DataSources.Linq.vTBLAksatDetaile);
-            this.LSMSData.KeyExpression = "[MandoopId]";
+            this.LSMSData.KeyExpression = "MemberId,datesadad";
             // 
             // gridViewData
             // 
@@ -192,6 +192,19 @@
             this.gridViewData.OptionsView.ShowDetailButtons = false;
             this.gridViewData.OptionsView.ShowFooter = true;
             // 
+            // coldatesadad
+            // 
+            this.coldatesadad.AppearanceCell.Options.UseTextOptions = true;
+            this.coldatesadad.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.coldatesadad.AppearanceHeader.Options.UseTextOptions = true;
+            this.coldatesadad.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.coldatesadad.Caption = "تاريخ السداد";
+            this.coldatesadad.ColumnEdit = this.repositoryItemDateEditDMY;
+            this.coldatesadad.FieldName = "datesadad";
+            this.coldatesadad.Name = "coldatesadad";
+            this.coldatesadad.Visible = true;
+            this.coldatesadad.VisibleIndex = 1;
+            // 
             // repositoryItemDateEditDMY
             // 
             this.repositoryItemDateEditDMY.AutoHeight = false;
@@ -205,38 +218,6 @@
             this.repositoryItemDateEditDMY.Name = "repositoryItemDateEditDMY";
             this.repositoryItemDateEditDMY.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            // 
-            // panelControl1
-            // 
-            this.panelControl1.Controls.Add(this.btnPrintExport);
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl1.Location = new System.Drawing.Point(0, 0);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(734, 47);
-            this.panelControl1.TabIndex = 2;
-            // 
-            // btnPrintExport
-            // 
-            this.btnPrintExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPrintExport.Location = new System.Drawing.Point(588, 12);
-            this.btnPrintExport.Name = "btnPrintExport";
-            this.btnPrintExport.Size = new System.Drawing.Size(134, 23);
-            this.btnPrintExport.TabIndex = 0;
-            this.btnPrintExport.Text = "طباعه و تصدير";
-            this.btnPrintExport.Click += new System.EventHandler(this.btnPrintExport_Click);
-            // 
-            // coldatesadad
-            // 
-            this.coldatesadad.AppearanceCell.Options.UseTextOptions = true;
-            this.coldatesadad.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.coldatesadad.AppearanceHeader.Options.UseTextOptions = true;
-            this.coldatesadad.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.coldatesadad.Caption = "تاريخ السداد";
-            this.coldatesadad.ColumnEdit = this.repositoryItemDateEditDMY;
-            this.coldatesadad.FieldName = "datesadad";
-            this.coldatesadad.Name = "coldatesadad";
-            this.coldatesadad.Visible = true;
-            this.coldatesadad.VisibleIndex = 1;
             // 
             // colsdadmony
             // 
@@ -423,6 +404,25 @@
             this.colfawry.Name = "colfawry";
             this.colfawry.Visible = true;
             this.colfawry.VisibleIndex = 13;
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.btnPrintExport);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl1.Location = new System.Drawing.Point(0, 0);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(734, 47);
+            this.panelControl1.TabIndex = 2;
+            // 
+            // btnPrintExport
+            // 
+            this.btnPrintExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPrintExport.Location = new System.Drawing.Point(588, 12);
+            this.btnPrintExport.Name = "btnPrintExport";
+            this.btnPrintExport.Size = new System.Drawing.Size(134, 23);
+            this.btnPrintExport.TabIndex = 0;
+            this.btnPrintExport.Text = "طباعه و تصدير";
+            this.btnPrintExport.Click += new System.EventHandler(this.btnPrintExport_Click);
             // 
             // Qry31Frm
             // 
