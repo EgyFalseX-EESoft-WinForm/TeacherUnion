@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.gridControlData = new DevExpress.XtraGrid.GridControl();
-            this.LSMSData = new DevExpress.Data.Linq.LinqServerModeSource();
             this.gridViewData = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.coldatesadad = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemDateEditDMY = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
@@ -50,13 +49,17 @@
             this.colfawry = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnPrintExport = new DevExpress.XtraEditors.SimpleButton();
+            this.dsTeachersUnionQuery = new Members.DataSources.dsTeachersUnionQuery();
+            this.vTBLAksatDetailesBindingSource = new System.Windows.Forms.BindingSource();
+            this.vTBLAksatDetailesTableAdapter = new Members.DataSources.dsTeachersUnionQueryTableAdapters.vTBLAksatDetailesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LSMSData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY.VistaTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vTBLAksatDetailesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControlData
@@ -64,7 +67,7 @@
             this.gridControlData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControlData.DataSource = this.LSMSData;
+            this.gridControlData.DataSource = this.vTBLAksatDetailesBindingSource;
             this.gridControlData.EmbeddedNavigator.Buttons.CancelEdit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
@@ -80,11 +83,6 @@
             this.gridControlData.UseEmbeddedNavigator = true;
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewData});
-            // 
-            // LSMSData
-            // 
-            this.LSMSData.ElementType = typeof(Members.DataSources.Linq.vTBLAksatDetaile);
-            this.LSMSData.KeyExpression = "MemberId,datesadad";
             // 
             // gridViewData
             // 
@@ -424,6 +422,20 @@
             this.btnPrintExport.Text = "طباعه و تصدير";
             this.btnPrintExport.Click += new System.EventHandler(this.btnPrintExport_Click);
             // 
+            // dsTeachersUnionQuery
+            // 
+            this.dsTeachersUnionQuery.DataSetName = "dsTeachersUnionQuery";
+            this.dsTeachersUnionQuery.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vTBLAksatDetailesBindingSource
+            // 
+            this.vTBLAksatDetailesBindingSource.DataMember = "vTBLAksatDetailes";
+            this.vTBLAksatDetailesBindingSource.DataSource = this.dsTeachersUnionQuery;
+            // 
+            // vTBLAksatDetailesTableAdapter
+            // 
+            this.vTBLAksatDetailesTableAdapter.ClearBeforeFill = true;
+            // 
             // Qry31Frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -435,12 +447,13 @@
             this.Text = "المندوبين للقيد";
             this.Load += new System.EventHandler(this.QryTblAhteatyFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LSMSData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY.VistaTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vTBLAksatDetailesBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -452,7 +465,6 @@
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.SimpleButton btnPrintExport;
         private DevExpress.XtraEditors.Repository.RepositoryItemDateEdit repositoryItemDateEditDMY;
-        private DevExpress.Data.Linq.LinqServerModeSource LSMSData;
         private DevExpress.XtraGrid.Columns.GridColumn coldatesadad;
         private DevExpress.XtraGrid.Columns.GridColumn colsdadmony;
         private DevExpress.XtraGrid.Columns.GridColumn coldatein;
@@ -469,6 +481,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn colCardtype;
         private DevExpress.XtraGrid.Columns.GridColumn colInstallment;
         private DevExpress.XtraGrid.Columns.GridColumn colfawry;
+        private DataSources.dsTeachersUnionQuery dsTeachersUnionQuery;
+        private System.Windows.Forms.BindingSource vTBLAksatDetailesBindingSource;
+        private DataSources.dsTeachersUnionQueryTableAdapters.vTBLAksatDetailesTableAdapter vTBLAksatDetailesTableAdapter;
 
     }
 }

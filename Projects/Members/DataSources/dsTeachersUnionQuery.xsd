@@ -866,6 +866,41 @@ WHERE        (TBLMembers.MemberMobil IS NOT NULL) AND (TBLMembers.MemberMobil &l
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vTBLAksatDetailesTableAdapter" GeneratorDataComponentClassName="vTBLAksatDetailesTableAdapter" Name="vTBLAksatDetailes" UserDataComponentName="vTBLAksatDetailesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TeachersUnionConnectionString (Settings)" DbObjectName="TeachersUnion.dbo.vTBLAksatDetailes" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MemberId, datesadad, sdadmony, datein, userin, kestenddate, mostahk, madfoaa, esalno, esaldate, RealName, Syndicate, SubCommitte, MemberName, KideNumber, Cardtype, Installment, fawry, SyndicateId, SubCommitteId FROM dbo.vTBLAksatDetailes</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MemberId" DataSetColumn="MemberId" />
+              <Mapping SourceColumn="datesadad" DataSetColumn="datesadad" />
+              <Mapping SourceColumn="sdadmony" DataSetColumn="sdadmony" />
+              <Mapping SourceColumn="datein" DataSetColumn="datein" />
+              <Mapping SourceColumn="userin" DataSetColumn="userin" />
+              <Mapping SourceColumn="kestenddate" DataSetColumn="kestenddate" />
+              <Mapping SourceColumn="mostahk" DataSetColumn="mostahk" />
+              <Mapping SourceColumn="madfoaa" DataSetColumn="madfoaa" />
+              <Mapping SourceColumn="esalno" DataSetColumn="esalno" />
+              <Mapping SourceColumn="esaldate" DataSetColumn="esaldate" />
+              <Mapping SourceColumn="RealName" DataSetColumn="RealName" />
+              <Mapping SourceColumn="Syndicate" DataSetColumn="Syndicate" />
+              <Mapping SourceColumn="SubCommitte" DataSetColumn="SubCommitte" />
+              <Mapping SourceColumn="MemberName" DataSetColumn="MemberName" />
+              <Mapping SourceColumn="KideNumber" DataSetColumn="KideNumber" />
+              <Mapping SourceColumn="Cardtype" DataSetColumn="Cardtype" />
+              <Mapping SourceColumn="Installment" DataSetColumn="Installment" />
+              <Mapping SourceColumn="fawry" DataSetColumn="fawry" />
+              <Mapping SourceColumn="SyndicateId" DataSetColumn="SyndicateId" />
+              <Mapping SourceColumn="SubCommitteId" DataSetColumn="SubCommitteId" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources>
           <DbSource ConnectionRef="TeachersUnionConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="eslanoRemains" MethodsParameterType="CLR" Modifier="Public" Name="eslanoRemains" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="eslanoRemains">
@@ -1598,6 +1633,68 @@ SET                AppData = @AppData, AppVersion = @AppVersion
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vTBLAksatDetailes" msprop:Generator_TableClassName="vTBLAksatDetailesDataTable" msprop:Generator_TableVarName="tablevTBLAksatDetailes" msprop:Generator_TablePropName="vTBLAksatDetailes" msprop:Generator_RowDeletingName="vTBLAksatDetailesRowDeleting" msprop:Generator_RowChangingName="vTBLAksatDetailesRowChanging" msprop:Generator_RowEvHandlerName="vTBLAksatDetailesRowChangeEventHandler" msprop:Generator_RowDeletedName="vTBLAksatDetailesRowDeleted" msprop:Generator_UserTableName="vTBLAksatDetailes" msprop:Generator_RowChangedName="vTBLAksatDetailesRowChanged" msprop:Generator_RowEvArgName="vTBLAksatDetailesRowChangeEvent" msprop:Generator_RowClassName="vTBLAksatDetailesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MemberId" msprop:Generator_ColumnVarNameInTable="columnMemberId" msprop:Generator_ColumnPropNameInRow="MemberId" msprop:Generator_ColumnPropNameInTable="MemberIdColumn" msprop:Generator_UserColumnName="MemberId" type="xs:int" />
+              <xs:element name="datesadad" msprop:Generator_ColumnVarNameInTable="columndatesadad" msprop:Generator_ColumnPropNameInRow="datesadad" msprop:Generator_ColumnPropNameInTable="datesadadColumn" msprop:Generator_UserColumnName="datesadad" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="sdadmony" msprop:Generator_ColumnVarNameInTable="columnsdadmony" msprop:Generator_ColumnPropNameInRow="sdadmony" msprop:Generator_ColumnPropNameInTable="sdadmonyColumn" msprop:Generator_UserColumnName="sdadmony" type="xs:double" minOccurs="0" />
+              <xs:element name="datein" msprop:Generator_ColumnVarNameInTable="columndatein" msprop:Generator_ColumnPropNameInRow="datein" msprop:Generator_ColumnPropNameInTable="dateinColumn" msprop:Generator_UserColumnName="datein" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="userin" msprop:Generator_ColumnVarNameInTable="columnuserin" msprop:Generator_ColumnPropNameInRow="userin" msprop:Generator_ColumnPropNameInTable="userinColumn" msprop:Generator_UserColumnName="userin" type="xs:int" minOccurs="0" />
+              <xs:element name="kestenddate" msprop:Generator_ColumnVarNameInTable="columnkestenddate" msprop:Generator_ColumnPropNameInRow="kestenddate" msprop:Generator_ColumnPropNameInTable="kestenddateColumn" msprop:Generator_UserColumnName="kestenddate" type="xs:dateTime" />
+              <xs:element name="mostahk" msprop:Generator_ColumnVarNameInTable="columnmostahk" msprop:Generator_ColumnPropNameInRow="mostahk" msprop:Generator_ColumnPropNameInTable="mostahkColumn" msprop:Generator_UserColumnName="mostahk" type="xs:double" />
+              <xs:element name="madfoaa" msprop:Generator_ColumnVarNameInTable="columnmadfoaa" msprop:Generator_ColumnPropNameInRow="madfoaa" msprop:Generator_ColumnPropNameInTable="madfoaaColumn" msprop:Generator_UserColumnName="madfoaa" type="xs:double" />
+              <xs:element name="esalno" msprop:Generator_ColumnVarNameInTable="columnesalno" msprop:Generator_ColumnPropNameInRow="esalno" msprop:Generator_ColumnPropNameInTable="esalnoColumn" msprop:Generator_UserColumnName="esalno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="esaldate" msprop:Generator_ColumnVarNameInTable="columnesaldate" msprop:Generator_ColumnPropNameInRow="esaldate" msprop:Generator_ColumnPropNameInTable="esaldateColumn" msprop:Generator_UserColumnName="esaldate" type="xs:dateTime" />
+              <xs:element name="RealName" msprop:Generator_ColumnVarNameInTable="columnRealName" msprop:Generator_ColumnPropNameInRow="RealName" msprop:Generator_ColumnPropNameInTable="RealNameColumn" msprop:Generator_UserColumnName="RealName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Syndicate" msprop:Generator_ColumnVarNameInTable="columnSyndicate" msprop:Generator_ColumnPropNameInRow="Syndicate" msprop:Generator_ColumnPropNameInTable="SyndicateColumn" msprop:Generator_UserColumnName="Syndicate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubCommitte" msprop:Generator_ColumnVarNameInTable="columnSubCommitte" msprop:Generator_ColumnPropNameInRow="SubCommitte" msprop:Generator_ColumnPropNameInTable="SubCommitteColumn" msprop:Generator_UserColumnName="SubCommitte" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MemberName" msprop:Generator_ColumnVarNameInTable="columnMemberName" msprop:Generator_ColumnPropNameInRow="MemberName" msprop:Generator_ColumnPropNameInTable="MemberNameColumn" msprop:Generator_UserColumnName="MemberName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="75" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KideNumber" msprop:Generator_ColumnVarNameInTable="columnKideNumber" msprop:Generator_ColumnPropNameInRow="KideNumber" msprop:Generator_ColumnPropNameInTable="KideNumberColumn" msprop:Generator_UserColumnName="KideNumber" type="xs:int" minOccurs="0" />
+              <xs:element name="Cardtype" msprop:Generator_ColumnVarNameInTable="columnCardtype" msprop:Generator_ColumnPropNameInRow="Cardtype" msprop:Generator_ColumnPropNameInTable="CardtypeColumn" msprop:Generator_UserColumnName="Cardtype" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Installment" msprop:Generator_ColumnVarNameInTable="columnInstallment" msprop:Generator_ColumnPropNameInRow="Installment" msprop:Generator_ColumnPropNameInTable="InstallmentColumn" msprop:Generator_UserColumnName="Installment" type="xs:boolean" minOccurs="0" />
+              <xs:element name="fawry" msprop:Generator_ColumnVarNameInTable="columnfawry" msprop:Generator_ColumnPropNameInRow="fawry" msprop:Generator_ColumnPropNameInTable="fawryColumn" msprop:Generator_UserColumnName="fawry" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SyndicateId" msprop:Generator_ColumnVarNameInTable="columnSyndicateId" msprop:Generator_ColumnPropNameInRow="SyndicateId" msprop:Generator_ColumnPropNameInTable="SyndicateIdColumn" msprop:Generator_UserColumnName="SyndicateId" type="xs:int" minOccurs="0" />
+              <xs:element name="SubCommitteId" msprop:Generator_ColumnVarNameInTable="columnSubCommitteId" msprop:Generator_ColumnPropNameInRow="SubCommitteId" msprop:Generator_ColumnPropNameInTable="SubCommitteIdColumn" msprop:Generator_UserColumnName="SubCommitteId" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

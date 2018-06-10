@@ -23,60 +23,62 @@ namespace Members
                 cmd.CommandText = UpdateNULLuserin;
                 cmd.ExecuteNonQuery();
 
-                if (!CheckViewExists("vTBLPrintCard"))
+                //if (!CheckViewExists("vTBLPrintCard"))
+                //{
+                //    cmd.CommandText = vTBLPrintCard;
+                //    cmd.ExecuteNonQuery();
+                //}
+                //if (!CheckViewExists("vTBLMembersPlusTBLMemberHala"))
+                //{
+                //    cmd.CommandText = vTBLMembersPlusTBLMemberHala;
+                //    cmd.ExecuteNonQuery();
+                //}
+                //if (!CheckViewExists("vTBLMembersPlusShadetKed"))
+                //{
+                //    cmd.CommandText = vTBLMembersPlusShadetKed;
+                //    cmd.ExecuteNonQuery();
+                //}
+                //if (!CheckViewExists("vTBLMembersPlusTblMemberAttach"))
+                //{
+                //    cmd.CommandText = vTBLMembersPlusTblMemberAttach;
+                //    cmd.ExecuteNonQuery();
+                //}
+                //if (CheckViewExists("vTBLMembersQry05"))
+                //{
+                //    cmd.CommandText = DropView("vTBLMembersQry05");
+                //    cmd.ExecuteNonQuery();
+                //}
+                //cmd.CommandText = vTBLMembersQry05;
+                //cmd.ExecuteNonQuery();
+
+                //if (!CheckViewExists("vTBLMazroofPlusReceiptsQry29"))
+                //{
+                //    cmd.CommandText = vTBLMazroofPlusReceiptsQry29;
+                //    cmd.ExecuteNonQuery();
+                //}
+                //if (!CheckViewExists("vTBLMandoop"))
+                //{
+                //    cmd.CommandText = vTBLMandoop;
+                //    cmd.ExecuteNonQuery();
+                //}
+                if (CheckViewExists("vTBLAksatDetailes"))
                 {
-                    cmd.CommandText = vTBLPrintCard;
+                    cmd.CommandText = DropView("vTBLAksatDetailes");
                     cmd.ExecuteNonQuery();
                 }
-                if (!CheckViewExists("vTBLMembersPlusTBLMemberHala"))
-                {
-                    cmd.CommandText = vTBLMembersPlusTBLMemberHala;
-                    cmd.ExecuteNonQuery();
-                }
-                if (!CheckViewExists("vTBLMembersPlusShadetKed"))
-                {
-                    cmd.CommandText = vTBLMembersPlusShadetKed;
-                    cmd.ExecuteNonQuery();
-                }
-                if (!CheckViewExists("vTBLMembersPlusTblMemberAttach"))
-                {
-                    cmd.CommandText = vTBLMembersPlusTblMemberAttach;
-                    cmd.ExecuteNonQuery();
-                }
-                if (CheckViewExists("vTBLMembersQry05"))
-                {
-                    cmd.CommandText = DropView("vTBLMembersQry05");
-                    cmd.ExecuteNonQuery();
-                }
-                cmd.CommandText = vTBLMembersQry05;
+                cmd.CommandText = vTBLAksatDetailes;
                 cmd.ExecuteNonQuery();
 
-                if (!CheckViewExists("vTBLMazroofPlusReceiptsQry29"))
-                {
-                    cmd.CommandText = vTBLMazroofPlusReceiptsQry29;
-                    cmd.ExecuteNonQuery();
-                }
-                if (!CheckViewExists("vTBLMandoop"))
-                {
-                    cmd.CommandText = vTBLMandoop;
-                    cmd.ExecuteNonQuery();
-                }
-                if (!CheckViewExists("vTBLAksatDetailes"))
-                {
-                    cmd.CommandText = vTBLAksatDetailes;
-                    cmd.ExecuteNonQuery();
-                }
+                //cmd.CommandText = DropSP("SPro_0001");
+                //cmd.ExecuteNonQuery();
+                //cmd.CommandText = SPro_0001;
+                //cmd.ExecuteNonQuery();
 
-                cmd.CommandText = DropSP("SPro_0001");
-                cmd.ExecuteNonQuery();
-                cmd.CommandText = SPro_0001;
-                cmd.ExecuteNonQuery();
-
-                if (!CheckViewExists("vQry33"))
-                {
-                    cmd.CommandText = vQry33;
-                    cmd.ExecuteNonQuery();
-                }
+                //if (!CheckViewExists("vQry33"))
+                //{
+                //    cmd.CommandText = vQry33;
+                //    cmd.ExecuteNonQuery();
+                //}
             }
             catch (SqlException ex)
             {
@@ -271,17 +273,16 @@ namespace Members
             {
                 return @"CREATE VIEW [dbo].[vTBLAksatDetailes]
                 AS
-                SELECT        dbo.TBLAksatDetailes.MemberId, dbo.TBLAksatDetailes.datesadad, dbo.TBLAksatDetailes.sdadmony, dbo.TBLAksatDetailes.datein, 
-                dbo.TBLAksatDetailes.userin, dbo.TBLAksat.kestenddate, dbo.TBLAksat.mostahk, dbo.TBLAksat.madfoaa, dbo.TBLAksat.esalno, dbo.TBLAksat.esaldate, 
-                dbo.Users.RealName, dbo.CDSyndicate.Syndicate, dbo.CDSubCommitte.SubCommitte, dbo.TBLMembers.MemberName, dbo.TBLMembers.KideNumber, 
-                dbo.CDCardtype.Cardtype, dbo.TBLMembers.Installment, dbo.TBLMembers.fawry, dbo.TBLMembers.SyndicateId, dbo.TBLMembers.SubCommitteId
-                FROM            dbo.TBLMembers LEFT OUTER JOIN
-                dbo.CDCardtype ON dbo.TBLMembers.cardtype = dbo.CDCardtype.CardtypeId LEFT OUTER JOIN
-                dbo.CDSubCommitte ON dbo.TBLMembers.SubCommitteId = dbo.CDSubCommitte.SubCommitteId LEFT OUTER JOIN
-                dbo.CDSyndicate ON dbo.TBLMembers.SyndicateId = dbo.CDSyndicate.SyndicateId RIGHT OUTER JOIN
-                dbo.TBLAksat ON dbo.TBLMembers.MemberId = dbo.TBLAksat.MemberId RIGHT OUTER JOIN
-                dbo.TBLAksatDetailes LEFT OUTER JOIN
-                dbo.Users ON dbo.TBLAksatDetailes.userin = dbo.Users.UserID ON dbo.TBLAksat.MemberId = dbo.TBLAksatDetailes.MemberId";
+                SELECT        dbo.TBLAksat.MemberId, dbo.TBLAksatDetailes.datesadad, dbo.TBLAksatDetailes.sdadmony, dbo.TBLAksatDetailes.datein, dbo.TBLAksatDetailes.userin, dbo.TBLAksat.kestenddate, dbo.TBLAksat.mostahk, 
+                         dbo.TBLAksat.madfoaa, dbo.TBLAksat.esalno, dbo.TBLAksat.esaldate, dbo.Users.RealName, dbo.CDSyndicate.Syndicate, dbo.CDSubCommitte.SubCommitte, dbo.TBLMembers.MemberName, dbo.TBLMembers.KideNumber, 
+                         dbo.CDCardtype.Cardtype, dbo.TBLMembers.Installment, dbo.TBLMembers.fawry, dbo.TBLMembers.SyndicateId, dbo.TBLMembers.SubCommitteId
+FROM            dbo.Users RIGHT OUTER JOIN
+                         dbo.TBLMembers LEFT OUTER JOIN
+                         dbo.CDCardtype ON dbo.TBLMembers.cardtype = dbo.CDCardtype.CardtypeId LEFT OUTER JOIN
+                         dbo.CDSubCommitte ON dbo.TBLMembers.SubCommitteId = dbo.CDSubCommitte.SubCommitteId LEFT OUTER JOIN
+                         dbo.CDSyndicate ON dbo.TBLMembers.SyndicateId = dbo.CDSyndicate.SyndicateId RIGHT OUTER JOIN
+                         dbo.TBLAksatDetailes RIGHT OUTER JOIN
+                         dbo.TBLAksat ON dbo.TBLAksatDetailes.MemberId = dbo.TBLAksat.MemberId ON dbo.TBLMembers.MemberId = dbo.TBLAksat.MemberId ON dbo.Users.UserID = dbo.TBLAksatDetailes.userin";
             }
         }
 

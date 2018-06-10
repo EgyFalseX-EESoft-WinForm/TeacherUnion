@@ -23,7 +23,8 @@ namespace Members.Forms.Qry
         #region -   Event Handlers   -
         private void QryTblAhteatyFrm_Load(object sender, EventArgs e)
         {
-            LSMSData.QueryableSource = ds.vTBLAksatDetailes;
+            // TODO: This line of code loads data into the 'dsTeachersUnionQuery.vTBLAksatDetailes' table. You can move, or remove it, as needed.
+            this.vTBLAksatDetailesTableAdapter.Fill(this.dsTeachersUnionQuery.vTBLAksatDetailes);
             gridViewData.BestFitColumns();
             btnPrintExport.Visible = Program.UserInfo.IsAdmin;
         }
