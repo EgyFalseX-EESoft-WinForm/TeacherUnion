@@ -1,7 +1,9 @@
-﻿namespace Retirement.DataSources {
-    
-    
-    public partial class dsTeachersUnion {
+﻿namespace Retirement.DataSources
+{
+
+
+    public partial class dsTeachersUnion
+    {
     }
 }
 

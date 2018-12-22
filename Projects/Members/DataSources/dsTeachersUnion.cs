@@ -7,7 +7,7 @@
         partial class RePrintCardsDataTable
         {
         }
-    
+
         partial class PrintCardsDataTable
         {
         }

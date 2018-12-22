@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Employee</RootNamespace>
     <AssemblyName>Employee</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>2.0</OldToolsVersion>
@@ -43,6 +43,7 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <DeepSeaObfuscate>false</DeepSeaObfuscate>
     <DeepSeaKeyPassword>[Egy]FalseX</DeepSeaKeyPassword>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -52,6 +53,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Employee.ico</ApplicationIcon>
@@ -69,6 +71,7 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRuleSetDirectories>;D:\Sysbase\Development\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
     <CodeAnalysisRuleDirectories>;D:\Sysbase\Development\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -85,6 +88,7 @@
     <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
     <CodeAnalysisRuleDirectories>;D:\Sysbase\Development\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
     <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>bin\x86\Release\</OutputPath>
@@ -101,6 +105,7 @@
     <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
     <CodeAnalysisRuleDirectories>;D:\Sysbase\Development\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
     <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'x86|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -117,36 +122,52 @@
     <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
     <CodeAnalysisRuleDirectories>;D:\Sysbase\Development\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
     <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.BonusSkins.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.BonusSkins.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Data.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Printing.v12.2.Core, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Pdf.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Utils.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Office.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraBars.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.RichEdit.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraEditors.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.RichEdit.v18.2.Export, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraGrid.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraLayout.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraNavBar.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraTreeList.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
     <Reference Include="FXFW, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -446,6 +467,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Resources\Close.png" />
     <None Include="Resources\Code.png" />
     <None Include="Resources\Connection.png" />

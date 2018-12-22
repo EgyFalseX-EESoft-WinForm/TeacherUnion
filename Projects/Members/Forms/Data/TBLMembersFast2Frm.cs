@@ -443,7 +443,9 @@ namespace Members
             if ((pe.EditValue is Image) || pe.Properties.PictureStoreMode == PictureStoreMode.Image)
                 pe.EditValue = im;
             else
-                pe.EditValue = DevExpress.XtraExport.ByteImageConverter.ToByteArray(im, System.Drawing.Imaging.ImageFormat.Bmp);
+                pe.EditValue = ByteImageConverter.ToByteArray(im, System.Drawing.Imaging.ImageFormat.Bmp);
+
+            
         }
         private void peImg_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
         {
