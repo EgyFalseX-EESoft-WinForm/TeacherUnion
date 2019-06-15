@@ -31,25 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RoleDetailFrm));
             this.groupControlUpdate = new DevExpress.XtraEditors.GroupControl();
+            this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.popupControlContainer2 = new DevExpress.XtraBars.PopupControlContainer(this.components);
             this.buttonEdit = new DevExpress.XtraEditors.ButtonEdit();
             this.popupControlContainer1 = new DevExpress.XtraBars.PopupControlContainer(this.components);
             this.someLabelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.someLabelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.CEUpdate = new DevExpress.XtraEditors.CheckEdit();
-            this.CESelect = new DevExpress.XtraEditors.CheckEdit();
-            this.CEDelete = new DevExpress.XtraEditors.CheckEdit();
-            this.CEInsert = new DevExpress.XtraEditors.CheckEdit();
-            this.groupControlSelect = new DevExpress.XtraEditors.GroupControl();
-            this.LUEItems = new DevExpress.XtraEditors.LookUpEdit();
-            this.rolesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dsTeachersUnion = new Members.DataSources.dsTeachersUnion();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.roleDetialTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.RoleDetialTableAdapter();
-            this.rolesTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.RolesTableAdapter();
-            this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.ribbonImageCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.mbMembersExit = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersHelp = new DevExpress.XtraBars.BarButtonItem();
@@ -182,14 +170,29 @@
             this.skinsRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.helpRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.CEUpdate = new DevExpress.XtraEditors.CheckEdit();
+            this.CESelect = new DevExpress.XtraEditors.CheckEdit();
+            this.CEDelete = new DevExpress.XtraEditors.CheckEdit();
+            this.CEInsert = new DevExpress.XtraEditors.CheckEdit();
+            this.groupControlSelect = new DevExpress.XtraEditors.GroupControl();
+            this.LUEItems = new DevExpress.XtraEditors.LookUpEdit();
+            this.rolesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsTeachersUnion = new Members.DataSources.dsTeachersUnion();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.roleDetialTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.RoleDetialTableAdapter();
+            this.rolesTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.RolesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlUpdate)).BeginInit();
             this.groupControlUpdate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer2)).BeginInit();
             this.popupControlContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).BeginInit();
             this.popupControlContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollection)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CEUpdate.Properties)).BeginInit();
@@ -201,9 +204,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.LUEItems.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rolesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollection)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControlUpdate
@@ -216,176 +216,9 @@
             this.groupControlUpdate.Controls.Add(this.groupControl2);
             this.groupControlUpdate.Location = new System.Drawing.Point(9, 75);
             this.groupControlUpdate.Name = "groupControlUpdate";
-            this.groupControlUpdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.groupControlUpdate.Size = new System.Drawing.Size(963, 251);
             this.groupControlUpdate.TabIndex = 1;
             this.groupControlUpdate.Text = "التفاصيل";
-            // 
-            // appMenu
-            // 
-            this.appMenu.BottomPaneControlContainer = this.popupControlContainer2;
-            this.appMenu.Name = "appMenu";
-            this.appMenu.RightPaneControlContainer = this.popupControlContainer1;
-            this.appMenu.ShowRightPane = true;
-            // 
-            // popupControlContainer2
-            // 
-            this.popupControlContainer2.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.popupControlContainer2.Appearance.Options.UseBackColor = true;
-            this.popupControlContainer2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.popupControlContainer2.Controls.Add(this.buttonEdit);
-            this.popupControlContainer2.Location = new System.Drawing.Point(127, 218);
-            this.popupControlContainer2.Name = "popupControlContainer2";
-            this.popupControlContainer2.Size = new System.Drawing.Size(118, 28);
-            this.popupControlContainer2.TabIndex = 5;
-            this.popupControlContainer2.Visible = false;
-            // 
-            // buttonEdit
-            // 
-            this.buttonEdit.EditValue = "No Text";
-            this.buttonEdit.Location = new System.Drawing.Point(3, 5);
-            this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.buttonEdit.Size = new System.Drawing.Size(100, 20);
-            this.buttonEdit.TabIndex = 0;
-            // 
-            // popupControlContainer1
-            // 
-            this.popupControlContainer1.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.popupControlContainer1.Appearance.Options.UseBackColor = true;
-            this.popupControlContainer1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.popupControlContainer1.Controls.Add(this.someLabelControl2);
-            this.popupControlContainer1.Controls.Add(this.someLabelControl1);
-            this.popupControlContainer1.Location = new System.Drawing.Point(45, 176);
-            this.popupControlContainer1.Name = "popupControlContainer1";
-            this.popupControlContainer1.Size = new System.Drawing.Size(76, 70);
-            this.popupControlContainer1.TabIndex = 4;
-            this.popupControlContainer1.Visible = false;
-            // 
-            // someLabelControl2
-            // 
-            this.someLabelControl2.Location = new System.Drawing.Point(3, 57);
-            this.someLabelControl2.Name = "someLabelControl2";
-            this.someLabelControl2.Size = new System.Drawing.Size(36, 13);
-            this.someLabelControl2.TabIndex = 0;
-            this.someLabelControl2.Text = "No Info";
-            // 
-            // someLabelControl1
-            // 
-            this.someLabelControl1.Location = new System.Drawing.Point(3, 3);
-            this.someLabelControl1.Name = "someLabelControl1";
-            this.someLabelControl1.Size = new System.Drawing.Size(36, 13);
-            this.someLabelControl1.TabIndex = 0;
-            this.someLabelControl1.Text = "No Info";
-            // 
-            // groupControl2
-            // 
-            this.groupControl2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.groupControl2.AppearanceCaption.Options.UseTextOptions = true;
-            this.groupControl2.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.groupControl2.Controls.Add(this.CEUpdate);
-            this.groupControl2.Controls.Add(this.CESelect);
-            this.groupControl2.Controls.Add(this.CEDelete);
-            this.groupControl2.Controls.Add(this.CEInsert);
-            this.groupControl2.Location = new System.Drawing.Point(361, 169);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(240, 73);
-            this.groupControl2.TabIndex = 2;
-            this.groupControl2.Text = "عناصر السماح";
-            // 
-            // CEUpdate
-            // 
-            this.CEUpdate.Location = new System.Drawing.Point(21, 49);
-            this.CEUpdate.Name = "CEUpdate";
-            this.CEUpdate.Properties.Caption = "تعديل";
-            this.CEUpdate.Size = new System.Drawing.Size(75, 19);
-            this.CEUpdate.TabIndex = 0;
-            // 
-            // CESelect
-            // 
-            this.CESelect.Location = new System.Drawing.Point(21, 24);
-            this.CESelect.Name = "CESelect";
-            this.CESelect.Properties.Caption = "عرض";
-            this.CESelect.Size = new System.Drawing.Size(75, 19);
-            this.CESelect.TabIndex = 0;
-            // 
-            // CEDelete
-            // 
-            this.CEDelete.Location = new System.Drawing.Point(144, 49);
-            this.CEDelete.Name = "CEDelete";
-            this.CEDelete.Properties.Caption = "حذف";
-            this.CEDelete.Size = new System.Drawing.Size(75, 19);
-            this.CEDelete.TabIndex = 0;
-            // 
-            // CEInsert
-            // 
-            this.CEInsert.Location = new System.Drawing.Point(144, 24);
-            this.CEInsert.Name = "CEInsert";
-            this.CEInsert.Properties.Caption = "اضافه";
-            this.CEInsert.Size = new System.Drawing.Size(75, 19);
-            this.CEInsert.TabIndex = 0;
-            // 
-            // groupControlSelect
-            // 
-            this.groupControlSelect.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupControlSelect.AppearanceCaption.Options.UseTextOptions = true;
-            this.groupControlSelect.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.groupControlSelect.Controls.Add(this.LUEItems);
-            this.groupControlSelect.Controls.Add(this.labelControl1);
-            this.groupControlSelect.Location = new System.Drawing.Point(9, 10);
-            this.groupControlSelect.Name = "groupControlSelect";
-            this.groupControlSelect.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupControlSelect.Size = new System.Drawing.Size(963, 59);
-            this.groupControlSelect.TabIndex = 0;
-            this.groupControlSelect.Text = "جميع السماحيات";
-            // 
-            // LUEItems
-            // 
-            this.LUEItems.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.LUEItems.Location = new System.Drawing.Point(386, 28);
-            this.LUEItems.Name = "LUEItems";
-            this.LUEItems.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.LUEItems.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("RoleName", "اسم الصلاحيه", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("RoleDesc", "تعليق", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center)});
-            this.LUEItems.Properties.DataSource = this.rolesBindingSource;
-            this.LUEItems.Properties.DisplayMember = "RoleName";
-            this.LUEItems.Properties.NullText = "";
-            this.LUEItems.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.LUEItems.Properties.ValueMember = "RoleID";
-            this.LUEItems.Size = new System.Drawing.Size(173, 20);
-            this.LUEItems.TabIndex = 0;
-            this.LUEItems.EditValueChanged += new System.EventHandler(this.LUEItems_EditValueChanged);
-            // 
-            // rolesBindingSource
-            // 
-            this.rolesBindingSource.DataMember = "Roles";
-            this.rolesBindingSource.DataSource = this.dsTeachersUnion;
-            // 
-            // dsTeachersUnion
-            // 
-            this.dsTeachersUnion.DataSetName = "dsTeachersUnion";
-            this.dsTeachersUnion.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelControl1.Location = new System.Drawing.Point(565, 31);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(62, 13);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "اختار سماحيه";
-            // 
-            // roleDetialTableAdapter
-            // 
-            this.roleDetialTableAdapter.ClearBeforeFill = true;
-            // 
-            // rolesTableAdapter
-            // 
-            this.rolesTableAdapter.ClearBeforeFill = true;
             // 
             // ribbonControl
             // 
@@ -507,7 +340,7 @@
             this.mbMembersQry33,
             this.mbMembersTBLPrintCardFawry});
             this.ribbonControl.LargeImages = this.ribbonImageCollectionLarge;
-            this.ribbonControl.Location = new System.Drawing.Point(2, 21);
+            this.ribbonControl.Location = new System.Drawing.Point(2, 20);
             this.ribbonControl.MaxItemId = 202;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.PageHeaderItemLinks.Add(this.mbMembersAbout);
@@ -519,10 +352,67 @@
             this.PrintribbonPage,
             this.PremissionribbonPage,
             this.helpRibbonPage});
+            this.ribbonControl.QuickToolbarItemLinks.Add(this.mbMembersHelp);
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
-            this.ribbonControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ribbonControl.Size = new System.Drawing.Size(959, 142);
-            this.ribbonControl.Toolbar.ItemLinks.Add(this.mbMembersHelp);
+            this.ribbonControl.Size = new System.Drawing.Size(959, 141);
+            // 
+            // appMenu
+            // 
+            this.appMenu.BottomPaneControlContainer = this.popupControlContainer2;
+            this.appMenu.Name = "appMenu";
+            this.appMenu.RightPaneControlContainer = this.popupControlContainer1;
+            this.appMenu.ShowRightPane = true;
+            // 
+            // popupControlContainer2
+            // 
+            this.popupControlContainer2.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.popupControlContainer2.Appearance.Options.UseBackColor = true;
+            this.popupControlContainer2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.popupControlContainer2.Controls.Add(this.buttonEdit);
+            this.popupControlContainer2.Location = new System.Drawing.Point(127, 218);
+            this.popupControlContainer2.Name = "popupControlContainer2";
+            this.popupControlContainer2.Size = new System.Drawing.Size(118, 28);
+            this.popupControlContainer2.TabIndex = 5;
+            this.popupControlContainer2.Visible = false;
+            // 
+            // buttonEdit
+            // 
+            this.buttonEdit.EditValue = "No Text";
+            this.buttonEdit.Location = new System.Drawing.Point(3, 5);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.buttonEdit.Size = new System.Drawing.Size(100, 20);
+            this.buttonEdit.TabIndex = 0;
+            // 
+            // popupControlContainer1
+            // 
+            this.popupControlContainer1.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.popupControlContainer1.Appearance.Options.UseBackColor = true;
+            this.popupControlContainer1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.popupControlContainer1.Controls.Add(this.someLabelControl2);
+            this.popupControlContainer1.Controls.Add(this.someLabelControl1);
+            this.popupControlContainer1.Location = new System.Drawing.Point(45, 176);
+            this.popupControlContainer1.Name = "popupControlContainer1";
+            this.popupControlContainer1.Size = new System.Drawing.Size(76, 70);
+            this.popupControlContainer1.TabIndex = 4;
+            this.popupControlContainer1.Visible = false;
+            // 
+            // someLabelControl2
+            // 
+            this.someLabelControl2.Location = new System.Drawing.Point(3, 57);
+            this.someLabelControl2.Name = "someLabelControl2";
+            this.someLabelControl2.Size = new System.Drawing.Size(36, 13);
+            this.someLabelControl2.TabIndex = 0;
+            this.someLabelControl2.Text = "No Info";
+            // 
+            // someLabelControl1
+            // 
+            this.someLabelControl1.Location = new System.Drawing.Point(3, 3);
+            this.someLabelControl1.Name = "someLabelControl1";
+            this.someLabelControl1.Size = new System.Drawing.Size(36, 13);
+            this.someLabelControl1.TabIndex = 0;
+            this.someLabelControl1.Text = "No Info";
             // 
             // ribbonImageCollection
             // 
@@ -572,8 +462,8 @@
             this.mbMembersExit.Description = "Closes this program after prompting you to save unsaved data.";
             this.mbMembersExit.Hint = "Closes this program after prompting you to save unsaved data";
             this.mbMembersExit.Id = 20;
-            this.mbMembersExit.ImageIndex = 0;
-            this.mbMembersExit.LargeImageIndex = 0;
+            this.mbMembersExit.ImageOptions.ImageIndex = 0;
+            this.mbMembersExit.ImageOptions.LargeImageIndex = 0;
             this.mbMembersExit.Name = "mbMembersExit";
             // 
             // mbMembersHelp
@@ -582,8 +472,8 @@
             this.mbMembersHelp.Description = "Start the program help system.";
             this.mbMembersHelp.Hint = "Start the program help system";
             this.mbMembersHelp.Id = 22;
-            this.mbMembersHelp.ImageIndex = 1;
-            this.mbMembersHelp.LargeImageIndex = 1;
+            this.mbMembersHelp.ImageOptions.ImageIndex = 1;
+            this.mbMembersHelp.ImageOptions.LargeImageIndex = 1;
             this.mbMembersHelp.Name = "mbMembersHelp";
             // 
             // mbMembersAbout
@@ -592,8 +482,8 @@
             this.mbMembersAbout.Description = "Displays general program information.";
             this.mbMembersAbout.Hint = "Displays general program information";
             this.mbMembersAbout.Id = 24;
-            this.mbMembersAbout.ImageIndex = 2;
-            this.mbMembersAbout.LargeImageIndex = 2;
+            this.mbMembersAbout.ImageOptions.ImageIndex = 2;
+            this.mbMembersAbout.ImageOptions.LargeImageIndex = 2;
             this.mbMembersAbout.Name = "mbMembersAbout";
             // 
             // mbMembersStatus
@@ -601,7 +491,6 @@
             this.mbMembersStatus.Caption = "جاهز";
             this.mbMembersStatus.Id = 31;
             this.mbMembersStatus.Name = "mbMembersStatus";
-            this.mbMembersStatus.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // mbMembersInfo
             // 
@@ -609,7 +498,6 @@
             this.mbMembersInfo.Caption = "الرسائل";
             this.mbMembersInfo.Id = 32;
             this.mbMembersInfo.Name = "mbMembersInfo";
-            this.mbMembersInfo.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // mbMembersSkins
             // 
@@ -635,8 +523,8 @@
             this.mbMembersDBChange.Description = "الغاء اتصال قاعدة البيانات";
             this.mbMembersDBChange.Hint = "الغاء اتصال قاعدة البيانات";
             this.mbMembersDBChange.Id = 71;
-            this.mbMembersDBChange.ImageIndex = 3;
-            this.mbMembersDBChange.LargeImageIndex = 3;
+            this.mbMembersDBChange.ImageOptions.ImageIndex = 3;
+            this.mbMembersDBChange.ImageOptions.LargeImageIndex = 3;
             this.mbMembersDBChange.Name = "mbMembersDBChange";
             // 
             // mbReportsMembers
@@ -644,12 +532,12 @@
             this.mbReportsMembers.Caption = "التقارير";
             this.mbReportsMembers.Description = "قائمة التقارير";
             this.mbReportsMembers.Edit = null;
+            this.mbReportsMembers.EditWidth = 150;
             this.mbReportsMembers.Hint = "قائمة التقارير";
             this.mbReportsMembers.Id = 79;
-            this.mbReportsMembers.ImageIndex = 12;
-            this.mbReportsMembers.LargeImageIndex = 12;
+            this.mbReportsMembers.ImageOptions.ImageIndex = 12;
+            this.mbReportsMembers.ImageOptions.LargeImageIndex = 12;
             this.mbReportsMembers.Name = "mbReportsMembers";
-            this.mbReportsMembers.Width = 150;
             // 
             // mbMembersCDGov
             // 
@@ -657,8 +545,8 @@
             this.mbMembersCDGov.Description = "اضافة, تعديل, حذف محافظه";
             this.mbMembersCDGov.Hint = "اضافة, تعديل, حذف محافظه";
             this.mbMembersCDGov.Id = 81;
-            this.mbMembersCDGov.ImageIndex = 4;
-            this.mbMembersCDGov.LargeImageIndex = 4;
+            this.mbMembersCDGov.ImageOptions.ImageIndex = 4;
+            this.mbMembersCDGov.ImageOptions.LargeImageIndex = 4;
             this.mbMembersCDGov.Name = "mbMembersCDGov";
             // 
             // mbMembersCDMarkez
@@ -667,8 +555,8 @@
             this.mbMembersCDMarkez.Description = "اضافة, تعديل, حذف مركز او قسم";
             this.mbMembersCDMarkez.Hint = "اضافة, تعديل, حذف مركز او قسم";
             this.mbMembersCDMarkez.Id = 82;
-            this.mbMembersCDMarkez.ImageIndex = 5;
-            this.mbMembersCDMarkez.LargeImageIndex = 5;
+            this.mbMembersCDMarkez.ImageOptions.ImageIndex = 5;
+            this.mbMembersCDMarkez.ImageOptions.LargeImageIndex = 5;
             this.mbMembersCDMarkez.Name = "mbMembersCDMarkez";
             // 
             // mbMembersCDSyndicate
@@ -677,8 +565,8 @@
             this.mbMembersCDSyndicate.Description = "اضافة, تعديل, حذف نقابه فرعيه";
             this.mbMembersCDSyndicate.Hint = "اضافة, تعديل, حذف نقابه فرعيه";
             this.mbMembersCDSyndicate.Id = 83;
-            this.mbMembersCDSyndicate.ImageIndex = 6;
-            this.mbMembersCDSyndicate.LargeImageIndex = 6;
+            this.mbMembersCDSyndicate.ImageOptions.ImageIndex = 6;
+            this.mbMembersCDSyndicate.ImageOptions.LargeImageIndex = 6;
             this.mbMembersCDSyndicate.Name = "mbMembersCDSyndicate";
             // 
             // mbMembersCDSubCommitte
@@ -687,8 +575,8 @@
             this.mbMembersCDSubCommitte.Description = "اضافة, تعديل, حذف لجنه نقابيه";
             this.mbMembersCDSubCommitte.Hint = "اضافة, تعديل, حذف لجنه نقابيه";
             this.mbMembersCDSubCommitte.Id = 84;
-            this.mbMembersCDSubCommitte.ImageIndex = 7;
-            this.mbMembersCDSubCommitte.LargeImageIndex = 7;
+            this.mbMembersCDSubCommitte.ImageOptions.ImageIndex = 7;
+            this.mbMembersCDSubCommitte.ImageOptions.LargeImageIndex = 7;
             this.mbMembersCDSubCommitte.Name = "mbMembersCDSubCommitte";
             // 
             // mbMembersCDJop
@@ -697,8 +585,8 @@
             this.mbMembersCDJop.Description = "اضافة, تعديل, حذف وظيفه";
             this.mbMembersCDJop.Hint = "اضافة, تعديل, حذف وظيفه";
             this.mbMembersCDJop.Id = 85;
-            this.mbMembersCDJop.ImageIndex = 9;
-            this.mbMembersCDJop.LargeImageIndex = 9;
+            this.mbMembersCDJop.ImageOptions.ImageIndex = 9;
+            this.mbMembersCDJop.ImageOptions.LargeImageIndex = 9;
             this.mbMembersCDJop.Name = "mbMembersCDJop";
             // 
             // mbMembersCDBirthPlace
@@ -707,8 +595,8 @@
             this.mbMembersCDBirthPlace.Description = "اضافة, تعديل, حذف محل ميلاد";
             this.mbMembersCDBirthPlace.Hint = "اضافة, تعديل, حذف محل ميلاد";
             this.mbMembersCDBirthPlace.Id = 86;
-            this.mbMembersCDBirthPlace.ImageIndex = 8;
-            this.mbMembersCDBirthPlace.LargeImageIndex = 8;
+            this.mbMembersCDBirthPlace.ImageOptions.ImageIndex = 8;
+            this.mbMembersCDBirthPlace.ImageOptions.LargeImageIndex = 8;
             this.mbMembersCDBirthPlace.Name = "mbMembersCDBirthPlace";
             // 
             // mbMembersCDJobDescription
@@ -717,8 +605,8 @@
             this.mbMembersCDJobDescription.Description = "اضافة, تعديل, حذف وصف وظيفي";
             this.mbMembersCDJobDescription.Hint = "اضافة, تعديل, حذف وصف وظيفي";
             this.mbMembersCDJobDescription.Id = 87;
-            this.mbMembersCDJobDescription.ImageIndex = 10;
-            this.mbMembersCDJobDescription.LargeImageIndex = 10;
+            this.mbMembersCDJobDescription.ImageOptions.ImageIndex = 10;
+            this.mbMembersCDJobDescription.ImageOptions.LargeImageIndex = 10;
             this.mbMembersCDJobDescription.Name = "mbMembersCDJobDescription";
             // 
             // mbMembersCDGehaType
@@ -727,8 +615,8 @@
             this.mbMembersCDGehaType.Description = "اضافة, تعديل, حذف جهة عمل";
             this.mbMembersCDGehaType.Hint = "اضافة, تعديل, حذف جهة عمل";
             this.mbMembersCDGehaType.Id = 88;
-            this.mbMembersCDGehaType.ImageIndex = 11;
-            this.mbMembersCDGehaType.LargeImageIndex = 11;
+            this.mbMembersCDGehaType.ImageOptions.ImageIndex = 11;
+            this.mbMembersCDGehaType.ImageOptions.LargeImageIndex = 11;
             this.mbMembersCDGehaType.Name = "mbMembersCDGehaType";
             // 
             // mbMembersCDModerea
@@ -737,8 +625,8 @@
             this.mbMembersCDModerea.Description = "اضافة, تعديل, حذف مدريه";
             this.mbMembersCDModerea.Hint = "اضافة, تعديل, حذف مدريه";
             this.mbMembersCDModerea.Id = 89;
-            this.mbMembersCDModerea.ImageIndex = 12;
-            this.mbMembersCDModerea.LargeImageIndex = 12;
+            this.mbMembersCDModerea.ImageOptions.ImageIndex = 12;
+            this.mbMembersCDModerea.ImageOptions.LargeImageIndex = 12;
             this.mbMembersCDModerea.Name = "mbMembersCDModerea";
             // 
             // mbMembersCDGeha
@@ -747,8 +635,8 @@
             this.mbMembersCDGeha.Description = "اضافة, تعديل, حذف جهة عمل";
             this.mbMembersCDGeha.Hint = "اضافة, تعديل, حذف جهة عمل";
             this.mbMembersCDGeha.Id = 90;
-            this.mbMembersCDGeha.ImageIndex = 14;
-            this.mbMembersCDGeha.LargeImageIndex = 14;
+            this.mbMembersCDGeha.ImageOptions.ImageIndex = 14;
+            this.mbMembersCDGeha.ImageOptions.LargeImageIndex = 14;
             this.mbMembersCDGeha.Name = "mbMembersCDGeha";
             // 
             // mbMembersCDQualification
@@ -757,8 +645,8 @@
             this.mbMembersCDQualification.Description = "اضافة, تعديل, حذف مؤهل";
             this.mbMembersCDQualification.Hint = "اضافة, تعديل, حذف مؤهل";
             this.mbMembersCDQualification.Id = 91;
-            this.mbMembersCDQualification.ImageIndex = 15;
-            this.mbMembersCDQualification.LargeImageIndex = 15;
+            this.mbMembersCDQualification.ImageOptions.ImageIndex = 15;
+            this.mbMembersCDQualification.ImageOptions.LargeImageIndex = 15;
             this.mbMembersCDQualification.Name = "mbMembersCDQualification";
             // 
             // mbMembersCDSpecialization
@@ -767,8 +655,8 @@
             this.mbMembersCDSpecialization.Description = "اضافة, تعديل, حذف تخصص مؤهل";
             this.mbMembersCDSpecialization.Hint = "اضافة, تعديل, حذف تخصص مؤهل";
             this.mbMembersCDSpecialization.Id = 92;
-            this.mbMembersCDSpecialization.ImageIndex = 16;
-            this.mbMembersCDSpecialization.LargeImageIndex = 16;
+            this.mbMembersCDSpecialization.ImageOptions.ImageIndex = 16;
+            this.mbMembersCDSpecialization.ImageOptions.LargeImageIndex = 16;
             this.mbMembersCDSpecialization.Name = "mbMembersCDSpecialization";
             // 
             // mbMembersCDEDARET
@@ -777,8 +665,8 @@
             this.mbMembersCDEDARET.Description = "اضافة, تعديل, حذف اداره";
             this.mbMembersCDEDARET.Hint = "اضافة, تعديل, حذف اداره";
             this.mbMembersCDEDARET.Id = 93;
-            this.mbMembersCDEDARET.ImageIndex = 13;
-            this.mbMembersCDEDARET.LargeImageIndex = 13;
+            this.mbMembersCDEDARET.ImageOptions.ImageIndex = 13;
+            this.mbMembersCDEDARET.ImageOptions.LargeImageIndex = 13;
             this.mbMembersCDEDARET.Name = "mbMembersCDEDARET";
             // 
             // mbMembersCDEstefaaKed
@@ -787,8 +675,8 @@
             this.mbMembersCDEstefaaKed.Description = "اضافة, تعديل, حذف استيفاء عضويه";
             this.mbMembersCDEstefaaKed.Hint = "اضافة, تعديل, حذف استيفاء عضويه";
             this.mbMembersCDEstefaaKed.Id = 95;
-            this.mbMembersCDEstefaaKed.ImageIndex = 18;
-            this.mbMembersCDEstefaaKed.LargeImageIndex = 18;
+            this.mbMembersCDEstefaaKed.ImageOptions.ImageIndex = 18;
+            this.mbMembersCDEstefaaKed.ImageOptions.LargeImageIndex = 18;
             this.mbMembersCDEstefaaKed.Name = "mbMembersCDEstefaaKed";
             // 
             // mbMembersQry1
@@ -799,7 +687,7 @@
             this.mbMembersQry1.Hint = "استعلام الاسم تاريخ الميلاد الوظيفة تاريخ التعيين اللجنة النقابية النقابة الفرعية" +
     " جهة العمل";
             this.mbMembersQry1.Id = 96;
-            this.mbMembersQry1.ImageIndex = 19;
+            this.mbMembersQry1.ImageOptions.ImageIndex = 19;
             this.mbMembersQry1.Name = "mbMembersQry1";
             this.mbMembersQry1.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -809,8 +697,8 @@
             this.mbMembersTBLHafza.Description = "اضافة, تعديل, حذف حافظة";
             this.mbMembersTBLHafza.Hint = "اضافة, تعديل, حذف حافظة";
             this.mbMembersTBLHafza.Id = 97;
-            this.mbMembersTBLHafza.ImageIndex = 20;
-            this.mbMembersTBLHafza.LargeImageIndex = 20;
+            this.mbMembersTBLHafza.ImageOptions.ImageIndex = 20;
+            this.mbMembersTBLHafza.ImageOptions.LargeImageIndex = 20;
             this.mbMembersTBLHafza.Name = "mbMembersTBLHafza";
             // 
             // mbMembersQry3
@@ -821,7 +709,7 @@
             this.mbMembersQry3.Hint = "رقم الحافظة و تاريخ و الحافظة و الاسم و الوظيفة و جهة العمل و موبيل و تاريخ تقديم" +
     " الطلب و اللجنة النقابية و النقابة الفرعية و تاريخ استلام الكانيه و المستلم";
             this.mbMembersQry3.Id = 99;
-            this.mbMembersQry3.ImageIndex = 19;
+            this.mbMembersQry3.ImageOptions.ImageIndex = 19;
             this.mbMembersQry3.Name = "mbMembersQry3";
             this.mbMembersQry3.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -831,8 +719,8 @@
             this.mbMembersTBLMemberCard.Description = "اضافة, تعديل, حذف كرنيه";
             this.mbMembersTBLMemberCard.Hint = "اضافة, تعديل, حذف كرنيه";
             this.mbMembersTBLMemberCard.Id = 100;
-            this.mbMembersTBLMemberCard.ImageIndex = 21;
-            this.mbMembersTBLMemberCard.LargeImageIndex = 21;
+            this.mbMembersTBLMemberCard.ImageOptions.ImageIndex = 21;
+            this.mbMembersTBLMemberCard.ImageOptions.LargeImageIndex = 21;
             this.mbMembersTBLMemberCard.Name = "mbMembersTBLMemberCard";
             this.mbMembersTBLMemberCard.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.mbMembersTBLMemberCard.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
@@ -843,8 +731,8 @@
             this.mbMembersTBLPrintCard.Caption = "طباعة";
             this.mbMembersTBLPrintCard.Description = "طباعة كارنيهات";
             this.mbMembersTBLPrintCard.Id = 101;
-            this.mbMembersTBLPrintCard.ImageIndex = 22;
-            this.mbMembersTBLPrintCard.LargeImageIndex = 22;
+            this.mbMembersTBLPrintCard.ImageOptions.ImageIndex = 22;
+            this.mbMembersTBLPrintCard.ImageOptions.LargeImageIndex = 22;
             this.mbMembersTBLPrintCard.Name = "mbMembersTBLPrintCard";
             this.mbMembersTBLPrintCard.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.mbMembersTBLPrintCard.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
@@ -857,8 +745,8 @@
             this.mbMembersTBLMembersFast.Enabled = false;
             this.mbMembersTBLMembersFast.Hint = "اضافة, تعديل, حذف بيانات عضو";
             this.mbMembersTBLMembersFast.Id = 105;
-            this.mbMembersTBLMembersFast.ImageIndex = 17;
-            this.mbMembersTBLMembersFast.LargeImageIndex = 17;
+            this.mbMembersTBLMembersFast.ImageOptions.ImageIndex = 17;
+            this.mbMembersTBLMembersFast.ImageOptions.LargeImageIndex = 17;
             this.mbMembersTBLMembersFast.Name = "mbMembersTBLMembersFast";
             // 
             // mbMembersTBLPrintCardRe
@@ -866,8 +754,8 @@
             this.mbMembersTBLPrintCardRe.Caption = "اعادة طباعة";
             this.mbMembersTBLPrintCardRe.Description = "اعادة طباعة الكارنيهات";
             this.mbMembersTBLPrintCardRe.Id = 106;
-            this.mbMembersTBLPrintCardRe.ImageIndex = 22;
-            this.mbMembersTBLPrintCardRe.LargeImageIndex = 22;
+            this.mbMembersTBLPrintCardRe.ImageOptions.ImageIndex = 22;
+            this.mbMembersTBLPrintCardRe.ImageOptions.LargeImageIndex = 22;
             this.mbMembersTBLPrintCardRe.Name = "mbMembersTBLPrintCardRe";
             this.mbMembersTBLPrintCardRe.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.mbMembersTBLPrintCardRe.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
@@ -877,14 +765,14 @@
             // 
             this.mbMembersQry5.Caption = "مدخلين الاعضاء";
             this.mbMembersQry5.Id = 115;
-            this.mbMembersQry5.ImageIndex = 19;
+            this.mbMembersQry5.ImageOptions.ImageIndex = 19;
             this.mbMembersQry5.Name = "mbMembersQry5";
             // 
             // mbMembersQry6
             // 
             this.mbMembersQry6.Caption = "استعلام استخراج الكرنيهات";
             this.mbMembersQry6.Id = 116;
-            this.mbMembersQry6.ImageIndex = 19;
+            this.mbMembersQry6.ImageOptions.ImageIndex = 19;
             this.mbMembersQry6.Name = "mbMembersQry6";
             this.mbMembersQry6.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -892,8 +780,8 @@
             // 
             this.mbMembersPrintCard.Caption = "طباعة الكرنيهات";
             this.mbMembersPrintCard.Id = 117;
-            this.mbMembersPrintCard.ImageIndex = 22;
-            this.mbMembersPrintCard.LargeImageIndex = 22;
+            this.mbMembersPrintCard.ImageOptions.ImageIndex = 22;
+            this.mbMembersPrintCard.ImageOptions.LargeImageIndex = 22;
             this.mbMembersPrintCard.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLPrintCard),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLPrintCardRe),
@@ -904,16 +792,16 @@
             // 
             this.mbMembersTBLPrintCardFawry.Caption = "طباعة الكرنيهات الفوري";
             this.mbMembersTBLPrintCardFawry.Id = 201;
-            this.mbMembersTBLPrintCardFawry.ImageIndex = 22;
-            this.mbMembersTBLPrintCardFawry.LargeImageIndex = 22;
+            this.mbMembersTBLPrintCardFawry.ImageOptions.ImageIndex = 22;
+            this.mbMembersTBLPrintCardFawry.ImageOptions.LargeImageIndex = 22;
             this.mbMembersTBLPrintCardFawry.Name = "mbMembersTBLPrintCardFawry";
             // 
             // mbMembersDataMember
             // 
             this.mbMembersDataMember.Caption = "بيانات الاعضاء";
             this.mbMembersDataMember.Id = 118;
-            this.mbMembersDataMember.ImageIndex = 17;
-            this.mbMembersDataMember.LargeImageIndex = 17;
+            this.mbMembersDataMember.ImageOptions.ImageIndex = 17;
+            this.mbMembersDataMember.ImageOptions.LargeImageIndex = 17;
             this.mbMembersDataMember.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLMembersFast2),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLMembersFastKid),
@@ -927,32 +815,32 @@
             this.mbMembersTBLMembersFast2.Description = "اضافة, تعديل, حذف بيانات عضو";
             this.mbMembersTBLMembersFast2.Hint = "اضافة, تعديل, حذف بيانات عضو";
             this.mbMembersTBLMembersFast2.Id = 119;
-            this.mbMembersTBLMembersFast2.ImageIndex = 17;
-            this.mbMembersTBLMembersFast2.LargeImageIndex = 17;
+            this.mbMembersTBLMembersFast2.ImageOptions.ImageIndex = 17;
+            this.mbMembersTBLMembersFast2.ImageOptions.LargeImageIndex = 17;
             this.mbMembersTBLMembersFast2.Name = "mbMembersTBLMembersFast2";
             // 
             // mbMembersTBLMembersFastKid
             // 
             this.mbMembersTBLMembersFastKid.Caption = "محتصر للقيد";
             this.mbMembersTBLMembersFastKid.Id = 187;
-            this.mbMembersTBLMembersFastKid.ImageIndex = 17;
-            this.mbMembersTBLMembersFastKid.LargeImageIndex = 17;
+            this.mbMembersTBLMembersFastKid.ImageOptions.ImageIndex = 17;
+            this.mbMembersTBLMembersFastKid.ImageOptions.LargeImageIndex = 17;
             this.mbMembersTBLMembersFastKid.Name = "mbMembersTBLMembersFastKid";
             // 
             // mbMembersTBLMembersFastMaashat
             // 
             this.mbMembersTBLMembersFastMaashat.Caption = "مختصر معاشات";
             this.mbMembersTBLMembersFastMaashat.Id = 189;
-            this.mbMembersTBLMembersFastMaashat.ImageIndex = 17;
-            this.mbMembersTBLMembersFastMaashat.LargeImageIndex = 17;
+            this.mbMembersTBLMembersFastMaashat.ImageOptions.ImageIndex = 17;
+            this.mbMembersTBLMembersFastMaashat.ImageOptions.LargeImageIndex = 17;
             this.mbMembersTBLMembersFastMaashat.Name = "mbMembersTBLMembersFastMaashat";
             // 
             // mbTBLMembersFast3
             // 
             this.mbTBLMembersFast3.Caption = "تعديل موبيل الاعضاء";
             this.mbTBLMembersFast3.Id = 197;
-            this.mbTBLMembersFast3.ImageIndex = 17;
-            this.mbTBLMembersFast3.LargeImageIndex = 17;
+            this.mbTBLMembersFast3.ImageOptions.ImageIndex = 17;
+            this.mbTBLMembersFast3.ImageOptions.LargeImageIndex = 17;
             this.mbTBLMembersFast3.Name = "mbTBLMembersFast3";
             // 
             // mbMembersJobs
@@ -961,8 +849,8 @@
             this.mbMembersJobs.Description = "اضافة, تعديل, حذف وظيفه";
             this.mbMembersJobs.Hint = "اضافة, تعديل, حذف وظيفه";
             this.mbMembersJobs.Id = 120;
-            this.mbMembersJobs.ImageIndex = 9;
-            this.mbMembersJobs.LargeImageIndex = 9;
+            this.mbMembersJobs.ImageOptions.ImageIndex = 9;
+            this.mbMembersJobs.ImageOptions.LargeImageIndex = 9;
             this.mbMembersJobs.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersCDJop),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersCDJobtitle),
@@ -975,8 +863,8 @@
             this.mbMembersCDJobtitle.Description = "اضافة, تعديل, حذف وظيفه";
             this.mbMembersCDJobtitle.Hint = "اضافة, تعديل, حذف وظيفه";
             this.mbMembersCDJobtitle.Id = 121;
-            this.mbMembersCDJobtitle.ImageIndex = 9;
-            this.mbMembersCDJobtitle.LargeImageIndex = 9;
+            this.mbMembersCDJobtitle.ImageOptions.ImageIndex = 9;
+            this.mbMembersCDJobtitle.ImageOptions.LargeImageIndex = 9;
             this.mbMembersCDJobtitle.Name = "mbMembersCDJobtitle";
             // 
             // mbMembersQry7
@@ -985,7 +873,7 @@
             this.mbMembersQry7.Description = "عدد مرات ادخال بيانات الاعضاء";
             this.mbMembersQry7.Hint = "عدد مرات ادخال بيانات الاعضاء";
             this.mbMembersQry7.Id = 122;
-            this.mbMembersQry7.ImageIndex = 19;
+            this.mbMembersQry7.ImageOptions.ImageIndex = 19;
             this.mbMembersQry7.Name = "mbMembersQry7";
             this.mbMembersQry7.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -993,23 +881,23 @@
             // 
             this.mbMembersTBLMandoop.Caption = "مندوبي الفرعيات";
             this.mbMembersTBLMandoop.Id = 123;
-            this.mbMembersTBLMandoop.ImageIndex = 23;
-            this.mbMembersTBLMandoop.LargeImageIndex = 23;
+            this.mbMembersTBLMandoop.ImageOptions.ImageIndex = 23;
+            this.mbMembersTBLMandoop.ImageOptions.LargeImageIndex = 23;
             this.mbMembersTBLMandoop.Name = "mbMembersTBLMandoop";
             // 
             // mbMembersTBLHafzaTasleem
             // 
             this.mbMembersTBLHafzaTasleem.Caption = "حافظة تسليم";
             this.mbMembersTBLHafzaTasleem.Id = 125;
-            this.mbMembersTBLHafzaTasleem.ImageIndex = 20;
-            this.mbMembersTBLHafzaTasleem.LargeImageIndex = 20;
+            this.mbMembersTBLHafzaTasleem.ImageOptions.ImageIndex = 20;
+            this.mbMembersTBLHafzaTasleem.ImageOptions.LargeImageIndex = 20;
             this.mbMembersTBLHafzaTasleem.Name = "mbMembersTBLHafzaTasleem";
             // 
             // mbMembersQry8
             // 
             this.mbMembersQry8.Caption = "ارقام القيد المكرره";
             this.mbMembersQry8.Id = 126;
-            this.mbMembersQry8.ImageIndex = 19;
+            this.mbMembersQry8.ImageOptions.ImageIndex = 19;
             this.mbMembersQry8.Name = "mbMembersQry8";
             this.mbMembersQry8.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1017,91 +905,91 @@
             // 
             this.mbMembersXRep02.Caption = "استخراج الكرنيهات";
             this.mbMembersXRep02.Id = 127;
-            this.mbMembersXRep02.ImageIndex = 24;
+            this.mbMembersXRep02.ImageOptions.ImageIndex = 24;
             this.mbMembersXRep02.Name = "mbMembersXRep02";
             // 
             // mbMembersXRep03
             // 
             this.mbMembersXRep03.Caption = "مجموع الكارنيهات حسب الايصال في فتره";
             this.mbMembersXRep03.Id = 128;
-            this.mbMembersXRep03.ImageIndex = 24;
+            this.mbMembersXRep03.ImageOptions.ImageIndex = 24;
             this.mbMembersXRep03.Name = "mbMembersXRep03";
             // 
             // mbMembersXRep04
             // 
             this.mbMembersXRep04.Caption = "مجموع الكارنيهات حسب الفرعية في فتره";
             this.mbMembersXRep04.Id = 129;
-            this.mbMembersXRep04.ImageIndex = 24;
+            this.mbMembersXRep04.ImageOptions.ImageIndex = 24;
             this.mbMembersXRep04.Name = "mbMembersXRep04";
             // 
             // mbMembersXRep05
             // 
             this.mbMembersXRep05.Caption = "مجموع الادخال حسب الايصال في فتره";
             this.mbMembersXRep05.Id = 130;
-            this.mbMembersXRep05.ImageIndex = 24;
+            this.mbMembersXRep05.ImageOptions.ImageIndex = 24;
             this.mbMembersXRep05.Name = "mbMembersXRep05";
             // 
             // mbMembersXRep06
             // 
             this.mbMembersXRep06.Caption = "مجموع الادخال حسب الفرعية في فتره";
             this.mbMembersXRep06.Id = 131;
-            this.mbMembersXRep06.ImageIndex = 24;
+            this.mbMembersXRep06.ImageOptions.ImageIndex = 24;
             this.mbMembersXRep06.Name = "mbMembersXRep06";
             // 
             // mbMembersXRepBarcodeTester
             // 
             this.mbMembersXRepBarcodeTester.Caption = "اختبار الباركود";
             this.mbMembersXRepBarcodeTester.Id = 132;
-            this.mbMembersXRepBarcodeTester.ImageIndex = 2;
-            this.mbMembersXRepBarcodeTester.LargeImageIndex = 2;
+            this.mbMembersXRepBarcodeTester.ImageOptions.ImageIndex = 2;
+            this.mbMembersXRepBarcodeTester.ImageOptions.LargeImageIndex = 2;
             this.mbMembersXRepBarcodeTester.Name = "mbMembersXRepBarcodeTester";
             // 
             // mbMembersTBLPrintCard3
             // 
             this.mbMembersTBLPrintCard3.Caption = "طباعة التقسيط";
             this.mbMembersTBLPrintCard3.Id = 134;
-            this.mbMembersTBLPrintCard3.ImageIndex = 22;
-            this.mbMembersTBLPrintCard3.LargeImageIndex = 22;
+            this.mbMembersTBLPrintCard3.ImageOptions.ImageIndex = 22;
+            this.mbMembersTBLPrintCard3.ImageOptions.LargeImageIndex = 22;
             this.mbMembersTBLPrintCard3.Name = "mbMembersTBLPrintCard3";
             // 
             // mbMembersTBLPrintCardRe3
             // 
             this.mbMembersTBLPrintCardRe3.Caption = "اعادة طباعة التقسيط";
             this.mbMembersTBLPrintCardRe3.Id = 135;
-            this.mbMembersTBLPrintCardRe3.ImageIndex = 22;
-            this.mbMembersTBLPrintCardRe3.LargeImageIndex = 22;
+            this.mbMembersTBLPrintCardRe3.ImageOptions.ImageIndex = 22;
+            this.mbMembersTBLPrintCardRe3.ImageOptions.LargeImageIndex = 22;
             this.mbMembersTBLPrintCardRe3.Name = "mbMembersTBLPrintCardRe3";
             // 
             // mbMembersReceipts
             // 
             this.mbMembersReceipts.Caption = "ارقام الايصالات";
             this.mbMembersReceipts.Id = 136;
-            this.mbMembersReceipts.ImageIndex = 25;
-            this.mbMembersReceipts.LargeImageIndex = 25;
+            this.mbMembersReceipts.ImageOptions.ImageIndex = 25;
+            this.mbMembersReceipts.ImageOptions.LargeImageIndex = 25;
             this.mbMembersReceipts.Name = "mbMembersReceipts";
             // 
             // mbMembersTblMemberAttach
             // 
             this.mbMembersTblMemberAttach.Caption = "مرفقات الاعضاء";
             this.mbMembersTblMemberAttach.Id = 137;
-            this.mbMembersTblMemberAttach.ImageIndex = 26;
-            this.mbMembersTblMemberAttach.LargeImageIndex = 26;
+            this.mbMembersTblMemberAttach.ImageOptions.ImageIndex = 26;
+            this.mbMembersTblMemberAttach.ImageOptions.LargeImageIndex = 26;
             this.mbMembersTblMemberAttach.Name = "mbMembersTblMemberAttach";
             // 
             // mbMembersCDAttachmentType
             // 
             this.mbMembersCDAttachmentType.Caption = "انواع المرفقات";
             this.mbMembersCDAttachmentType.Id = 138;
-            this.mbMembersCDAttachmentType.ImageIndex = 27;
-            this.mbMembersCDAttachmentType.LargeImageIndex = 27;
+            this.mbMembersCDAttachmentType.ImageOptions.ImageIndex = 27;
+            this.mbMembersCDAttachmentType.ImageOptions.LargeImageIndex = 27;
             this.mbMembersCDAttachmentType.Name = "mbMembersCDAttachmentType";
             // 
             // mbMembersTBLHafzaweb
             // 
             this.mbMembersTBLHafzaweb.Caption = "حافظة ويب";
             this.mbMembersTBLHafzaweb.Id = 139;
-            this.mbMembersTBLHafzaweb.ImageIndex = 20;
-            this.mbMembersTBLHafzaweb.LargeImageIndex = 20;
+            this.mbMembersTBLHafzaweb.ImageOptions.ImageIndex = 20;
+            this.mbMembersTBLHafzaweb.ImageOptions.LargeImageIndex = 20;
             this.mbMembersTBLHafzaweb.Name = "mbMembersTBLHafzaweb";
             // 
             // mbMembersTBLMemberWeb
@@ -1109,55 +997,55 @@
             this.mbMembersTBLMemberWeb.Caption = "اعضاء الانترنت";
             this.mbMembersTBLMemberWeb.Enabled = false;
             this.mbMembersTBLMemberWeb.Id = 140;
-            this.mbMembersTBLMemberWeb.ImageIndex = 17;
-            this.mbMembersTBLMemberWeb.LargeImageIndex = 17;
+            this.mbMembersTBLMemberWeb.ImageOptions.ImageIndex = 17;
+            this.mbMembersTBLMemberWeb.ImageOptions.LargeImageIndex = 17;
             this.mbMembersTBLMemberWeb.Name = "mbMembersTBLMemberWeb";
             // 
             // mbMembersImportFromWeb
             // 
             this.mbMembersImportFromWeb.Caption = "استيراد بيانات";
             this.mbMembersImportFromWeb.Id = 141;
-            this.mbMembersImportFromWeb.ImageIndex = 28;
-            this.mbMembersImportFromWeb.LargeImageIndex = 28;
+            this.mbMembersImportFromWeb.ImageOptions.ImageIndex = 28;
+            this.mbMembersImportFromWeb.ImageOptions.LargeImageIndex = 28;
             this.mbMembersImportFromWeb.Name = "mbMembersImportFromWeb";
             // 
             // mbMembersRoles
             // 
             this.mbMembersRoles.Caption = "الصلاحيات";
             this.mbMembersRoles.Id = 142;
-            this.mbMembersRoles.ImageIndex = 30;
-            this.mbMembersRoles.LargeImageIndex = 30;
+            this.mbMembersRoles.ImageOptions.ImageIndex = 30;
+            this.mbMembersRoles.ImageOptions.LargeImageIndex = 30;
             this.mbMembersRoles.Name = "mbMembersRoles";
             // 
             // mbMembersUsers
             // 
             this.mbMembersUsers.Caption = "المستخدمين";
             this.mbMembersUsers.Id = 143;
-            this.mbMembersUsers.ImageIndex = 29;
-            this.mbMembersUsers.LargeImageIndex = 29;
+            this.mbMembersUsers.ImageOptions.ImageIndex = 29;
+            this.mbMembersUsers.ImageOptions.LargeImageIndex = 29;
             this.mbMembersUsers.Name = "mbMembersUsers";
             // 
             // mbMembersUserRoles
             // 
             this.mbMembersUserRoles.Caption = "صلاحيات المستخدمين";
             this.mbMembersUserRoles.Id = 144;
-            this.mbMembersUserRoles.ImageIndex = 32;
-            this.mbMembersUserRoles.LargeImageIndex = 32;
+            this.mbMembersUserRoles.ImageOptions.ImageIndex = 32;
+            this.mbMembersUserRoles.ImageOptions.LargeImageIndex = 32;
             this.mbMembersUserRoles.Name = "mbMembersUserRoles";
             // 
             // mbMembersRoleDetail
             // 
             this.mbMembersRoleDetail.Caption = "تفاصيل الصلاحيات";
             this.mbMembersRoleDetail.Id = 145;
-            this.mbMembersRoleDetail.ImageIndex = 31;
-            this.mbMembersRoleDetail.LargeImageIndex = 31;
+            this.mbMembersRoleDetail.ImageOptions.ImageIndex = 31;
+            this.mbMembersRoleDetail.ImageOptions.LargeImageIndex = 31;
             this.mbMembersRoleDetail.Name = "mbMembersRoleDetail";
             // 
             // mbMembersQry9
             // 
             this.mbMembersQry9.Caption = "مرفقات الاعضاء";
             this.mbMembersQry9.Id = 146;
-            this.mbMembersQry9.ImageIndex = 19;
+            this.mbMembersQry9.ImageOptions.ImageIndex = 19;
             this.mbMembersQry9.Name = "mbMembersQry9";
             this.mbMembersQry9.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1165,7 +1053,7 @@
             // 
             this.mbMembersQry10.Caption = "كارنيهات لم تطبع";
             this.mbMembersQry10.Id = 147;
-            this.mbMembersQry10.ImageIndex = 19;
+            this.mbMembersQry10.ImageOptions.ImageIndex = 19;
             this.mbMembersQry10.Name = "mbMembersQry10";
             this.mbMembersQry10.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1173,7 +1061,7 @@
             // 
             this.mbMembersQry11.Caption = "كارنيهات تم طبعها";
             this.mbMembersQry11.Id = 148;
-            this.mbMembersQry11.ImageIndex = 19;
+            this.mbMembersQry11.ImageOptions.ImageIndex = 19;
             this.mbMembersQry11.Name = "mbMembersQry11";
             this.mbMembersQry11.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1181,7 +1069,7 @@
             // 
             this.mbMembersQry12.Caption = "الاستيفاء للويب";
             this.mbMembersQry12.Id = 150;
-            this.mbMembersQry12.ImageIndex = 19;
+            this.mbMembersQry12.ImageOptions.ImageIndex = 19;
             this.mbMembersQry12.Name = "mbMembersQry12";
             this.mbMembersQry12.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1189,15 +1077,15 @@
             // 
             this.mbMembersTBLManualArsheef.Caption = "الارشيف اليدوي";
             this.mbMembersTBLManualArsheef.Id = 151;
-            this.mbMembersTBLManualArsheef.ImageIndex = 32;
-            this.mbMembersTBLManualArsheef.LargeImageIndex = 32;
+            this.mbMembersTBLManualArsheef.ImageOptions.ImageIndex = 32;
+            this.mbMembersTBLManualArsheef.ImageOptions.LargeImageIndex = 32;
             this.mbMembersTBLManualArsheef.Name = "mbMembersTBLManualArsheef";
             // 
             // mbMembersQry13
             // 
             this.mbMembersQry13.Caption = "تفاصيل الارشيف اليدوي";
             this.mbMembersQry13.Id = 152;
-            this.mbMembersQry13.ImageIndex = 19;
+            this.mbMembersQry13.ImageOptions.ImageIndex = 19;
             this.mbMembersQry13.Name = "mbMembersQry13";
             this.mbMembersQry13.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1205,7 +1093,7 @@
             // 
             this.mbMembersQry14.Caption = "استعلام حافظة التسليم";
             this.mbMembersQry14.Id = 153;
-            this.mbMembersQry14.ImageIndex = 19;
+            this.mbMembersQry14.ImageOptions.ImageIndex = 19;
             this.mbMembersQry14.Name = "mbMembersQry14";
             this.mbMembersQry14.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1213,7 +1101,7 @@
             // 
             this.mbMembersQry15.Caption = "الارشيف اليدوي";
             this.mbMembersQry15.Id = 154;
-            this.mbMembersQry15.ImageIndex = 19;
+            this.mbMembersQry15.ImageOptions.ImageIndex = 19;
             this.mbMembersQry15.Name = "mbMembersQry15";
             this.mbMembersQry15.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1221,16 +1109,16 @@
             // 
             this.mbMembersTBLHafzawebNoTarhelEdit.Caption = "حافظة ويب للقيد تعديل";
             this.mbMembersTBLHafzawebNoTarhelEdit.Id = 155;
-            this.mbMembersTBLHafzawebNoTarhelEdit.ImageIndex = 20;
-            this.mbMembersTBLHafzawebNoTarhelEdit.LargeImageIndex = 20;
+            this.mbMembersTBLHafzawebNoTarhelEdit.ImageOptions.ImageIndex = 20;
+            this.mbMembersTBLHafzawebNoTarhelEdit.ImageOptions.LargeImageIndex = 20;
             this.mbMembersTBLHafzawebNoTarhelEdit.Name = "mbMembersTBLHafzawebNoTarhelEdit";
             // 
             // mbMembersHafza
             // 
             this.mbMembersHafza.Caption = "الحافظة";
             this.mbMembersHafza.Id = 158;
-            this.mbMembersHafza.ImageIndex = 20;
-            this.mbMembersHafza.LargeImageIndex = 20;
+            this.mbMembersHafza.ImageOptions.ImageIndex = 20;
+            this.mbMembersHafza.ImageOptions.LargeImageIndex = 20;
             this.mbMembersHafza.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLHafza),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLHafzaTasleem),
@@ -1242,23 +1130,23 @@
             // 
             this.mbMembersAppOptions.Caption = "خيارات البرنامج";
             this.mbMembersAppOptions.Id = 159;
-            this.mbMembersAppOptions.ImageIndex = 33;
-            this.mbMembersAppOptions.LargeImageIndex = 33;
+            this.mbMembersAppOptions.ImageOptions.ImageIndex = 33;
+            this.mbMembersAppOptions.ImageOptions.LargeImageIndex = 33;
             this.mbMembersAppOptions.Name = "mbMembersAppOptions";
             // 
             // mbMembersTBLMemberOld
             // 
             this.mbMembersTBLMemberOld.Caption = "ادخال قديم";
             this.mbMembersTBLMemberOld.Id = 160;
-            this.mbMembersTBLMemberOld.ImageIndex = 17;
-            this.mbMembersTBLMemberOld.LargeImageIndex = 17;
+            this.mbMembersTBLMemberOld.ImageOptions.ImageIndex = 17;
+            this.mbMembersTBLMemberOld.ImageOptions.LargeImageIndex = 17;
             this.mbMembersTBLMemberOld.Name = "mbMembersTBLMemberOld";
             // 
             // mbMembersQry16
             // 
             this.mbMembersQry16.Caption = "ادخال قديم";
             this.mbMembersQry16.Id = 161;
-            this.mbMembersQry16.ImageIndex = 19;
+            this.mbMembersQry16.ImageOptions.ImageIndex = 19;
             this.mbMembersQry16.Name = "mbMembersQry16";
             this.mbMembersQry16.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1266,7 +1154,7 @@
             // 
             this.mbMembersQry17.Caption = "اعضاء الويب";
             this.mbMembersQry17.Id = 162;
-            this.mbMembersQry17.ImageIndex = 19;
+            this.mbMembersQry17.ImageOptions.ImageIndex = 19;
             this.mbMembersQry17.Name = "mbMembersQry17";
             this.mbMembersQry17.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1274,7 +1162,7 @@
             // 
             this.mbMembersQry18.Caption = "حافظات ويب";
             this.mbMembersQry18.Id = 163;
-            this.mbMembersQry18.ImageIndex = 19;
+            this.mbMembersQry18.ImageOptions.ImageIndex = 19;
             this.mbMembersQry18.Name = "mbMembersQry18";
             this.mbMembersQry18.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1282,15 +1170,15 @@
             // 
             this.mbMembersTBLMemberEsalat.Caption = "ايصالات الاعضاء";
             this.mbMembersTBLMemberEsalat.Id = 164;
-            this.mbMembersTBLMemberEsalat.ImageIndex = 25;
-            this.mbMembersTBLMemberEsalat.LargeImageIndex = 25;
+            this.mbMembersTBLMemberEsalat.ImageOptions.ImageIndex = 25;
+            this.mbMembersTBLMemberEsalat.ImageOptions.LargeImageIndex = 25;
             this.mbMembersTBLMemberEsalat.Name = "mbMembersTBLMemberEsalat";
             // 
             // mbMembersQry19
             // 
             this.mbMembersQry19.Caption = "ايصالات الاعضاء";
             this.mbMembersQry19.Id = 165;
-            this.mbMembersQry19.ImageIndex = 19;
+            this.mbMembersQry19.ImageOptions.ImageIndex = 19;
             this.mbMembersQry19.Name = "mbMembersQry19";
             this.mbMembersQry19.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1298,22 +1186,22 @@
             // 
             this.mbMembersXRep07.Caption = "حافظة الكترونية";
             this.mbMembersXRep07.Id = 166;
-            this.mbMembersXRep07.ImageIndex = 24;
+            this.mbMembersXRep07.ImageOptions.ImageIndex = 24;
             this.mbMembersXRep07.Name = "mbMembersXRep07";
             // 
             // mbMembersTBLAksat
             // 
             this.mbMembersTBLAksat.Caption = "الاقساط جدولي";
             this.mbMembersTBLAksat.Id = 167;
-            this.mbMembersTBLAksat.ImageIndex = 34;
-            this.mbMembersTBLAksat.LargeImageIndex = 34;
+            this.mbMembersTBLAksat.ImageOptions.ImageIndex = 34;
+            this.mbMembersTBLAksat.ImageOptions.LargeImageIndex = 34;
             this.mbMembersTBLAksat.Name = "mbMembersTBLAksat";
             // 
             // mbMembersQry20
             // 
             this.mbMembersQry20.Caption = "صور الاعضاء المفقودة";
             this.mbMembersQry20.Id = 168;
-            this.mbMembersQry20.ImageIndex = 19;
+            this.mbMembersQry20.ImageOptions.ImageIndex = 19;
             this.mbMembersQry20.Name = "mbMembersQry20";
             this.mbMembersQry20.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1321,8 +1209,8 @@
             // 
             this.mbMembersAksat.Caption = "الاقساط";
             this.mbMembersAksat.Id = 169;
-            this.mbMembersAksat.ImageIndex = 34;
-            this.mbMembersAksat.LargeImageIndex = 34;
+            this.mbMembersAksat.ImageOptions.ImageIndex = 34;
+            this.mbMembersAksat.ImageOptions.LargeImageIndex = 34;
             this.mbMembersAksat.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLAksat),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLAksatWindow)});
@@ -1332,15 +1220,15 @@
             // 
             this.mbMembersTBLAksatWindow.Caption = "الاقساط تفصيلي";
             this.mbMembersTBLAksatWindow.Id = 170;
-            this.mbMembersTBLAksatWindow.ImageIndex = 34;
-            this.mbMembersTBLAksatWindow.LargeImageIndex = 34;
+            this.mbMembersTBLAksatWindow.ImageOptions.ImageIndex = 34;
+            this.mbMembersTBLAksatWindow.ImageOptions.LargeImageIndex = 34;
             this.mbMembersTBLAksatWindow.Name = "mbMembersTBLAksatWindow";
             // 
             // mbMembersQry21
             // 
             this.mbMembersQry21.Caption = "مسارات الويب المفقودة";
             this.mbMembersQry21.Id = 171;
-            this.mbMembersQry21.ImageIndex = 19;
+            this.mbMembersQry21.ImageOptions.ImageIndex = 19;
             this.mbMembersQry21.Name = "mbMembersQry21";
             this.mbMembersQry21.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1348,22 +1236,22 @@
             // 
             this.mbMembersRep08.Caption = "ارقام القيد";
             this.mbMembersRep08.Id = 172;
-            this.mbMembersRep08.ImageIndex = 24;
+            this.mbMembersRep08.ImageOptions.ImageIndex = 24;
             this.mbMembersRep08.Name = "mbMembersRep08";
             // 
             // mbMembersTBLEmpWork
             // 
             this.mbMembersTBLEmpWork.Caption = "المهام";
             this.mbMembersTBLEmpWork.Id = 173;
-            this.mbMembersTBLEmpWork.ImageIndex = 35;
-            this.mbMembersTBLEmpWork.LargeImageIndex = 35;
+            this.mbMembersTBLEmpWork.ImageOptions.ImageIndex = 35;
+            this.mbMembersTBLEmpWork.ImageOptions.LargeImageIndex = 35;
             this.mbMembersTBLEmpWork.Name = "mbMembersTBLEmpWork";
             // 
             // mbMembersQry22
             // 
             this.mbMembersQry22.Caption = "المهام";
             this.mbMembersQry22.Id = 174;
-            this.mbMembersQry22.ImageIndex = 19;
+            this.mbMembersQry22.ImageOptions.ImageIndex = 19;
             this.mbMembersQry22.Name = "mbMembersQry22";
             this.mbMembersQry22.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1371,7 +1259,7 @@
             // 
             this.mbMembersQry23.Caption = "عدد الادخال بالشهر و السنة";
             this.mbMembersQry23.Id = 175;
-            this.mbMembersQry23.ImageIndex = 19;
+            this.mbMembersQry23.ImageOptions.ImageIndex = 19;
             this.mbMembersQry23.Name = "mbMembersQry23";
             this.mbMembersQry23.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1379,7 +1267,7 @@
             // 
             this.mbMembersQry24.Caption = "عدد الادخال بالشهر و السنة";
             this.mbMembersQry24.Id = 176;
-            this.mbMembersQry24.ImageIndex = 19;
+            this.mbMembersQry24.ImageOptions.ImageIndex = 19;
             this.mbMembersQry24.Name = "mbMembersQry24";
             this.mbMembersQry24.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1387,7 +1275,7 @@
             // 
             this.mbMembersQry25.Caption = "عدد ادخال الاعضاء للفرعيات في فترة";
             this.mbMembersQry25.Id = 177;
-            this.mbMembersQry25.ImageIndex = 19;
+            this.mbMembersQry25.ImageOptions.ImageIndex = 19;
             this.mbMembersQry25.Name = "mbMembersQry25";
             this.mbMembersQry25.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1395,7 +1283,7 @@
             // 
             this.mbMembersQry26.Caption = "الايصالات";
             this.mbMembersQry26.Id = 179;
-            this.mbMembersQry26.ImageIndex = 19;
+            this.mbMembersQry26.ImageOptions.ImageIndex = 19;
             this.mbMembersQry26.Name = "mbMembersQry26";
             this.mbMembersQry26.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1403,7 +1291,7 @@
             // 
             this.mbMembersQry27.Caption = "المهام في فترة";
             this.mbMembersQry27.Id = 180;
-            this.mbMembersQry27.ImageIndex = 19;
+            this.mbMembersQry27.ImageOptions.ImageIndex = 19;
             this.mbMembersQry27.Name = "mbMembersQry27";
             this.mbMembersQry27.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1411,7 +1299,7 @@
             // 
             this.mbMembersQry28.Caption = "الايصالات من الاعضاء";
             this.mbMembersQry28.Id = 181;
-            this.mbMembersQry28.ImageIndex = 19;
+            this.mbMembersQry28.ImageOptions.ImageIndex = 19;
             this.mbMembersQry28.Name = "mbMembersQry28";
             this.mbMembersQry28.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1419,24 +1307,24 @@
             // 
             this.mbMembersFiximgPath.Caption = "معالجة مسارات خاطئة للاعضاء";
             this.mbMembersFiximgPath.Id = 182;
-            this.mbMembersFiximgPath.ImageIndex = 2;
-            this.mbMembersFiximgPath.LargeImageIndex = 2;
+            this.mbMembersFiximgPath.ImageOptions.ImageIndex = 2;
+            this.mbMembersFiximgPath.ImageOptions.LargeImageIndex = 2;
             this.mbMembersFiximgPath.Name = "mbMembersFiximgPath";
             // 
             // mbMembersTBLUserMistake
             // 
             this.mbMembersTBLUserMistake.Caption = "اخطاء العاملين";
             this.mbMembersTBLUserMistake.Id = 183;
-            this.mbMembersTBLUserMistake.ImageIndex = 36;
-            this.mbMembersTBLUserMistake.LargeImageIndex = 36;
+            this.mbMembersTBLUserMistake.ImageOptions.ImageIndex = 36;
+            this.mbMembersTBLUserMistake.ImageOptions.LargeImageIndex = 36;
             this.mbMembersTBLUserMistake.Name = "mbMembersTBLUserMistake";
             // 
             // mbMembersFixs
             // 
             this.mbMembersFixs.Caption = "اصلاحات";
             this.mbMembersFixs.Id = 184;
-            this.mbMembersFixs.ImageIndex = 37;
-            this.mbMembersFixs.LargeImageIndex = 37;
+            this.mbMembersFixs.ImageOptions.ImageIndex = 37;
+            this.mbMembersFixs.ImageOptions.LargeImageIndex = 37;
             this.mbMembersFixs.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersFixesalnoTBLMembers),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersFixesalnoTBLMemberWeb)});
@@ -1446,23 +1334,23 @@
             // 
             this.mbMembersFixesalnoTBLMembers.Caption = "تعديل ايصال الاعضاء";
             this.mbMembersFixesalnoTBLMembers.Id = 185;
-            this.mbMembersFixesalnoTBLMembers.ImageIndex = 37;
-            this.mbMembersFixesalnoTBLMembers.LargeImageIndex = 37;
+            this.mbMembersFixesalnoTBLMembers.ImageOptions.ImageIndex = 37;
+            this.mbMembersFixesalnoTBLMembers.ImageOptions.LargeImageIndex = 37;
             this.mbMembersFixesalnoTBLMembers.Name = "mbMembersFixesalnoTBLMembers";
             // 
             // mbMembersFixesalnoTBLMemberWeb
             // 
             this.mbMembersFixesalnoTBLMemberWeb.Caption = "تعديل ايصال اعضاء الويب";
             this.mbMembersFixesalnoTBLMemberWeb.Id = 186;
-            this.mbMembersFixesalnoTBLMemberWeb.ImageIndex = 37;
-            this.mbMembersFixesalnoTBLMemberWeb.LargeImageIndex = 37;
+            this.mbMembersFixesalnoTBLMemberWeb.ImageOptions.ImageIndex = 37;
+            this.mbMembersFixesalnoTBLMemberWeb.ImageOptions.LargeImageIndex = 37;
             this.mbMembersFixesalnoTBLMemberWeb.Name = "mbMembersFixesalnoTBLMemberWeb";
             // 
             // mbMembersQry29
             // 
             this.mbMembersQry29.Caption = "الايصالات و المظاريف";
             this.mbMembersQry29.Id = 190;
-            this.mbMembersQry29.ImageIndex = 19;
+            this.mbMembersQry29.ImageOptions.ImageIndex = 19;
             this.mbMembersQry29.Name = "mbMembersQry29";
             this.mbMembersQry29.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
@@ -1470,30 +1358,30 @@
             // 
             this.mbMembersPasswordChanger.Caption = "تغير كلمة المرور";
             this.mbMembersPasswordChanger.Id = 191;
-            this.mbMembersPasswordChanger.ImageIndex = 29;
-            this.mbMembersPasswordChanger.LargeImageIndex = 29;
+            this.mbMembersPasswordChanger.ImageOptions.ImageIndex = 29;
+            this.mbMembersPasswordChanger.ImageOptions.LargeImageIndex = 29;
             this.mbMembersPasswordChanger.Name = "mbMembersPasswordChanger";
             // 
             // mbMembersQry5a
             // 
             this.mbMembersQry5a.Caption = "بيانات الاعضاء مختصر";
             this.mbMembersQry5a.Id = 192;
-            this.mbMembersQry5a.ImageIndex = 19;
+            this.mbMembersQry5a.ImageOptions.ImageIndex = 19;
             this.mbMembersQry5a.Name = "mbMembersQry5a";
             // 
             // mbMembersQry30
             // 
             this.mbMembersQry30.Caption = "المندوبين للقيد";
             this.mbMembersQry30.Id = 193;
-            this.mbMembersQry30.ImageIndex = 19;
+            this.mbMembersQry30.ImageOptions.ImageIndex = 19;
             this.mbMembersQry30.Name = "mbMembersQry30";
             // 
             // mbMembersQryEshtrakat
             // 
             this.mbMembersQryEshtrakat.Caption = "الاشتراكات";
             this.mbMembersQryEshtrakat.Id = 194;
-            this.mbMembersQryEshtrakat.ImageIndex = 19;
-            this.mbMembersQryEshtrakat.LargeImageIndex = 19;
+            this.mbMembersQryEshtrakat.ImageOptions.ImageIndex = 19;
+            this.mbMembersQryEshtrakat.ImageOptions.LargeImageIndex = 19;
             this.mbMembersQryEshtrakat.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersQry1),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersQry3),
@@ -1529,24 +1417,24 @@
             // 
             this.mbMembersQry31.Caption = "الاقساط";
             this.mbMembersQry31.Id = 196;
-            this.mbMembersQry31.ImageIndex = 19;
-            this.mbMembersQry31.LargeImageIndex = 19;
+            this.mbMembersQry31.ImageOptions.ImageIndex = 19;
+            this.mbMembersQry31.ImageOptions.LargeImageIndex = 19;
             this.mbMembersQry31.Name = "mbMembersQry31";
             // 
             // mbMembersQry33
             // 
             this.mbMembersQry33.Caption = "تفاصيل شغل الايصالات";
             this.mbMembersQry33.Id = 200;
-            this.mbMembersQry33.ImageIndex = 19;
-            this.mbMembersQry33.LargeImageIndex = 19;
+            this.mbMembersQry33.ImageOptions.ImageIndex = 19;
+            this.mbMembersQry33.ImageOptions.LargeImageIndex = 19;
             this.mbMembersQry33.Name = "mbMembersQry33";
             // 
             // mbMembersQryKeed
             // 
             this.mbMembersQryKeed.Caption = "القيــــــد";
             this.mbMembersQryKeed.Id = 195;
-            this.mbMembersQryKeed.ImageIndex = 19;
-            this.mbMembersQryKeed.LargeImageIndex = 19;
+            this.mbMembersQryKeed.ImageOptions.ImageIndex = 19;
+            this.mbMembersQryKeed.ImageOptions.LargeImageIndex = 19;
             this.mbMembersQryKeed.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersQry30),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersQry32),
@@ -1557,16 +1445,16 @@
             // 
             this.mbMembersQry32.Caption = "ارقام موبيل الاعضاء";
             this.mbMembersQry32.Id = 198;
-            this.mbMembersQry32.ImageIndex = 19;
-            this.mbMembersQry32.LargeImageIndex = 19;
+            this.mbMembersQry32.ImageOptions.ImageIndex = 19;
+            this.mbMembersQry32.ImageOptions.LargeImageIndex = 19;
             this.mbMembersQry32.Name = "mbMembersQry32";
             // 
             // mbMembersSPro_0001
             // 
             this.mbMembersSPro_0001.Caption = "بيانات الاعضاء بالقطاع";
             this.mbMembersSPro_0001.Id = 199;
-            this.mbMembersSPro_0001.ImageIndex = 19;
-            this.mbMembersSPro_0001.LargeImageIndex = 19;
+            this.mbMembersSPro_0001.ImageOptions.ImageIndex = 19;
+            this.mbMembersSPro_0001.ImageOptions.LargeImageIndex = 19;
             this.mbMembersSPro_0001.Name = "mbMembersSPro_0001";
             // 
             // ribbonImageCollectionLarge
@@ -1726,7 +1614,6 @@
             // 
             // ReportribbonPageGroup
             // 
-            this.ReportribbonPageGroup.AllowMinimize = false;
             this.ReportribbonPageGroup.AllowTextClipping = false;
             this.ReportribbonPageGroup.ItemLinks.Add(this.mbMembersXRep02);
             this.ReportribbonPageGroup.ItemLinks.Add(this.mbMembersXRep03);
@@ -1736,6 +1623,7 @@
             this.ReportribbonPageGroup.ItemLinks.Add(this.mbMembersXRep07);
             this.ReportribbonPageGroup.ItemLinks.Add(this.mbMembersRep08);
             this.ReportribbonPageGroup.Name = "ReportribbonPageGroup";
+            this.ReportribbonPageGroup.State = DevExpress.XtraBars.Ribbon.RibbonPageGroupState.Expanded;
             this.ReportribbonPageGroup.Text = "التقارير";
             // 
             // PremissionribbonPage
@@ -1791,6 +1679,114 @@
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "اختبار";
             // 
+            // groupControl2
+            // 
+            this.groupControl2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.groupControl2.AppearanceCaption.Options.UseTextOptions = true;
+            this.groupControl2.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.groupControl2.Controls.Add(this.CEUpdate);
+            this.groupControl2.Controls.Add(this.CESelect);
+            this.groupControl2.Controls.Add(this.CEDelete);
+            this.groupControl2.Controls.Add(this.CEInsert);
+            this.groupControl2.Location = new System.Drawing.Point(361, 169);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(240, 73);
+            this.groupControl2.TabIndex = 2;
+            this.groupControl2.Text = "عناصر السماح";
+            // 
+            // CEUpdate
+            // 
+            this.CEUpdate.Location = new System.Drawing.Point(21, 49);
+            this.CEUpdate.Name = "CEUpdate";
+            this.CEUpdate.Properties.Caption = "تعديل";
+            this.CEUpdate.Size = new System.Drawing.Size(75, 19);
+            this.CEUpdate.TabIndex = 0;
+            // 
+            // CESelect
+            // 
+            this.CESelect.Location = new System.Drawing.Point(21, 24);
+            this.CESelect.Name = "CESelect";
+            this.CESelect.Properties.Caption = "عرض";
+            this.CESelect.Size = new System.Drawing.Size(75, 19);
+            this.CESelect.TabIndex = 0;
+            // 
+            // CEDelete
+            // 
+            this.CEDelete.Location = new System.Drawing.Point(144, 49);
+            this.CEDelete.Name = "CEDelete";
+            this.CEDelete.Properties.Caption = "حذف";
+            this.CEDelete.Size = new System.Drawing.Size(75, 19);
+            this.CEDelete.TabIndex = 0;
+            // 
+            // CEInsert
+            // 
+            this.CEInsert.Location = new System.Drawing.Point(144, 24);
+            this.CEInsert.Name = "CEInsert";
+            this.CEInsert.Properties.Caption = "اضافه";
+            this.CEInsert.Size = new System.Drawing.Size(75, 19);
+            this.CEInsert.TabIndex = 0;
+            // 
+            // groupControlSelect
+            // 
+            this.groupControlSelect.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControlSelect.AppearanceCaption.Options.UseTextOptions = true;
+            this.groupControlSelect.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.groupControlSelect.Controls.Add(this.LUEItems);
+            this.groupControlSelect.Controls.Add(this.labelControl1);
+            this.groupControlSelect.Location = new System.Drawing.Point(9, 10);
+            this.groupControlSelect.Name = "groupControlSelect";
+            this.groupControlSelect.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupControlSelect.Size = new System.Drawing.Size(963, 59);
+            this.groupControlSelect.TabIndex = 0;
+            this.groupControlSelect.Text = "جميع السماحيات";
+            // 
+            // LUEItems
+            // 
+            this.LUEItems.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.LUEItems.Location = new System.Drawing.Point(386, 28);
+            this.LUEItems.Name = "LUEItems";
+            this.LUEItems.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.LUEItems.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("RoleName", "اسم الصلاحيه", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("RoleDesc", "تعليق", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            this.LUEItems.Properties.DataSource = this.rolesBindingSource;
+            this.LUEItems.Properties.DisplayMember = "RoleName";
+            this.LUEItems.Properties.NullText = "";
+            this.LUEItems.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.LUEItems.Properties.ValueMember = "RoleID";
+            this.LUEItems.Size = new System.Drawing.Size(173, 20);
+            this.LUEItems.TabIndex = 0;
+            this.LUEItems.EditValueChanged += new System.EventHandler(this.LUEItems_EditValueChanged);
+            // 
+            // rolesBindingSource
+            // 
+            this.rolesBindingSource.DataMember = "Roles";
+            this.rolesBindingSource.DataSource = this.dsTeachersUnion;
+            // 
+            // dsTeachersUnion
+            // 
+            this.dsTeachersUnion.DataSetName = "dsTeachersUnion";
+            this.dsTeachersUnion.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelControl1.Location = new System.Drawing.Point(565, 31);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(62, 13);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "اختار سماحيه";
+            // 
+            // roleDetialTableAdapter
+            // 
+            this.roleDetialTableAdapter.ClearBeforeFill = true;
+            // 
+            // rolesTableAdapter
+            // 
+            this.rolesTableAdapter.ClearBeforeFill = true;
+            // 
             // RoleDetailFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1804,6 +1800,8 @@
             this.Load += new System.EventHandler(this.EditorJobFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControlUpdate)).EndInit();
             this.groupControlUpdate.ResumeLayout(false);
+            this.groupControlUpdate.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer2)).EndInit();
             this.popupControlContainer2.ResumeLayout(false);
@@ -1811,6 +1809,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).EndInit();
             this.popupControlContainer1.ResumeLayout(false);
             this.popupControlContainer1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollection)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CEUpdate.Properties)).EndInit();
@@ -1823,9 +1823,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.LUEItems.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rolesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollection)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).EndInit();
             this.ResumeLayout(false);
 
         }

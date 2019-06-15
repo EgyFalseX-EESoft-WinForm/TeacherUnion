@@ -96,12 +96,12 @@
             this.gridControlData.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.Remove.Visible = false;
-            this.gridControlData.Location = new System.Drawing.Point(2, 21);
+            this.gridControlData.Location = new System.Drawing.Point(2, 20);
             this.gridControlData.MainView = this.gridViewData;
             this.gridControlData.Name = "gridControlData";
             this.gridControlData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEditcardtype});
-            this.gridControlData.Size = new System.Drawing.Size(756, 229);
+            this.gridControlData.Size = new System.Drawing.Size(756, 230);
             this.gridControlData.TabIndex = 6;
             this.gridControlData.UseEmbeddedNavigator = true;
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -133,6 +133,7 @@
             this.gridViewData.GridControl = this.gridControlData;
             this.gridViewData.Name = "gridViewData";
             this.gridViewData.OptionsView.ColumnAutoWidth = false;
+            this.gridViewData.OptionsView.ShowAutoFilterRow = true;
             this.gridViewData.OptionsView.ShowDetailButtons = false;
             // 
             // colcheckforprint
@@ -271,7 +272,7 @@
             this.repositoryItemLookUpEditcardtype.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemLookUpEditcardtype.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Text", "النوع", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Text", "النوع", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.repositoryItemLookUpEditcardtype.Name = "repositoryItemLookUpEditcardtype";
             this.repositoryItemLookUpEditcardtype.NullText = "";
             // 
@@ -362,8 +363,8 @@
             this.lueSyndicateId.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lueSyndicateId.Properties.NullText = "";
+            this.lueSyndicateId.Properties.PopupView = this.gridLookUpEdit1View;
             this.lueSyndicateId.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.lueSyndicateId.Properties.View = this.gridLookUpEdit1View;
             this.lueSyndicateId.Size = new System.Drawing.Size(250, 20);
             this.lueSyndicateId.TabIndex = 0;
             // 

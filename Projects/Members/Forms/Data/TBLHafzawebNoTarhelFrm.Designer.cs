@@ -29,16 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.LUEHafza = new DevExpress.XtraEditors.GridLookUpEdit();
             this.tBLHafzawebListBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dsTeachersUnionList = new Members.DataSources.dsTeachersUnion();
-            this.repositoryItemLookUpEditSyndicateId = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.cDSyndicateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridLookUpEdit2View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colhafzaid = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSyndicateId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemLookUpEditSyndicateId = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.cDSyndicateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.colhafzadate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAllCount1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colClosedCount1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -47,6 +51,7 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlData = new DevExpress.XtraGrid.GridControl();
+            this.tBLMemberWebBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridViewData = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMemberName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSubCommitteId = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -57,8 +62,12 @@
             this.colQualtypeId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemLookUpEditQualtypeId = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.cDQualtypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colKideNumber = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colesalno = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colrekeed = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemCheckEditclosed = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.colestefaa = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemButtonEditEdit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.cDSyndicateTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.CDSyndicateTableAdapter();
@@ -67,33 +76,28 @@
             this.tBLHafzawebListTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.TBLHafzawebListTableAdapter();
             this.tblHafzawebTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.TBLHafzawebTableAdapter();
             this.tblMemberWebTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.TBLMemberWebTableAdapter();
-            this.tBLMemberWebBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.colKideNumber = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colesalno = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colrekeed = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colestefaa = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LUEHafza.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tBLHafzawebListBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit2View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditSyndicateId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDSyndicateBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit2View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.beesalno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBLMemberWebBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditSubCommitteId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDSubCommitteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditBirthDate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditBirthDate.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditBirthDate.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditQualtypeId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDQualtypeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEditclosed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditEdit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBLMemberWebBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -108,7 +112,6 @@
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(12, 12);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.groupControl1.Size = new System.Drawing.Size(668, 88);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "الحافظة";
@@ -124,11 +127,11 @@
             this.LUEHafza.Properties.DataSource = this.tBLHafzawebListBindingSource;
             this.LUEHafza.Properties.DisplayMember = "hafzaid";
             this.LUEHafza.Properties.NullText = "";
+            this.LUEHafza.Properties.PopupView = this.gridLookUpEdit2View;
             this.LUEHafza.Properties.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEditSyndicateId});
             this.LUEHafza.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.LUEHafza.Properties.ValueMember = "hafzaid";
-            this.LUEHafza.Properties.View = this.gridLookUpEdit2View;
             this.LUEHafza.Size = new System.Drawing.Size(249, 20);
             this.LUEHafza.TabIndex = 5;
             this.LUEHafza.EditValueChanged += new System.EventHandler(this.LUEHafza_EditValueChanged);
@@ -142,23 +145,6 @@
             // 
             this.dsTeachersUnionList.DataSetName = "dsTeachersUnion";
             this.dsTeachersUnionList.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // repositoryItemLookUpEditSyndicateId
-            // 
-            this.repositoryItemLookUpEditSyndicateId.AutoHeight = false;
-            this.repositoryItemLookUpEditSyndicateId.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemLookUpEditSyndicateId.DataSource = this.cDSyndicateBindingSource;
-            this.repositoryItemLookUpEditSyndicateId.DisplayMember = "Syndicate";
-            this.repositoryItemLookUpEditSyndicateId.Name = "repositoryItemLookUpEditSyndicateId";
-            this.repositoryItemLookUpEditSyndicateId.NullText = "";
-            this.repositoryItemLookUpEditSyndicateId.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.repositoryItemLookUpEditSyndicateId.ValueMember = "SyndicateId";
-            // 
-            // cDSyndicateBindingSource
-            // 
-            this.cDSyndicateBindingSource.DataMember = "CDSyndicate";
-            this.cDSyndicateBindingSource.DataSource = this.dsTeachersUnionList;
             // 
             // gridLookUpEdit2View
             // 
@@ -199,6 +185,23 @@
             this.colSyndicateId.Name = "colSyndicateId";
             this.colSyndicateId.Visible = true;
             this.colSyndicateId.VisibleIndex = 1;
+            // 
+            // repositoryItemLookUpEditSyndicateId
+            // 
+            this.repositoryItemLookUpEditSyndicateId.AutoHeight = false;
+            this.repositoryItemLookUpEditSyndicateId.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemLookUpEditSyndicateId.DataSource = this.cDSyndicateBindingSource;
+            this.repositoryItemLookUpEditSyndicateId.DisplayMember = "Syndicate";
+            this.repositoryItemLookUpEditSyndicateId.Name = "repositoryItemLookUpEditSyndicateId";
+            this.repositoryItemLookUpEditSyndicateId.NullText = "";
+            this.repositoryItemLookUpEditSyndicateId.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.repositoryItemLookUpEditSyndicateId.ValueMember = "SyndicateId";
+            // 
+            // cDSyndicateBindingSource
+            // 
+            this.cDSyndicateBindingSource.DataMember = "CDSyndicate";
+            this.cDSyndicateBindingSource.DataSource = this.dsTeachersUnionList;
             // 
             // colhafzadate
             // 
@@ -244,7 +247,7 @@
             this.beesalno.Location = new System.Drawing.Point(360, 59);
             this.beesalno.Name = "beesalno";
             this.beesalno.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.OK, "تعديل رقم الايصال", 30, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.OK, "تعديل رقم الايصال", 30, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.beesalno.Size = new System.Drawing.Size(100, 20);
             this.beesalno.TabIndex = 3;
             this.beesalno.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.beesalno_ButtonClick);
@@ -277,7 +280,6 @@
             this.groupControl3.Controls.Add(this.gridControlData);
             this.groupControl3.Location = new System.Drawing.Point(12, 106);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.groupControl3.Size = new System.Drawing.Size(668, 255);
             this.groupControl3.TabIndex = 1;
             this.groupControl3.Text = "تفاصيل للحافظة";
@@ -291,7 +293,7 @@
             this.gridControlData.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.Remove.Visible = false;
-            this.gridControlData.Location = new System.Drawing.Point(2, 21);
+            this.gridControlData.Location = new System.Drawing.Point(2, 20);
             this.gridControlData.MainView = this.gridViewData;
             this.gridControlData.Name = "gridControlData";
             this.gridControlData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
@@ -300,11 +302,16 @@
             this.repositoryItemLookUpEditQualtypeId,
             this.repositoryItemButtonEditEdit,
             this.repositoryItemCheckEditclosed});
-            this.gridControlData.Size = new System.Drawing.Size(664, 232);
+            this.gridControlData.Size = new System.Drawing.Size(664, 233);
             this.gridControlData.TabIndex = 0;
             this.gridControlData.UseEmbeddedNavigator = true;
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewData});
+            // 
+            // tBLMemberWebBindingSource
+            // 
+            this.tBLMemberWebBindingSource.DataMember = "TBLMemberWeb";
+            this.tBLMemberWebBindingSource.DataSource = this.dsTeachersUnionList;
             // 
             // gridViewData
             // 
@@ -322,6 +329,7 @@
             this.gridViewData.GridControl = this.gridControlData;
             this.gridViewData.Name = "gridViewData";
             this.gridViewData.OptionsView.ColumnAutoWidth = false;
+            this.gridViewData.OptionsView.ShowAutoFilterRow = true;
             this.gridViewData.OptionsView.ShowDetailButtons = false;
             // 
             // colMemberName
@@ -359,7 +367,7 @@
             this.repositoryItemLookUpEditSubCommitteId.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemLookUpEditSubCommitteId.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SubCommitte", "الاسم", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SubCommitte", "الاسم", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.repositoryItemLookUpEditSubCommitteId.DataSource = this.cDSubCommitteBindingSource;
             this.repositoryItemLookUpEditSubCommitteId.DisplayMember = "SubCommitte";
             this.repositoryItemLookUpEditSubCommitteId.Name = "repositoryItemLookUpEditSubCommitteId";
@@ -392,14 +400,14 @@
             this.repositoryItemDateEditBirthDate.AutoHeight = false;
             this.repositoryItemDateEditBirthDate.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEditBirthDate.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.repositoryItemDateEditBirthDate.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.repositoryItemDateEditBirthDate.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.repositoryItemDateEditBirthDate.EditFormat.FormatString = "dd/MM/yyyy";
             this.repositoryItemDateEditBirthDate.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.repositoryItemDateEditBirthDate.Mask.EditMask = "dd/MM/yyyy";
             this.repositoryItemDateEditBirthDate.Name = "repositoryItemDateEditBirthDate";
-            this.repositoryItemDateEditBirthDate.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
             // 
             // colQualtypeId
             // 
@@ -422,7 +430,7 @@
             this.repositoryItemLookUpEditQualtypeId.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemLookUpEditQualtypeId.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("QualtypeName", "الاسم", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("QualtypeName", "الاسم", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.repositoryItemLookUpEditQualtypeId.DataSource = this.cDQualtypeBindingSource;
             this.repositoryItemLookUpEditQualtypeId.DisplayMember = "QualtypeName";
             this.repositoryItemLookUpEditQualtypeId.Name = "repositoryItemLookUpEditQualtypeId";
@@ -434,6 +442,61 @@
             // 
             this.cDQualtypeBindingSource.DataMember = "CDQualtype";
             this.cDQualtypeBindingSource.DataSource = this.dsTeachersUnionList;
+            // 
+            // colKideNumber
+            // 
+            this.colKideNumber.AppearanceCell.Options.UseTextOptions = true;
+            this.colKideNumber.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colKideNumber.AppearanceHeader.Options.UseTextOptions = true;
+            this.colKideNumber.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colKideNumber.Caption = "رقم القيد";
+            this.colKideNumber.FieldName = "KideNumber";
+            this.colKideNumber.Name = "colKideNumber";
+            this.colKideNumber.Visible = true;
+            this.colKideNumber.VisibleIndex = 4;
+            // 
+            // colesalno
+            // 
+            this.colesalno.AppearanceCell.Options.UseTextOptions = true;
+            this.colesalno.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colesalno.AppearanceHeader.Options.UseTextOptions = true;
+            this.colesalno.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colesalno.Caption = "رقم الايصال";
+            this.colesalno.FieldName = "esalno";
+            this.colesalno.Name = "colesalno";
+            this.colesalno.Visible = true;
+            this.colesalno.VisibleIndex = 5;
+            // 
+            // colrekeed
+            // 
+            this.colrekeed.AppearanceCell.Options.UseTextOptions = true;
+            this.colrekeed.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colrekeed.AppearanceHeader.Options.UseTextOptions = true;
+            this.colrekeed.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colrekeed.Caption = "مراجعة قيد";
+            this.colrekeed.ColumnEdit = this.repositoryItemCheckEditclosed;
+            this.colrekeed.FieldName = "rekeed";
+            this.colrekeed.Name = "colrekeed";
+            this.colrekeed.Visible = true;
+            this.colrekeed.VisibleIndex = 6;
+            // 
+            // repositoryItemCheckEditclosed
+            // 
+            this.repositoryItemCheckEditclosed.AutoHeight = false;
+            this.repositoryItemCheckEditclosed.Name = "repositoryItemCheckEditclosed";
+            // 
+            // colestefaa
+            // 
+            this.colestefaa.AppearanceCell.Options.UseTextOptions = true;
+            this.colestefaa.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colestefaa.AppearanceHeader.Options.UseTextOptions = true;
+            this.colestefaa.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colestefaa.Caption = "استيفاء";
+            this.colestefaa.ColumnEdit = this.repositoryItemCheckEditclosed;
+            this.colestefaa.FieldName = "estefaa";
+            this.colestefaa.Name = "colestefaa";
+            this.colestefaa.Visible = true;
+            this.colestefaa.VisibleIndex = 7;
             // 
             // gridColumn2
             // 
@@ -448,11 +511,6 @@
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 8;
             this.gridColumn2.Width = 37;
-            // 
-            // repositoryItemCheckEditclosed
-            // 
-            this.repositoryItemCheckEditclosed.AutoHeight = false;
-            this.repositoryItemCheckEditclosed.Name = "repositoryItemCheckEditclosed";
             // 
             // gridColumn1
             // 
@@ -500,61 +558,6 @@
             // 
             this.tblMemberWebTableAdapter.ClearBeforeFill = true;
             // 
-            // tBLMemberWebBindingSource
-            // 
-            this.tBLMemberWebBindingSource.DataMember = "TBLMemberWeb";
-            this.tBLMemberWebBindingSource.DataSource = this.dsTeachersUnionList;
-            // 
-            // colKideNumber
-            // 
-            this.colKideNumber.AppearanceCell.Options.UseTextOptions = true;
-            this.colKideNumber.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colKideNumber.AppearanceHeader.Options.UseTextOptions = true;
-            this.colKideNumber.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colKideNumber.Caption = "رقم القيد";
-            this.colKideNumber.FieldName = "KideNumber";
-            this.colKideNumber.Name = "colKideNumber";
-            this.colKideNumber.Visible = true;
-            this.colKideNumber.VisibleIndex = 4;
-            // 
-            // colesalno
-            // 
-            this.colesalno.AppearanceCell.Options.UseTextOptions = true;
-            this.colesalno.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colesalno.AppearanceHeader.Options.UseTextOptions = true;
-            this.colesalno.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colesalno.Caption = "رقم الايصال";
-            this.colesalno.FieldName = "esalno";
-            this.colesalno.Name = "colesalno";
-            this.colesalno.Visible = true;
-            this.colesalno.VisibleIndex = 5;
-            // 
-            // colrekeed
-            // 
-            this.colrekeed.AppearanceCell.Options.UseTextOptions = true;
-            this.colrekeed.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colrekeed.AppearanceHeader.Options.UseTextOptions = true;
-            this.colrekeed.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colrekeed.Caption = "مراجعة قيد";
-            this.colrekeed.ColumnEdit = this.repositoryItemCheckEditclosed;
-            this.colrekeed.FieldName = "rekeed";
-            this.colrekeed.Name = "colrekeed";
-            this.colrekeed.Visible = true;
-            this.colrekeed.VisibleIndex = 6;
-            // 
-            // colestefaa
-            // 
-            this.colestefaa.AppearanceCell.Options.UseTextOptions = true;
-            this.colestefaa.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colestefaa.AppearanceHeader.Options.UseTextOptions = true;
-            this.colestefaa.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colestefaa.Caption = "استيفاء";
-            this.colestefaa.ColumnEdit = this.repositoryItemCheckEditclosed;
-            this.colestefaa.FieldName = "estefaa";
-            this.colestefaa.Name = "colestefaa";
-            this.colestefaa.Visible = true;
-            this.colestefaa.VisibleIndex = 7;
-            // 
             // TBLHafzawebNoTarhelFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -571,23 +574,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.LUEHafza.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tBLHafzawebListBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit2View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditSyndicateId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDSyndicateBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit2View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.beesalno.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBLMemberWebBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditSubCommitteId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDSubCommitteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditBirthDate.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditBirthDate.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditBirthDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditQualtypeId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDQualtypeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEditclosed)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditEdit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBLMemberWebBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -29,22 +29,31 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.LUEHafza = new DevExpress.XtraEditors.GridLookUpEdit();
             this.tBLHafzawebListBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dsTeachersUnionList = new Members.DataSources.dsTeachersUnion();
-            this.repositoryItemLookUpEditSyndicateId = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.cDSyndicateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridLookUpEdit2View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colhafzaid = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSyndicateId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemLookUpEditSyndicateId = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.cDSyndicateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.colhafzadate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAllCount1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colClosedCount1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnTarheal = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.beesalno = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.receiptsListBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsTeachersUnionQuery = new Members.DataSources.dsTeachersUnionQuery();
+            this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colReceiptNo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlData = new DevExpress.XtraGrid.GridControl();
             this.tBLMemberWebBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -81,20 +90,19 @@
             this.tblHafzawebTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.TBLHafzawebTableAdapter();
             this.tblMemberWebTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.TBLMemberWebTableAdapter();
             this.cDCardtypeTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.CDCardtypeTableAdapter();
-            this.beesalno = new DevExpress.XtraEditors.GridLookUpEdit();
-            this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.dsTeachersUnionQuery = new Members.DataSources.dsTeachersUnionQuery();
-            this.receiptsListBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.receiptsListTableAdapter = new Members.DataSources.dsTeachersUnionQueryTableAdapters.ReceiptsListTableAdapter();
-            this.colReceiptNo = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LUEHafza.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tBLHafzawebListBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit2View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditSyndicateId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDSyndicateBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit2View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beesalno.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.receiptsListBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).BeginInit();
@@ -103,7 +111,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditSubCommitteId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDSubCommitteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditBirthDate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditBirthDate.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditBirthDate.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditQualtypeId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDQualtypeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEditclosed)).BeginInit();
@@ -111,10 +119,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.cDCardtypeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditDel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.beesalno.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.receiptsListBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -130,7 +134,6 @@
             this.groupControl1.Controls.Add(this.beesalno);
             this.groupControl1.Location = new System.Drawing.Point(12, 12);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.groupControl1.Size = new System.Drawing.Size(668, 88);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "الحافظة";
@@ -146,11 +149,11 @@
             this.LUEHafza.Properties.DataSource = this.tBLHafzawebListBindingSource;
             this.LUEHafza.Properties.DisplayMember = "hafzaid";
             this.LUEHafza.Properties.NullText = "";
+            this.LUEHafza.Properties.PopupView = this.gridLookUpEdit2View;
             this.LUEHafza.Properties.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEditSyndicateId});
             this.LUEHafza.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.LUEHafza.Properties.ValueMember = "hafzaid";
-            this.LUEHafza.Properties.View = this.gridLookUpEdit2View;
             this.LUEHafza.Size = new System.Drawing.Size(249, 20);
             this.LUEHafza.TabIndex = 5;
             this.LUEHafza.EditValueChanged += new System.EventHandler(this.LUEHafza_EditValueChanged);
@@ -164,23 +167,6 @@
             // 
             this.dsTeachersUnionList.DataSetName = "dsTeachersUnion";
             this.dsTeachersUnionList.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // repositoryItemLookUpEditSyndicateId
-            // 
-            this.repositoryItemLookUpEditSyndicateId.AutoHeight = false;
-            this.repositoryItemLookUpEditSyndicateId.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemLookUpEditSyndicateId.DataSource = this.cDSyndicateBindingSource;
-            this.repositoryItemLookUpEditSyndicateId.DisplayMember = "Syndicate";
-            this.repositoryItemLookUpEditSyndicateId.Name = "repositoryItemLookUpEditSyndicateId";
-            this.repositoryItemLookUpEditSyndicateId.NullText = "";
-            this.repositoryItemLookUpEditSyndicateId.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.repositoryItemLookUpEditSyndicateId.ValueMember = "SyndicateId";
-            // 
-            // cDSyndicateBindingSource
-            // 
-            this.cDSyndicateBindingSource.DataMember = "CDSyndicate";
-            this.cDSyndicateBindingSource.DataSource = this.dsTeachersUnionList;
             // 
             // gridLookUpEdit2View
             // 
@@ -221,6 +207,23 @@
             this.colSyndicateId.Name = "colSyndicateId";
             this.colSyndicateId.Visible = true;
             this.colSyndicateId.VisibleIndex = 1;
+            // 
+            // repositoryItemLookUpEditSyndicateId
+            // 
+            this.repositoryItemLookUpEditSyndicateId.AutoHeight = false;
+            this.repositoryItemLookUpEditSyndicateId.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemLookUpEditSyndicateId.DataSource = this.cDSyndicateBindingSource;
+            this.repositoryItemLookUpEditSyndicateId.DisplayMember = "Syndicate";
+            this.repositoryItemLookUpEditSyndicateId.Name = "repositoryItemLookUpEditSyndicateId";
+            this.repositoryItemLookUpEditSyndicateId.NullText = "";
+            this.repositoryItemLookUpEditSyndicateId.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.repositoryItemLookUpEditSyndicateId.ValueMember = "SyndicateId";
+            // 
+            // cDSyndicateBindingSource
+            // 
+            this.cDSyndicateBindingSource.DataMember = "CDSyndicate";
+            this.cDSyndicateBindingSource.DataSource = this.dsTeachersUnionList;
             // 
             // colhafzadate
             // 
@@ -288,6 +291,55 @@
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "اختر حافظة";
             // 
+            // beesalno
+            // 
+            this.beesalno.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.beesalno.Location = new System.Drawing.Point(307, 59);
+            this.beesalno.Name = "beesalno";
+            this.beesalno.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.OK, "", 40, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.beesalno.Properties.DataSource = this.receiptsListBindingSource;
+            this.beesalno.Properties.DisplayMember = "ReceiptNo";
+            this.beesalno.Properties.NullText = "";
+            this.beesalno.Properties.PopupView = this.gridLookUpEdit1View;
+            this.beesalno.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.beesalno.Properties.ValueMember = "ReceiptNo";
+            this.beesalno.Size = new System.Drawing.Size(153, 20);
+            this.beesalno.TabIndex = 3;
+            this.beesalno.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.beesalno_ButtonClick);
+            // 
+            // receiptsListBindingSource
+            // 
+            this.receiptsListBindingSource.DataMember = "ReceiptsList";
+            this.receiptsListBindingSource.DataSource = this.dsTeachersUnionQuery;
+            // 
+            // dsTeachersUnionQuery
+            // 
+            this.dsTeachersUnionQuery.DataSetName = "dsTeachersUnionQuery";
+            this.dsTeachersUnionQuery.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // gridLookUpEdit1View
+            // 
+            this.gridLookUpEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colReceiptNo});
+            this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
+            this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
+            // colReceiptNo
+            // 
+            this.colReceiptNo.AppearanceCell.Options.UseTextOptions = true;
+            this.colReceiptNo.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colReceiptNo.AppearanceHeader.Options.UseTextOptions = true;
+            this.colReceiptNo.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colReceiptNo.Caption = "الارقام";
+            this.colReceiptNo.FieldName = "ReceiptNo";
+            this.colReceiptNo.Name = "colReceiptNo";
+            this.colReceiptNo.Visible = true;
+            this.colReceiptNo.VisibleIndex = 0;
+            // 
             // groupControl3
             // 
             this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -298,7 +350,6 @@
             this.groupControl3.Controls.Add(this.gridControlData);
             this.groupControl3.Location = new System.Drawing.Point(12, 106);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.groupControl3.Size = new System.Drawing.Size(668, 255);
             this.groupControl3.TabIndex = 1;
             this.groupControl3.Text = "تفاصيل للحافظة";
@@ -312,7 +363,7 @@
             this.gridControlData.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.Remove.Visible = false;
-            this.gridControlData.Location = new System.Drawing.Point(2, 21);
+            this.gridControlData.Location = new System.Drawing.Point(2, 20);
             this.gridControlData.MainView = this.gridViewData;
             this.gridControlData.Name = "gridControlData";
             this.gridControlData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
@@ -323,7 +374,7 @@
             this.repositoryItemCheckEditclosed,
             this.repositoryItemButtonEditDel,
             this.repositoryItemLookUpEditCardtypeId});
-            this.gridControlData.Size = new System.Drawing.Size(664, 232);
+            this.gridControlData.Size = new System.Drawing.Size(664, 233);
             this.gridControlData.TabIndex = 0;
             this.gridControlData.UseEmbeddedNavigator = true;
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -355,6 +406,7 @@
             this.gridViewData.GridControl = this.gridControlData;
             this.gridViewData.Name = "gridViewData";
             this.gridViewData.OptionsView.ColumnAutoWidth = false;
+            this.gridViewData.OptionsView.ShowAutoFilterRow = true;
             this.gridViewData.OptionsView.ShowDetailButtons = false;
             // 
             // colMemberName
@@ -392,7 +444,7 @@
             this.repositoryItemLookUpEditSubCommitteId.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemLookUpEditSubCommitteId.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SubCommitte", "الاسم", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SubCommitte", "الاسم", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.repositoryItemLookUpEditSubCommitteId.DataSource = this.cDSubCommitteBindingSource;
             this.repositoryItemLookUpEditSubCommitteId.DisplayMember = "SubCommitte";
             this.repositoryItemLookUpEditSubCommitteId.Name = "repositoryItemLookUpEditSubCommitteId";
@@ -425,14 +477,14 @@
             this.repositoryItemDateEditBirthDate.AutoHeight = false;
             this.repositoryItemDateEditBirthDate.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEditBirthDate.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.repositoryItemDateEditBirthDate.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.repositoryItemDateEditBirthDate.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.repositoryItemDateEditBirthDate.EditFormat.FormatString = "dd/MM/yyyy";
             this.repositoryItemDateEditBirthDate.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.repositoryItemDateEditBirthDate.Mask.EditMask = "dd/MM/yyyy";
             this.repositoryItemDateEditBirthDate.Name = "repositoryItemDateEditBirthDate";
-            this.repositoryItemDateEditBirthDate.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
             // 
             // colQualtypeId
             // 
@@ -455,7 +507,7 @@
             this.repositoryItemLookUpEditQualtypeId.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemLookUpEditQualtypeId.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("QualtypeName", "الاسم", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("QualtypeName", "الاسم", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.repositoryItemLookUpEditQualtypeId.DataSource = this.cDQualtypeBindingSource;
             this.repositoryItemLookUpEditQualtypeId.DisplayMember = "QualtypeName";
             this.repositoryItemLookUpEditQualtypeId.Name = "repositoryItemLookUpEditQualtypeId";
@@ -688,58 +740,9 @@
             // 
             this.cDCardtypeTableAdapter.ClearBeforeFill = true;
             // 
-            // beesalno
-            // 
-            this.beesalno.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.beesalno.Location = new System.Drawing.Point(307, 59);
-            this.beesalno.Name = "beesalno";
-            this.beesalno.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.OK, "", 40, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
-            this.beesalno.Properties.DataSource = this.receiptsListBindingSource;
-            this.beesalno.Properties.DisplayMember = "ReceiptNo";
-            this.beesalno.Properties.NullText = "";
-            this.beesalno.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.beesalno.Properties.ValueMember = "ReceiptNo";
-            this.beesalno.Properties.View = this.gridLookUpEdit1View;
-            this.beesalno.Size = new System.Drawing.Size(153, 20);
-            this.beesalno.TabIndex = 3;
-            this.beesalno.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.beesalno_ButtonClick);
-            // 
-            // gridLookUpEdit1View
-            // 
-            this.gridLookUpEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colReceiptNo});
-            this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
-            this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
-            // 
-            // dsTeachersUnionQuery
-            // 
-            this.dsTeachersUnionQuery.DataSetName = "dsTeachersUnionQuery";
-            this.dsTeachersUnionQuery.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // receiptsListBindingSource
-            // 
-            this.receiptsListBindingSource.DataMember = "ReceiptsList";
-            this.receiptsListBindingSource.DataSource = this.dsTeachersUnionQuery;
-            // 
             // receiptsListTableAdapter
             // 
             this.receiptsListTableAdapter.ClearBeforeFill = true;
-            // 
-            // colReceiptNo
-            // 
-            this.colReceiptNo.AppearanceCell.Options.UseTextOptions = true;
-            this.colReceiptNo.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colReceiptNo.AppearanceHeader.Options.UseTextOptions = true;
-            this.colReceiptNo.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colReceiptNo.Caption = "الارقام";
-            this.colReceiptNo.FieldName = "ReceiptNo";
-            this.colReceiptNo.Name = "colReceiptNo";
-            this.colReceiptNo.Visible = true;
-            this.colReceiptNo.VisibleIndex = 0;
             // 
             // TBLHafzawebFrm
             // 
@@ -757,9 +760,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.LUEHafza.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tBLHafzawebListBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit2View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditSyndicateId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDSyndicateBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit2View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beesalno.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.receiptsListBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).EndInit();
@@ -767,7 +774,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditSubCommitteId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDSubCommitteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditBirthDate.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditBirthDate.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditBirthDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditQualtypeId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDQualtypeBindingSource)).EndInit();
@@ -776,10 +783,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.cDCardtypeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditDel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.beesalno.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.receiptsListBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

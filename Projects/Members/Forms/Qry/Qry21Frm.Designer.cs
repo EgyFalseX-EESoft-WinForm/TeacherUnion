@@ -110,11 +110,11 @@
             this.LUEHafza.Properties.DataSource = this.tBLHafzawebListBindingSource;
             this.LUEHafza.Properties.DisplayMember = "hafzaid";
             this.LUEHafza.Properties.NullText = "";
+            this.LUEHafza.Properties.PopupView = this.gridLookUpEdit2View;
             this.LUEHafza.Properties.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEditSyndicateId});
             this.LUEHafza.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.LUEHafza.Properties.ValueMember = "hafzaid";
-            this.LUEHafza.Properties.View = this.gridLookUpEdit2View;
             this.LUEHafza.Size = new System.Drawing.Size(249, 20);
             this.LUEHafza.TabIndex = 5;
             this.LUEHafza.EditValueChanged += new System.EventHandler(this.LUEHafza_EditValueChanged);
@@ -251,13 +251,13 @@
             this.gridControlData.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.Remove.Visible = false;
-            this.gridControlData.Location = new System.Drawing.Point(2, 21);
+            this.gridControlData.Location = new System.Drawing.Point(2, 20);
             this.gridControlData.MainView = this.gridViewData;
             this.gridControlData.Name = "gridControlData";
             this.gridControlData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEditEdit,
             this.repositoryItemCheckEditclosed});
-            this.gridControlData.Size = new System.Drawing.Size(664, 256);
+            this.gridControlData.Size = new System.Drawing.Size(664, 257);
             this.gridControlData.TabIndex = 0;
             this.gridControlData.UseEmbeddedNavigator = true;
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -285,6 +285,7 @@
             this.gridViewData.GridControl = this.gridControlData;
             this.gridViewData.Name = "gridViewData";
             this.gridViewData.OptionsView.ColumnAutoWidth = false;
+            this.gridViewData.OptionsView.ShowAutoFilterRow = true;
             this.gridViewData.OptionsView.ShowDetailButtons = false;
             // 
             // colMemberName

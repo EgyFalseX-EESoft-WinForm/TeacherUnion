@@ -30,34 +30,34 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gridControlData = new DevExpress.XtraGrid.GridControl();
+            this.qry13BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsTeachersUnion = new Members.DataSources.dsTeachersUnion();
             this.gridViewData = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colKartonaNo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn22 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn24 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMemberShipNumber = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colprintdate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemDateEditDMY = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
+            this.colSubCommitte = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemDateEditDate = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
             this.repositoryItemPictureEditImg = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnPrintExport = new DevExpress.XtraEditors.SimpleButton();
-            this.dsTeachersUnion = new Members.DataSources.dsTeachersUnion();
-            this.qry13BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qry13TableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.Qry13TableAdapter();
-            this.colKartonaNo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMemberShipNumber = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colprintdate = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSubCommitte = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemDateEditDMY = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qry13BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEditImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qry13BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY.VistaTimeProperties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControlData
@@ -83,6 +83,16 @@
             this.gridControlData.UseEmbeddedNavigator = true;
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewData});
+            // 
+            // qry13BindingSource
+            // 
+            this.qry13BindingSource.DataMember = "Qry13";
+            this.qry13BindingSource.DataSource = this.dsTeachersUnion;
+            // 
+            // dsTeachersUnion
+            // 
+            this.dsTeachersUnion.DataSetName = "dsTeachersUnion";
+            this.dsTeachersUnion.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gridViewData
             // 
@@ -176,12 +186,24 @@
             this.gridViewData.OptionsFind.AlwaysVisible = true;
             this.gridViewData.OptionsPrint.EnableAppearanceEvenRow = true;
             this.gridViewData.OptionsPrint.EnableAppearanceOddRow = true;
-            this.gridViewData.OptionsPrint.UsePrintStyles = true;
             this.gridViewData.OptionsView.ColumnAutoWidth = false;
             this.gridViewData.OptionsView.EnableAppearanceEvenRow = true;
             this.gridViewData.OptionsView.EnableAppearanceOddRow = true;
+            this.gridViewData.OptionsView.ShowAutoFilterRow = true;
             this.gridViewData.OptionsView.ShowDetailButtons = false;
             this.gridViewData.OptionsView.ShowFooter = true;
+            // 
+            // colKartonaNo
+            // 
+            this.colKartonaNo.AppearanceCell.Options.UseTextOptions = true;
+            this.colKartonaNo.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colKartonaNo.AppearanceHeader.Options.UseTextOptions = true;
+            this.colKartonaNo.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colKartonaNo.Caption = "رقم الكارتونة";
+            this.colKartonaNo.FieldName = "KartonaNo";
+            this.colKartonaNo.Name = "colKartonaNo";
+            this.colKartonaNo.Visible = true;
+            this.colKartonaNo.VisibleIndex = 0;
             // 
             // gridColumn22
             // 
@@ -236,67 +258,6 @@
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 5;
             // 
-            // repositoryItemDateEditDate
-            // 
-            this.repositoryItemDateEditDate.AutoHeight = false;
-            this.repositoryItemDateEditDate.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemDateEditDate.DisplayFormat.FormatString = "u";
-            this.repositoryItemDateEditDate.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.repositoryItemDateEditDate.Mask.EditMask = "u";
-            this.repositoryItemDateEditDate.Name = "repositoryItemDateEditDate";
-            this.repositoryItemDateEditDate.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            // 
-            // repositoryItemPictureEditImg
-            // 
-            this.repositoryItemPictureEditImg.Name = "repositoryItemPictureEditImg";
-            // 
-            // panelControl1
-            // 
-            this.panelControl1.Controls.Add(this.btnPrintExport);
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl1.Location = new System.Drawing.Point(0, 0);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(734, 47);
-            this.panelControl1.TabIndex = 2;
-            // 
-            // btnPrintExport
-            // 
-            this.btnPrintExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPrintExport.Location = new System.Drawing.Point(588, 12);
-            this.btnPrintExport.Name = "btnPrintExport";
-            this.btnPrintExport.Size = new System.Drawing.Size(134, 23);
-            this.btnPrintExport.TabIndex = 0;
-            this.btnPrintExport.Text = "طباعه و تصدير";
-            this.btnPrintExport.Click += new System.EventHandler(this.btnPrintExport_Click);
-            // 
-            // dsTeachersUnion
-            // 
-            this.dsTeachersUnion.DataSetName = "dsTeachersUnion";
-            this.dsTeachersUnion.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // qry13BindingSource
-            // 
-            this.qry13BindingSource.DataMember = "Qry13";
-            this.qry13BindingSource.DataSource = this.dsTeachersUnion;
-            // 
-            // qry13TableAdapter
-            // 
-            this.qry13TableAdapter.ClearBeforeFill = true;
-            // 
-            // colKartonaNo
-            // 
-            this.colKartonaNo.AppearanceCell.Options.UseTextOptions = true;
-            this.colKartonaNo.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colKartonaNo.AppearanceHeader.Options.UseTextOptions = true;
-            this.colKartonaNo.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colKartonaNo.Caption = "رقم الكارتونة";
-            this.colKartonaNo.FieldName = "KartonaNo";
-            this.colKartonaNo.Name = "colKartonaNo";
-            this.colKartonaNo.Visible = true;
-            this.colKartonaNo.VisibleIndex = 0;
-            // 
             // colMemberShipNumber
             // 
             this.colMemberShipNumber.AppearanceCell.Options.UseTextOptions = true;
@@ -322,6 +283,20 @@
             this.colprintdate.Visible = true;
             this.colprintdate.VisibleIndex = 7;
             // 
+            // repositoryItemDateEditDMY
+            // 
+            this.repositoryItemDateEditDMY.AutoHeight = false;
+            this.repositoryItemDateEditDMY.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEditDMY.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.repositoryItemDateEditDMY.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.repositoryItemDateEditDMY.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.repositoryItemDateEditDMY.EditFormat.FormatString = "dd/MM/yyyy";
+            this.repositoryItemDateEditDMY.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.repositoryItemDateEditDMY.Mask.EditMask = "dd/MM/yyyy";
+            this.repositoryItemDateEditDMY.Name = "repositoryItemDateEditDMY";
+            // 
             // colSubCommitte
             // 
             this.colSubCommitte.AppearanceCell.Options.UseTextOptions = true;
@@ -334,19 +309,44 @@
             this.colSubCommitte.Visible = true;
             this.colSubCommitte.VisibleIndex = 3;
             // 
-            // repositoryItemDateEditDMY
+            // repositoryItemDateEditDate
             // 
-            this.repositoryItemDateEditDMY.AutoHeight = false;
-            this.repositoryItemDateEditDMY.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.repositoryItemDateEditDate.AutoHeight = false;
+            this.repositoryItemDateEditDate.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemDateEditDMY.DisplayFormat.FormatString = "dd/MM/yyyy";
-            this.repositoryItemDateEditDMY.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.repositoryItemDateEditDMY.EditFormat.FormatString = "dd/MM/yyyy";
-            this.repositoryItemDateEditDMY.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.repositoryItemDateEditDMY.Mask.EditMask = "dd/MM/yyyy";
-            this.repositoryItemDateEditDMY.Name = "repositoryItemDateEditDMY";
-            this.repositoryItemDateEditDMY.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.repositoryItemDateEditDate.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.repositoryItemDateEditDate.DisplayFormat.FormatString = "u";
+            this.repositoryItemDateEditDate.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.repositoryItemDateEditDate.Mask.EditMask = "u";
+            this.repositoryItemDateEditDate.Name = "repositoryItemDateEditDate";
+            // 
+            // repositoryItemPictureEditImg
+            // 
+            this.repositoryItemPictureEditImg.Name = "repositoryItemPictureEditImg";
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.btnPrintExport);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl1.Location = new System.Drawing.Point(0, 0);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(734, 47);
+            this.panelControl1.TabIndex = 2;
+            // 
+            // btnPrintExport
+            // 
+            this.btnPrintExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPrintExport.Location = new System.Drawing.Point(588, 12);
+            this.btnPrintExport.Name = "btnPrintExport";
+            this.btnPrintExport.Size = new System.Drawing.Size(134, 23);
+            this.btnPrintExport.TabIndex = 0;
+            this.btnPrintExport.Text = "طباعه و تصدير";
+            this.btnPrintExport.Click += new System.EventHandler(this.btnPrintExport_Click);
+            // 
+            // qry13TableAdapter
+            // 
+            this.qry13TableAdapter.ClearBeforeFill = true;
             // 
             // Qry13Frm
             // 
@@ -359,16 +359,16 @@
             this.Text = "تفاصيل الارشيف اليدوي";
             this.Load += new System.EventHandler(this.QryTblAhteatyFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qry13BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEditImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qry13BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY.VistaTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY)).EndInit();
             this.ResumeLayout(false);
 
         }

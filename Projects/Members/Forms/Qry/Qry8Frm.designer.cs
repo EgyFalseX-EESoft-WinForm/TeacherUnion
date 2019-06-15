@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gridControlData = new DevExpress.XtraGrid.GridControl();
+            this.qry08BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsTeachersUnionQuery = new Members.DataSources.dsTeachersUnionQuery();
             this.gridViewData = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn22 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn24 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -41,18 +44,16 @@
             this.repositoryItemPictureEditImg = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnPrintExport = new DevExpress.XtraEditors.SimpleButton();
-            this.dsTeachersUnionQuery = new Members.DataSources.dsTeachersUnionQuery();
-            this.qry08BindingSource = new System.Windows.Forms.BindingSource();
             this.qry08TableAdapter = new Members.DataSources.dsTeachersUnionQueryTableAdapters.Qry08TableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qry08BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEditImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qry08BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControlData
@@ -77,6 +78,16 @@
             this.gridControlData.UseEmbeddedNavigator = true;
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewData});
+            // 
+            // qry08BindingSource
+            // 
+            this.qry08BindingSource.DataMember = "Qry08";
+            this.qry08BindingSource.DataSource = this.dsTeachersUnionQuery;
+            // 
+            // dsTeachersUnionQuery
+            // 
+            this.dsTeachersUnionQuery.DataSetName = "dsTeachersUnionQuery";
+            this.dsTeachersUnionQuery.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gridViewData
             // 
@@ -172,6 +183,7 @@
             this.gridViewData.OptionsView.ColumnAutoWidth = false;
             this.gridViewData.OptionsView.EnableAppearanceEvenRow = true;
             this.gridViewData.OptionsView.EnableAppearanceOddRow = true;
+            this.gridViewData.OptionsView.ShowAutoFilterRow = true;
             this.gridViewData.OptionsView.ShowFooter = true;
             // 
             // gridColumn22
@@ -269,12 +281,12 @@
             this.repositoryItemDateEditDate.AutoHeight = false;
             this.repositoryItemDateEditDate.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEditDate.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.repositoryItemDateEditDate.DisplayFormat.FormatString = "u";
             this.repositoryItemDateEditDate.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.repositoryItemDateEditDate.Mask.EditMask = "u";
             this.repositoryItemDateEditDate.Name = "repositoryItemDateEditDate";
-            this.repositoryItemDateEditDate.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
             // 
             // repositoryItemPictureEditImg
             // 
@@ -299,16 +311,6 @@
             this.btnPrintExport.Text = "طباعه و تصدير";
             this.btnPrintExport.Click += new System.EventHandler(this.btnPrintExport_Click);
             // 
-            // dsTeachersUnionQuery
-            // 
-            this.dsTeachersUnionQuery.DataSetName = "dsTeachersUnionQuery";
-            this.dsTeachersUnionQuery.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // qry08BindingSource
-            // 
-            this.qry08BindingSource.DataMember = "Qry08";
-            this.qry08BindingSource.DataSource = this.dsTeachersUnionQuery;
-            // 
             // qry08TableAdapter
             // 
             this.qry08TableAdapter.ClearBeforeFill = true;
@@ -324,14 +326,14 @@
             this.Text = "استعلام استخراج الكرنيهات";
             this.Load += new System.EventHandler(this.QryTblAhteatyFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qry08BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEditImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qry08BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

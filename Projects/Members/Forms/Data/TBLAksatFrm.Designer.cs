@@ -68,7 +68,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tBLMembersListBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCalcEditf2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditDetails)).BeginInit();
@@ -85,7 +85,6 @@
             this.groupControl3.Controls.Add(this.gridControlData);
             this.groupControl3.Location = new System.Drawing.Point(12, 12);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.groupControl3.Size = new System.Drawing.Size(668, 349);
             this.groupControl3.TabIndex = 1;
             this.groupControl3.Text = "الاقساط";
@@ -99,7 +98,7 @@
             this.gridControlData.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.Remove.Visible = false;
-            this.gridControlData.Location = new System.Drawing.Point(2, 21);
+            this.gridControlData.Location = new System.Drawing.Point(2, 20);
             this.gridControlData.MainView = this.gridViewData;
             this.gridControlData.Name = "gridControlData";
             this.gridControlData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
@@ -109,7 +108,7 @@
             this.repositoryItemCalcEditf2,
             this.repositoryItemButtonEditSave,
             this.repositoryItemButtonEditDelete});
-            this.gridControlData.Size = new System.Drawing.Size(664, 326);
+            this.gridControlData.Size = new System.Drawing.Size(664, 327);
             this.gridControlData.TabIndex = 0;
             this.gridControlData.UseEmbeddedNavigator = true;
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -144,6 +143,7 @@
             this.gridViewData.NewItemRowText = "اضعظ لاضافة جديد";
             this.gridViewData.OptionsView.ColumnAutoWidth = false;
             this.gridViewData.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
+            this.gridViewData.OptionsView.ShowAutoFilterRow = true;
             this.gridViewData.OptionsView.ShowDetailButtons = false;
             // 
             // colMemberId
@@ -169,9 +169,9 @@
             this.repositoryItemGridLookUpEditMemberId.DisplayMember = "MemberName";
             this.repositoryItemGridLookUpEditMemberId.Name = "repositoryItemGridLookUpEditMemberId";
             this.repositoryItemGridLookUpEditMemberId.NullText = "";
+            this.repositoryItemGridLookUpEditMemberId.PopupView = this.gridView2;
             this.repositoryItemGridLookUpEditMemberId.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.repositoryItemGridLookUpEditMemberId.ValueMember = "MemberId";
-            this.repositoryItemGridLookUpEditMemberId.View = this.gridView2;
             this.repositoryItemGridLookUpEditMemberId.EditValueChanged += new System.EventHandler(this.repositoryItemGridLookUpEditMemberId_EditValueChanged);
             // 
             // tBLMembersListBindingSource
@@ -271,14 +271,14 @@
             this.repositoryItemDateEditDMY.AutoHeight = false;
             this.repositoryItemDateEditDMY.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEditDMY.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.repositoryItemDateEditDMY.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.repositoryItemDateEditDMY.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.repositoryItemDateEditDMY.EditFormat.FormatString = "dd/MM/yyyy";
             this.repositoryItemDateEditDMY.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.repositoryItemDateEditDMY.Mask.EditMask = "dd/MM/yyyy";
             this.repositoryItemDateEditDMY.Name = "repositoryItemDateEditDMY";
-            this.repositoryItemDateEditDMY.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
             // 
             // colmostahk
             // 
@@ -435,7 +435,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEditMemberId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tBLMembersListBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCalcEditf2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditSave)).EndInit();

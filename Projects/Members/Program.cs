@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms;
 using DevExpress.LookAndFeel;
+using DevExpress.Utils;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
 
@@ -51,6 +52,8 @@ namespace Members
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.UserSkins.BonusSkins.Register();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
+            WindowsFormsSettings.AllowAutoFilterConditionChange = DefaultBoolean.False;
+            WindowsFormsSettings.ColumnAutoFilterMode = ColumnAutoFilterMode.Text;
 
             if (FXFW.SqlDB.LoadSqlDBPath("TeachersUnion") && Authentication())
             {
@@ -227,7 +230,7 @@ namespace Members
         }
         private static bool CheckExpiration()
         {
-            DateTime periodDate = new DateTime(2019, 03, 31);
+            DateTime periodDate = new DateTime(2019, 09, 30);
             bool ReturnMe = false;
             DataSources.dsTeachersUnionQuery ds = new DataSources.dsTeachersUnionQuery();
             DataSources.dsTeachersUnionQueryTableAdapters.ServerDateTimeTableAdapter adp = new DataSources.dsTeachersUnionQueryTableAdapters.ServerDateTimeTableAdapter();

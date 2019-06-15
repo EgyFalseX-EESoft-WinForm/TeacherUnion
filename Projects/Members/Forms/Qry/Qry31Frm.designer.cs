@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gridControlData = new DevExpress.XtraGrid.GridControl();
+            this.vTBLAksatDetailesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsTeachersUnionQuery = new Members.DataSources.dsTeachersUnionQuery();
             this.gridViewData = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.coldatesadad = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemDateEditDMY = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
@@ -49,17 +52,15 @@
             this.colfawry = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnPrintExport = new DevExpress.XtraEditors.SimpleButton();
-            this.dsTeachersUnionQuery = new Members.DataSources.dsTeachersUnionQuery();
-            this.vTBLAksatDetailesBindingSource = new System.Windows.Forms.BindingSource();
             this.vTBLAksatDetailesTableAdapter = new Members.DataSources.dsTeachersUnionQueryTableAdapters.vTBLAksatDetailesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vTBLAksatDetailesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vTBLAksatDetailesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControlData
@@ -83,6 +84,16 @@
             this.gridControlData.UseEmbeddedNavigator = true;
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewData});
+            // 
+            // vTBLAksatDetailesBindingSource
+            // 
+            this.vTBLAksatDetailesBindingSource.DataMember = "vTBLAksatDetailes";
+            this.vTBLAksatDetailesBindingSource.DataSource = this.dsTeachersUnionQuery;
+            // 
+            // dsTeachersUnionQuery
+            // 
+            this.dsTeachersUnionQuery.DataSetName = "dsTeachersUnionQuery";
+            this.dsTeachersUnionQuery.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gridViewData
             // 
@@ -187,6 +198,7 @@
             this.gridViewData.OptionsView.ColumnAutoWidth = false;
             this.gridViewData.OptionsView.EnableAppearanceEvenRow = true;
             this.gridViewData.OptionsView.EnableAppearanceOddRow = true;
+            this.gridViewData.OptionsView.ShowAutoFilterRow = true;
             this.gridViewData.OptionsView.ShowDetailButtons = false;
             this.gridViewData.OptionsView.ShowFooter = true;
             // 
@@ -208,14 +220,14 @@
             this.repositoryItemDateEditDMY.AutoHeight = false;
             this.repositoryItemDateEditDMY.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEditDMY.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.repositoryItemDateEditDMY.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.repositoryItemDateEditDMY.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.repositoryItemDateEditDMY.EditFormat.FormatString = "dd/MM/yyyy";
             this.repositoryItemDateEditDMY.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.repositoryItemDateEditDMY.Mask.EditMask = "dd/MM/yyyy";
             this.repositoryItemDateEditDMY.Name = "repositoryItemDateEditDMY";
-            this.repositoryItemDateEditDMY.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
             // 
             // colsdadmony
             // 
@@ -422,16 +434,6 @@
             this.btnPrintExport.Text = "طباعه و تصدير";
             this.btnPrintExport.Click += new System.EventHandler(this.btnPrintExport_Click);
             // 
-            // dsTeachersUnionQuery
-            // 
-            this.dsTeachersUnionQuery.DataSetName = "dsTeachersUnionQuery";
-            this.dsTeachersUnionQuery.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vTBLAksatDetailesBindingSource
-            // 
-            this.vTBLAksatDetailesBindingSource.DataMember = "vTBLAksatDetailes";
-            this.vTBLAksatDetailesBindingSource.DataSource = this.dsTeachersUnionQuery;
-            // 
             // vTBLAksatDetailesTableAdapter
             // 
             this.vTBLAksatDetailesTableAdapter.ClearBeforeFill = true;
@@ -447,13 +449,13 @@
             this.Text = "المندوبين للقيد";
             this.Load += new System.EventHandler(this.QryTblAhteatyFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vTBLAksatDetailesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDMY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vTBLAksatDetailesBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

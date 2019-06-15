@@ -33,18 +33,18 @@
             this.btnPrintExport = new DevExpress.XtraEditors.SimpleButton();
             this.gridViewData = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn22 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridControlData = new DevExpress.XtraGrid.GridControl();
-            this.dsTeachersUnion = new Members.DataSources.dsTeachersUnion();
-            this.tBLMemberRemarkBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tBLMemberRemarkTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.TBLMemberRemarkTableAdapter();
             this.repositoryItemMemoEditremarks = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
+            this.gridControlData = new DevExpress.XtraGrid.GridControl();
+            this.tBLMemberRemarkBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsTeachersUnion = new Members.DataSources.dsTeachersUnion();
+            this.tBLMemberRemarkTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.TBLMemberRemarkTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBLMemberRemarkBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoEditremarks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBLMemberRemarkBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnion)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -151,10 +151,10 @@
             this.gridViewData.OptionsFind.AlwaysVisible = true;
             this.gridViewData.OptionsPrint.EnableAppearanceEvenRow = true;
             this.gridViewData.OptionsPrint.EnableAppearanceOddRow = true;
-            this.gridViewData.OptionsPrint.UsePrintStyles = true;
             this.gridViewData.OptionsView.ColumnAutoWidth = false;
             this.gridViewData.OptionsView.EnableAppearanceEvenRow = true;
             this.gridViewData.OptionsView.EnableAppearanceOddRow = true;
+            this.gridViewData.OptionsView.ShowAutoFilterRow = true;
             this.gridViewData.OptionsView.ShowDetailButtons = false;
             this.gridViewData.OptionsView.ShowFooter = true;
             // 
@@ -173,6 +173,10 @@
             this.gridColumn22.Visible = true;
             this.gridColumn22.VisibleIndex = 0;
             this.gridColumn22.Width = 381;
+            // 
+            // repositoryItemMemoEditremarks
+            // 
+            this.repositoryItemMemoEditremarks.Name = "repositoryItemMemoEditremarks";
             // 
             // gridControlData
             // 
@@ -196,23 +200,19 @@
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewData});
             // 
-            // dsTeachersUnion
-            // 
-            this.dsTeachersUnion.DataSetName = "dsTeachersUnion";
-            this.dsTeachersUnion.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tBLMemberRemarkBindingSource
             // 
             this.tBLMemberRemarkBindingSource.DataMember = "TBLMemberRemark";
             this.tBLMemberRemarkBindingSource.DataSource = this.dsTeachersUnion;
             // 
+            // dsTeachersUnion
+            // 
+            this.dsTeachersUnion.DataSetName = "dsTeachersUnion";
+            this.dsTeachersUnion.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tBLMemberRemarkTableAdapter
             // 
             this.tBLMemberRemarkTableAdapter.ClearBeforeFill = true;
-            // 
-            // repositoryItemMemoEditremarks
-            // 
-            this.repositoryItemMemoEditremarks.Name = "repositoryItemMemoEditremarks";
             // 
             // Qry11WFrm
             // 
@@ -227,10 +227,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBLMemberRemarkBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoEditremarks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBLMemberRemarkBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnion)).EndInit();
             this.ResumeLayout(false);
 
         }

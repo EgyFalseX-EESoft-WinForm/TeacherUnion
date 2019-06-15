@@ -29,7 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlData = new DevExpress.XtraGrid.GridControl();
             this.tBLMembersMobileEditBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -81,7 +85,6 @@
             this.groupControl3.Controls.Add(this.gridControlData);
             this.groupControl3.Location = new System.Drawing.Point(12, 36);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.groupControl3.Size = new System.Drawing.Size(711, 325);
             this.groupControl3.TabIndex = 2;
             this.groupControl3.Text = "الاعضاء";
@@ -95,14 +98,14 @@
             this.gridControlData.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.Remove.Visible = false;
-            this.gridControlData.Location = new System.Drawing.Point(2, 21);
+            this.gridControlData.Location = new System.Drawing.Point(2, 20);
             this.gridControlData.MainView = this.gridViewData;
             this.gridControlData.Name = "gridControlData";
             this.gridControlData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEditEdit,
             this.repositoryItemLookUpEditSyndicateId,
             this.repositoryItemLookUpEditSubCommitteId});
-            this.gridControlData.Size = new System.Drawing.Size(707, 302);
+            this.gridControlData.Size = new System.Drawing.Size(707, 303);
             this.gridControlData.TabIndex = 1;
             this.gridControlData.UseEmbeddedNavigator = true;
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -130,6 +133,7 @@
             this.gridViewData.GridControl = this.gridControlData;
             this.gridViewData.Name = "gridViewData";
             this.gridViewData.OptionsView.ColumnAutoWidth = false;
+            this.gridViewData.OptionsView.ShowAutoFilterRow = true;
             this.gridViewData.OptionsView.ShowDetailButtons = false;
             // 
             // colMemberName
@@ -267,9 +271,9 @@
             this.GLUESyndicateId.Properties.DataSource = this.cDSyndicateBindingSource;
             this.GLUESyndicateId.Properties.DisplayMember = "Syndicate";
             this.GLUESyndicateId.Properties.NullText = "";
+            this.GLUESyndicateId.Properties.PopupView = this.gridLookUpEdit1View;
             this.GLUESyndicateId.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.GLUESyndicateId.Properties.ValueMember = "SyndicateId";
-            this.GLUESyndicateId.Properties.View = this.gridLookUpEdit1View;
             this.GLUESyndicateId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.GLUESyndicateId.Size = new System.Drawing.Size(209, 24);
             this.GLUESyndicateId.TabIndex = 0;
@@ -300,6 +304,7 @@
             // 
             this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(676, 13);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(45, 18);
@@ -318,6 +323,7 @@
             // 
             this.labelControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(400, 12);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(55, 18);
@@ -332,7 +338,7 @@
             this.tbKidNumber.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.tbKidNumber.Properties.Appearance.Options.UseFont = true;
             this.tbKidNumber.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.OK, "", 50, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.OK, "", 50, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.tbKidNumber.Size = new System.Drawing.Size(228, 24);
             this.tbKidNumber.TabIndex = 1;
             this.tbKidNumber.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.tbKidNumber_ButtonClick);

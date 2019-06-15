@@ -218,9 +218,9 @@
             this.LUEMembers.Properties.DataSource = this.LSMSMembers;
             this.LUEMembers.Properties.DisplayMember = "MemberName";
             this.LUEMembers.Properties.NullText = "";
+            this.LUEMembers.Properties.PopupView = this.gridLookUpEdit1View;
             this.LUEMembers.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.LUEMembers.Properties.ValueMember = "MemberId";
-            this.LUEMembers.Properties.View = this.gridLookUpEdit1View;
             this.LUEMembers.Size = new System.Drawing.Size(391, 26);
             this.LUEMembers.TabIndex = 0;
             this.LUEMembers.EditValueChanged += new System.EventHandler(this.LUEMembers_EditValueChanged);
@@ -327,7 +327,7 @@
             this.gridControlData.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.Remove.Visible = false;
-            this.gridControlData.Location = new System.Drawing.Point(2, 21);
+            this.gridControlData.Location = new System.Drawing.Point(2, 20);
             this.gridControlData.MainView = this.gridViewData;
             this.gridControlData.Name = "gridControlData";
             this.gridControlData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
@@ -336,7 +336,7 @@
             this.repositoryItemMemoExEditAttachInfo,
             this.repositoryItemButtonEditEdit,
             this.repositoryItemImageComboBox1});
-            this.gridControlData.Size = new System.Drawing.Size(564, 231);
+            this.gridControlData.Size = new System.Drawing.Size(564, 232);
             this.gridControlData.TabIndex = 1;
             this.gridControlData.UseEmbeddedNavigator = true;
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -360,6 +360,7 @@
             this.gridViewData.OptionsCustomization.AllowRowSizing = true;
             this.gridViewData.OptionsView.ColumnAutoWidth = false;
             this.gridViewData.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
+            this.gridViewData.OptionsView.ShowAutoFilterRow = true;
             this.gridViewData.RowHeight = 34;
             this.gridViewData.InvalidRowException += new DevExpress.XtraGrid.Views.Base.InvalidRowExceptionEventHandler(this.gridViewData_InvalidRowException);
             // 
@@ -385,11 +386,11 @@
             this.repositoryItemGridLookUpEditAttahcmentTypeId.DisplayMember = "AttachmentName";
             this.repositoryItemGridLookUpEditAttahcmentTypeId.Name = "repositoryItemGridLookUpEditAttahcmentTypeId";
             this.repositoryItemGridLookUpEditAttahcmentTypeId.NullText = "";
+            this.repositoryItemGridLookUpEditAttahcmentTypeId.PopupView = this.repositoryItemGridLookUpEdit1View;
             this.repositoryItemGridLookUpEditAttahcmentTypeId.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemPictureEdit1});
             this.repositoryItemGridLookUpEditAttahcmentTypeId.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.repositoryItemGridLookUpEditAttahcmentTypeId.ValueMember = "AttachmentTypeId";
-            this.repositoryItemGridLookUpEditAttahcmentTypeId.View = this.repositoryItemGridLookUpEdit1View;
             // 
             // cDAttachmentTypeBindingSource
             // 

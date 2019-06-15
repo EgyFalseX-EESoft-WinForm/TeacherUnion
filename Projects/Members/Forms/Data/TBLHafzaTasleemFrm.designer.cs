@@ -29,8 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TBLHafzaTasleemFrm));
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.gridControlData = new DevExpress.XtraGrid.GridControl();
             this.tBLHafzaTasleemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dsTeachersUnion = new Members.DataSources.dsTeachersUnion();
@@ -73,7 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewTBLHafzaTasleem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEditSyndicateId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDSyndicateBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).BeginInit();
@@ -83,7 +87,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoExEditRemark)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDatein)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDatein.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDatein.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditDel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditPrint)).BeginInit();
@@ -102,7 +106,7 @@
             this.gridControlData.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.Remove.Visible = false;
-            this.gridControlData.Location = new System.Drawing.Point(2, 21);
+            this.gridControlData.Location = new System.Drawing.Point(2, 20);
             this.gridControlData.MainView = this.gridViewTBLHafzaTasleem;
             this.gridControlData.Name = "gridControlData";
             this.gridControlData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
@@ -115,7 +119,7 @@
             this.repositoryItemCheckEditTF,
             this.repositoryItemMemoExEditRemark,
             this.repositoryItemButtonEditPrint});
-            this.gridControlData.Size = new System.Drawing.Size(756, 258);
+            this.gridControlData.Size = new System.Drawing.Size(756, 259);
             this.gridControlData.TabIndex = 0;
             this.gridControlData.UseEmbeddedNavigator = true;
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -153,6 +157,7 @@
             this.gridViewTBLHafzaTasleem.OptionsDetail.AllowExpandEmptyDetails = true;
             this.gridViewTBLHafzaTasleem.OptionsDetail.SmartDetailHeight = true;
             this.gridViewTBLHafzaTasleem.OptionsView.ColumnAutoWidth = false;
+            this.gridViewTBLHafzaTasleem.OptionsView.ShowAutoFilterRow = true;
             this.gridViewTBLHafzaTasleem.OptionsView.ShowDetailButtons = false;
             this.gridViewTBLHafzaTasleem.InvalidRowException += new DevExpress.XtraGrid.Views.Base.InvalidRowExceptionEventHandler(this.gridViewTBLHafzaTasleem_InvalidRowException);
             // 
@@ -174,14 +179,14 @@
             this.repositoryItemDateEditDate.AutoHeight = false;
             this.repositoryItemDateEditDate.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEditDate.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.repositoryItemDateEditDate.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.repositoryItemDateEditDate.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.repositoryItemDateEditDate.EditFormat.FormatString = "dd/MM/yyyy";
             this.repositoryItemDateEditDate.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.repositoryItemDateEditDate.Mask.EditMask = "dd/MM/yyyy";
             this.repositoryItemDateEditDate.Name = "repositoryItemDateEditDate";
-            this.repositoryItemDateEditDate.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
             // 
             // colSyndicateId
             // 
@@ -205,9 +210,9 @@
             this.repositoryItemGridLookUpEditSyndicateId.DisplayMember = "Syndicate";
             this.repositoryItemGridLookUpEditSyndicateId.Name = "repositoryItemGridLookUpEditSyndicateId";
             this.repositoryItemGridLookUpEditSyndicateId.NullText = "";
+            this.repositoryItemGridLookUpEditSyndicateId.PopupView = this.repositoryItemGridLookUpEdit1View;
             this.repositoryItemGridLookUpEditSyndicateId.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.repositoryItemGridLookUpEditSyndicateId.ValueMember = "SyndicateId";
-            this.repositoryItemGridLookUpEditSyndicateId.View = this.repositoryItemGridLookUpEdit1View;
             // 
             // cDSyndicateBindingSource
             // 
@@ -275,9 +280,9 @@
             this.repositoryItemGridLookUpEditHafzaperson.DisplayMember = "MandoopName";
             this.repositoryItemGridLookUpEditHafzaperson.Name = "repositoryItemGridLookUpEditHafzaperson";
             this.repositoryItemGridLookUpEditHafzaperson.NullText = "";
+            this.repositoryItemGridLookUpEditHafzaperson.PopupView = this.gridView2;
             this.repositoryItemGridLookUpEditHafzaperson.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.repositoryItemGridLookUpEditHafzaperson.ValueMember = "MandoopId";
-            this.repositoryItemGridLookUpEditHafzaperson.View = this.gridView2;
             // 
             // tBLMandoopBindingSource
             // 
@@ -365,14 +370,14 @@
             this.repositoryItemDateEditDatein.AutoHeight = false;
             this.repositoryItemDateEditDatein.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEditDatein.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.repositoryItemDateEditDatein.DisplayFormat.FormatString = "u";
             this.repositoryItemDateEditDatein.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.repositoryItemDateEditDatein.EditFormat.FormatString = "u";
             this.repositoryItemDateEditDatein.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.repositoryItemDateEditDatein.Mask.EditMask = "u";
             this.repositoryItemDateEditDatein.Name = "repositoryItemDateEditDatein";
-            this.repositoryItemDateEditDatein.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
             // 
             // coluserin
             // 
@@ -443,10 +448,17 @@
             // repositoryItemButtonEditPrint
             // 
             this.repositoryItemButtonEditPrint.AutoHeight = false;
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             serializableAppearanceObject1.Image = global::Members.Properties.Resources.Print;
             serializableAppearanceObject1.Options.UseImage = true;
+            serializableAppearanceObject2.Image = global::Members.Properties.Resources.Print;
+            serializableAppearanceObject2.Options.UseImage = true;
+            serializableAppearanceObject3.Image = global::Members.Properties.Resources.Print;
+            serializableAppearanceObject3.Options.UseImage = true;
+            serializableAppearanceObject4.Image = global::Members.Properties.Resources.Print;
+            serializableAppearanceObject4.Options.UseImage = true;
             this.repositoryItemButtonEditPrint.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("repositoryItemButtonEditPrint.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEditPrint.Name = "repositoryItemButtonEditPrint";
             this.repositoryItemButtonEditPrint.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.repositoryItemButtonEditPrint.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.repositoryItemButtonEditPrint_ButtonClick_1);
@@ -477,7 +489,7 @@
             // btnNew
             // 
             this.btnNew.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnNew.Image = global::Members.Properties.Resources.Add;
+            this.btnNew.ImageOptions.Image = global::Members.Properties.Resources.Add;
             this.btnNew.Location = new System.Drawing.Point(555, 23);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(200, 35);
@@ -511,7 +523,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tBLHafzaTasleemBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewTBLHafzaTasleem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEditSyndicateId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDSyndicateBindingSource)).EndInit();
@@ -521,7 +533,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tBLMandoopBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoExEditRemark)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDatein.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDatein.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDatein)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditSave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditDel)).EndInit();

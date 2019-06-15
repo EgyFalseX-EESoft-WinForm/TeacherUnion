@@ -43,6 +43,7 @@
             this.repositoryItemDateEditDatein = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
             this.groupControlView = new DevExpress.XtraEditors.GroupControl();
             this.groupControlCommand = new DevExpress.XtraEditors.GroupControl();
+            this.btnChooseNo = new DevExpress.XtraEditors.ButtonEdit();
             this.CEAll = new DevExpress.XtraEditors.CheckEdit();
             this.btnPrint = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
@@ -53,23 +54,22 @@
             this.lueSyndicateId = new DevExpress.XtraEditors.GridLookUpEdit();
             this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btnChooseNo = new DevExpress.XtraEditors.ButtonEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDatein)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDatein.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDatein.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlView)).BeginInit();
             this.groupControlView.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlCommand)).BeginInit();
             this.groupControlCommand.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnChooseNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CEAll.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbesalno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueSyndicateId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnChooseNo.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControlData
@@ -80,13 +80,13 @@
             this.gridControlData.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.Remove.Visible = false;
-            this.gridControlData.Location = new System.Drawing.Point(2, 21);
+            this.gridControlData.Location = new System.Drawing.Point(2, 20);
             this.gridControlData.MainView = this.gridViewData;
             this.gridControlData.Name = "gridControlData";
             this.gridControlData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemDateEditDatein,
             this.repositoryItemCheckEdit1});
-            this.gridControlData.Size = new System.Drawing.Size(756, 349);
+            this.gridControlData.Size = new System.Drawing.Size(756, 350);
             this.gridControlData.TabIndex = 0;
             this.gridControlData.UseEmbeddedNavigator = true;
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -109,6 +109,7 @@
             this.gridViewData.Name = "gridViewData";
             this.gridViewData.OptionsFind.AlwaysVisible = true;
             this.gridViewData.OptionsView.ColumnAutoWidth = false;
+            this.gridViewData.OptionsView.ShowAutoFilterRow = true;
             // 
             // gridColumn2
             // 
@@ -240,14 +241,14 @@
             this.repositoryItemDateEditDatein.AutoHeight = false;
             this.repositoryItemDateEditDatein.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEditDatein.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.repositoryItemDateEditDatein.DisplayFormat.FormatString = "u";
             this.repositoryItemDateEditDatein.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.repositoryItemDateEditDatein.EditFormat.FormatString = "u";
             this.repositoryItemDateEditDatein.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.repositoryItemDateEditDatein.Mask.EditMask = "u";
             this.repositoryItemDateEditDatein.Name = "repositoryItemDateEditDatein";
-            this.repositoryItemDateEditDatein.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
             // 
             // groupControlView
             // 
@@ -276,6 +277,17 @@
             this.groupControlCommand.Size = new System.Drawing.Size(756, 77);
             this.groupControlCommand.TabIndex = 0;
             this.groupControlCommand.Text = "العمليــــــــــــــــــــــات";
+            // 
+            // btnChooseNo
+            // 
+            this.btnChooseNo.EditValue = "50";
+            this.btnChooseNo.Location = new System.Drawing.Point(24, 48);
+            this.btnChooseNo.Name = "btnChooseNo";
+            this.btnChooseNo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.OK)});
+            this.btnChooseNo.Size = new System.Drawing.Size(100, 20);
+            this.btnChooseNo.TabIndex = 6;
+            this.btnChooseNo.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnChooseNo_ButtonClick);
             // 
             // CEAll
             // 
@@ -357,8 +369,8 @@
             this.lueSyndicateId.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lueSyndicateId.Properties.NullText = "";
+            this.lueSyndicateId.Properties.PopupView = this.gridLookUpEdit1View;
             this.lueSyndicateId.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.lueSyndicateId.Properties.View = this.gridLookUpEdit1View;
             this.lueSyndicateId.Size = new System.Drawing.Size(211, 20);
             this.lueSyndicateId.TabIndex = 0;
             // 
@@ -383,18 +395,7 @@
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 0;
             // 
-            // btnChooseNo
-            // 
-            this.btnChooseNo.EditValue = "50";
-            this.btnChooseNo.Location = new System.Drawing.Point(24, 48);
-            this.btnChooseNo.Name = "btnChooseNo";
-            this.btnChooseNo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.OK)});
-            this.btnChooseNo.Size = new System.Drawing.Size(100, 20);
-            this.btnChooseNo.TabIndex = 6;
-            this.btnChooseNo.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnChooseNo_ButtonClick);
-            // 
-            // TBLPrintCardRe2Frm
+            // TBLPrintCardRe3Frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -402,18 +403,19 @@
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.groupControlCommand);
             this.Controls.Add(this.groupControlView);
-            this.Name = "TBLPrintCardRe2Frm";
+            this.Name = "TBLPrintCardRe3Frm";
             this.Text = "اعادة طباعة الكارنيهات - المؤقت";
             this.Load += new System.EventHandler(this.TBLPrintCardFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDatein.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDatein.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditDatein)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlView)).EndInit();
             this.groupControlView.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControlCommand)).EndInit();
             this.groupControlCommand.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnChooseNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CEAll.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
@@ -421,7 +423,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbesalno.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueSyndicateId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnChooseNo.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

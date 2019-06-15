@@ -39,6 +39,8 @@
             this.colesalno = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colprintdate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coltotal = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coltotalDone = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gcCalcFree = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlData = new DevExpress.XtraGrid.GridControl();
             this.tBLManualArsheefDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -58,8 +60,6 @@
             this.tBLManualArsheefDetailsTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.TBLManualArsheefDetailsTableAdapter();
             this.tBLMembersListTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.TBLMembersListTableAdapter();
             this.tBLPrintCardListGroupedTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.TBLPrintCardListGroupedTableAdapter();
-            this.coltotalDone = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gcCalcFree = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LUEEmp.Properties)).BeginInit();
@@ -111,6 +111,7 @@
             // 
             this.labelControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(492, 32);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl1.Name = "labelControl1";
@@ -129,8 +130,8 @@
             this.LUEEmp.Properties.DataSource = this.tBLPrintCardListGroupedBindingSource;
             this.LUEEmp.Properties.DisplayMember = "esalno";
             this.LUEEmp.Properties.NullText = "";
+            this.LUEEmp.Properties.PopupView = this.gridLookUpEdit1View;
             this.LUEEmp.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.LUEEmp.Properties.View = this.gridLookUpEdit1View;
             this.LUEEmp.Size = new System.Drawing.Size(231, 20);
             this.LUEEmp.TabIndex = 2;
             // 
@@ -193,6 +194,32 @@
             this.coltotal.Visible = true;
             this.coltotal.VisibleIndex = 2;
             // 
+            // coltotalDone
+            // 
+            this.coltotalDone.AppearanceCell.Options.UseTextOptions = true;
+            this.coltotalDone.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.coltotalDone.AppearanceHeader.Options.UseTextOptions = true;
+            this.coltotalDone.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.coltotalDone.Caption = "تم ألحاقة من قبل";
+            this.coltotalDone.FieldName = "totalDone";
+            this.coltotalDone.Name = "coltotalDone";
+            this.coltotalDone.Visible = true;
+            this.coltotalDone.VisibleIndex = 3;
+            // 
+            // gcCalcFree
+            // 
+            this.gcCalcFree.AppearanceCell.Options.UseTextOptions = true;
+            this.gcCalcFree.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gcCalcFree.AppearanceHeader.Options.UseTextOptions = true;
+            this.gcCalcFree.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gcCalcFree.Caption = "لم يتم ألحاقة";
+            this.gcCalcFree.FieldName = "gcCalcFree";
+            this.gcCalcFree.Name = "gcCalcFree";
+            this.gcCalcFree.UnboundExpression = "[total]  - [totalDone]";
+            this.gcCalcFree.UnboundType = DevExpress.Data.UnboundColumnType.Integer;
+            this.gcCalcFree.Visible = true;
+            this.gcCalcFree.VisibleIndex = 4;
+            // 
             // groupControl2
             // 
             this.groupControl2.AppearanceCaption.Options.UseTextOptions = true;
@@ -213,13 +240,13 @@
             this.gridControlData.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.Remove.Visible = false;
-            this.gridControlData.Location = new System.Drawing.Point(2, 21);
+            this.gridControlData.Location = new System.Drawing.Point(2, 20);
             this.gridControlData.MainView = this.gridViewData;
             this.gridControlData.Name = "gridControlData";
             this.gridControlData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEditDel,
             this.repositoryItemLookUpEditMemberId});
-            this.gridControlData.Size = new System.Drawing.Size(780, 239);
+            this.gridControlData.Size = new System.Drawing.Size(780, 240);
             this.gridControlData.TabIndex = 1;
             this.gridControlData.UseEmbeddedNavigator = true;
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -245,6 +272,7 @@
             this.gridViewData.GridControl = this.gridControlData;
             this.gridViewData.Name = "gridViewData";
             this.gridViewData.OptionsView.ColumnAutoWidth = false;
+            this.gridViewData.OptionsView.ShowAutoFilterRow = true;
             // 
             // colKartonaNo
             // 
@@ -386,7 +414,7 @@
             this.repositoryItemLookUpEditMemberId.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemLookUpEditMemberId.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MemberName", "الاسم", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MemberName", "الاسم", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.repositoryItemLookUpEditMemberId.DataSource = this.tBLMembersListBindingSource;
             this.repositoryItemLookUpEditMemberId.DisplayMember = "MemberName";
             this.repositoryItemLookUpEditMemberId.Name = "repositoryItemLookUpEditMemberId";
@@ -409,32 +437,6 @@
             // tBLPrintCardListGroupedTableAdapter
             // 
             this.tBLPrintCardListGroupedTableAdapter.ClearBeforeFill = true;
-            // 
-            // coltotalDone
-            // 
-            this.coltotalDone.AppearanceCell.Options.UseTextOptions = true;
-            this.coltotalDone.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.coltotalDone.AppearanceHeader.Options.UseTextOptions = true;
-            this.coltotalDone.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.coltotalDone.Caption = "تم ألحاقة من قبل";
-            this.coltotalDone.FieldName = "totalDone";
-            this.coltotalDone.Name = "coltotalDone";
-            this.coltotalDone.Visible = true;
-            this.coltotalDone.VisibleIndex = 3;
-            // 
-            // gcCalcFree
-            // 
-            this.gcCalcFree.AppearanceCell.Options.UseTextOptions = true;
-            this.gcCalcFree.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gcCalcFree.AppearanceHeader.Options.UseTextOptions = true;
-            this.gcCalcFree.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gcCalcFree.Caption = "لم يتم ألحاقة";
-            this.gcCalcFree.FieldName = "gcCalcFree";
-            this.gcCalcFree.Name = "gcCalcFree";
-            this.gcCalcFree.UnboundExpression = "[total]  - [totalDone]";
-            this.gcCalcFree.UnboundType = DevExpress.Data.UnboundColumnType.Integer;
-            this.gcCalcFree.Visible = true;
-            this.gcCalcFree.VisibleIndex = 4;
             // 
             // TBLManualArsheefDetailsFrm
             // 

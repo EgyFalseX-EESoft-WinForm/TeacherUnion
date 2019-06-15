@@ -74,13 +74,13 @@
             this.gridControlData.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.gridControlData.EmbeddedNavigator.Buttons.Remove.Visible = false;
-            this.gridControlData.Location = new System.Drawing.Point(2, 21);
+            this.gridControlData.Location = new System.Drawing.Point(2, 20);
             this.gridControlData.MainView = this.gridViewData;
             this.gridControlData.Name = "gridControlData";
             this.gridControlData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEditSave,
             this.repositoryItemButtonEditDel});
-            this.gridControlData.Size = new System.Drawing.Size(756, 273);
+            this.gridControlData.Size = new System.Drawing.Size(756, 274);
             this.gridControlData.TabIndex = 0;
             this.gridControlData.UseEmbeddedNavigator = true;
             this.gridControlData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -107,6 +107,7 @@
             this.gridViewData.OptionsBehavior.ReadOnly = true;
             this.gridViewData.OptionsNavigation.AutoFocusNewRow = true;
             this.gridViewData.OptionsView.ColumnAutoWidth = false;
+            this.gridViewData.OptionsView.ShowAutoFilterRow = true;
             this.gridViewData.OptionsView.ShowDetailButtons = false;
             this.gridViewData.InvalidRowException += new DevExpress.XtraGrid.Views.Base.InvalidRowExceptionEventHandler(this.gridViewData_InvalidRowException);
             // 
@@ -303,7 +304,7 @@
             // btnNew
             // 
             this.btnNew.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnNew.Image = global::Members.Properties.Resources.Add;
+            this.btnNew.ImageOptions.Image = global::Members.Properties.Resources.Add;
             this.btnNew.Location = new System.Drawing.Point(555, 23);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(200, 35);

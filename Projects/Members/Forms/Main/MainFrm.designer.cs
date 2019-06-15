@@ -28,20 +28,19 @@ namespace Members
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFrm));
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
-            this.popupControlContainer2 = new DevExpress.XtraBars.PopupControlContainer(this.components);
+            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu();
+            this.popupControlContainer2 = new DevExpress.XtraBars.PopupControlContainer();
             this.buttonEdit = new DevExpress.XtraEditors.ButtonEdit();
             this.mbMembersDBChange = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersAppOptions = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersPasswordChanger = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersExit = new DevExpress.XtraBars.BarButtonItem();
-            this.popupControlContainer1 = new DevExpress.XtraBars.PopupControlContainer(this.components);
+            this.popupControlContainer1 = new DevExpress.XtraBars.PopupControlContainer();
             this.someLabelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.someLabelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.ribbonImageCollection = new DevExpress.Utils.ImageCollection(this.components);
+            this.ribbonImageCollection = new DevExpress.Utils.ImageCollection();
             this.mbMembersHelp = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersAbout = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersStatus = new DevExpress.XtraBars.BarStaticItem();
@@ -73,6 +72,7 @@ namespace Members
             this.mbMembersQry5 = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersQry6 = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersPrintCard = new DevExpress.XtraBars.BarSubItem();
+            this.mbMembersTBLPrintCardFawry = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersDataMember = new DevExpress.XtraBars.BarSubItem();
             this.mbMembersTBLMembersFast2 = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersTBLMembersFastKid = new DevExpress.XtraBars.BarButtonItem();
@@ -147,7 +147,7 @@ namespace Members
             this.mbMembersQryKeed = new DevExpress.XtraBars.BarSubItem();
             this.mbMembersQry32 = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersSPro_0001 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
+            this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection();
             this.DataribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.DataribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupDataCards = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -177,9 +177,8 @@ namespace Members
             this.alignButtonGroup = new DevExpress.XtraBars.BarButtonGroup();
             this.fileRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.PBBackground = new System.Windows.Forms.PictureBox();
-            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.popupMenu2 = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.mbMembersTBLPrintCardFawry = new DevExpress.XtraBars.BarButtonItem();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu();
+            this.popupMenu2 = new DevExpress.XtraBars.PopupMenu();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer2)).BeginInit();
@@ -330,16 +329,15 @@ namespace Members
             this.PrintribbonPage,
             this.PremissionribbonPage,
             this.helpRibbonPage});
+            this.ribbonControl.QuickToolbarItemLinks.Add(this.mbMembersHelp);
             this.ribbonControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEditCRRep,
             this.repositoryItemTextEdit1,
             this.repositoryItemTextEdit2,
             this.repositoryItemLookUpEdit1});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
-            this.ribbonControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ribbonControl.Size = new System.Drawing.Size(984, 142);
+            this.ribbonControl.Size = new System.Drawing.Size(984, 141);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
-            this.ribbonControl.Toolbar.ItemLinks.Add(this.mbMembersHelp);
             // 
             // appMenu
             // 
@@ -383,8 +381,8 @@ namespace Members
             this.mbMembersDBChange.Description = "«·€«¡ « ’«· ﬁ«⁄œ… «·»Ì«‰« ";
             this.mbMembersDBChange.Hint = "«·€«¡ « ’«· ﬁ«⁄œ… «·»Ì«‰« ";
             this.mbMembersDBChange.Id = 71;
-            this.mbMembersDBChange.ImageIndex = 3;
-            this.mbMembersDBChange.LargeImageIndex = 3;
+            this.mbMembersDBChange.ImageOptions.ImageIndex = 3;
+            this.mbMembersDBChange.ImageOptions.LargeImageIndex = 3;
             this.mbMembersDBChange.Name = "mbMembersDBChange";
             this.mbMembersDBChange.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbDBChange_ItemClick);
             // 
@@ -392,8 +390,8 @@ namespace Members
             // 
             this.mbMembersAppOptions.Caption = "ŒÌ«—«  «·»—‰«„Ã";
             this.mbMembersAppOptions.Id = 159;
-            this.mbMembersAppOptions.ImageIndex = 33;
-            this.mbMembersAppOptions.LargeImageIndex = 33;
+            this.mbMembersAppOptions.ImageOptions.ImageIndex = 33;
+            this.mbMembersAppOptions.ImageOptions.LargeImageIndex = 33;
             this.mbMembersAppOptions.Name = "mbMembersAppOptions";
             this.mbMembersAppOptions.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersAppOptions_ItemClick);
             // 
@@ -401,8 +399,8 @@ namespace Members
             // 
             this.mbMembersPasswordChanger.Caption = " €Ì— ﬂ·„… «·„—Ê—";
             this.mbMembersPasswordChanger.Id = 191;
-            this.mbMembersPasswordChanger.ImageIndex = 29;
-            this.mbMembersPasswordChanger.LargeImageIndex = 29;
+            this.mbMembersPasswordChanger.ImageOptions.ImageIndex = 29;
+            this.mbMembersPasswordChanger.ImageOptions.LargeImageIndex = 29;
             this.mbMembersPasswordChanger.Name = "mbMembersPasswordChanger";
             this.mbMembersPasswordChanger.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersPasswordChanger_ItemClick);
             // 
@@ -412,8 +410,8 @@ namespace Members
             this.mbMembersExit.Description = "Closes this program after prompting you to save unsaved data.";
             this.mbMembersExit.Hint = "Closes this program after prompting you to save unsaved data";
             this.mbMembersExit.Id = 20;
-            this.mbMembersExit.ImageIndex = 0;
-            this.mbMembersExit.LargeImageIndex = 0;
+            this.mbMembersExit.ImageOptions.ImageIndex = 0;
+            this.mbMembersExit.ImageOptions.LargeImageIndex = 0;
             this.mbMembersExit.Name = "mbMembersExit";
             this.mbMembersExit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.iMembersExit_ItemClick);
             // 
@@ -495,8 +493,8 @@ namespace Members
             this.mbMembersHelp.Description = "Start the program help system.";
             this.mbMembersHelp.Hint = "Start the program help system";
             this.mbMembersHelp.Id = 22;
-            this.mbMembersHelp.ImageIndex = 1;
-            this.mbMembersHelp.LargeImageIndex = 1;
+            this.mbMembersHelp.ImageOptions.ImageIndex = 1;
+            this.mbMembersHelp.ImageOptions.LargeImageIndex = 1;
             this.mbMembersHelp.Name = "mbMembersHelp";
             // 
             // mbMembersAbout
@@ -505,8 +503,8 @@ namespace Members
             this.mbMembersAbout.Description = "Displays general program information.";
             this.mbMembersAbout.Hint = "Displays general program information";
             this.mbMembersAbout.Id = 24;
-            this.mbMembersAbout.ImageIndex = 2;
-            this.mbMembersAbout.LargeImageIndex = 2;
+            this.mbMembersAbout.ImageOptions.ImageIndex = 2;
+            this.mbMembersAbout.ImageOptions.LargeImageIndex = 2;
             this.mbMembersAbout.Name = "mbMembersAbout";
             this.mbMembersAbout.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersAbout_ItemClick);
             // 
@@ -515,7 +513,6 @@ namespace Members
             this.mbMembersStatus.Caption = "Ã«Â“";
             this.mbMembersStatus.Id = 31;
             this.mbMembersStatus.Name = "mbMembersStatus";
-            this.mbMembersStatus.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // mbMembersInfo
             // 
@@ -523,7 +520,6 @@ namespace Members
             this.mbMembersInfo.Caption = "«·—”«∆·";
             this.mbMembersInfo.Id = 32;
             this.mbMembersInfo.Name = "mbMembersInfo";
-            this.mbMembersInfo.TextAlignment = System.Drawing.StringAlignment.Near;
             this.mbMembersInfo.ItemDoubleClick += new DevExpress.XtraBars.ItemClickEventHandler(this.siInfo_ItemDoubleClick);
             // 
             // mbMembersSkins
@@ -549,12 +545,12 @@ namespace Members
             this.mbReportsMembers.Caption = "«· ﬁ«—Ì—";
             this.mbReportsMembers.Description = "ﬁ«∆„… «· ﬁ«—Ì—";
             this.mbReportsMembers.Edit = this.repositoryItemLookUpEditCRRep;
+            this.mbReportsMembers.EditWidth = 150;
             this.mbReportsMembers.Hint = "ﬁ«∆„… «· ﬁ«—Ì—";
             this.mbReportsMembers.Id = 79;
-            this.mbReportsMembers.ImageIndex = 12;
-            this.mbReportsMembers.LargeImageIndex = 12;
+            this.mbReportsMembers.ImageOptions.ImageIndex = 12;
+            this.mbReportsMembers.ImageOptions.LargeImageIndex = 12;
             this.mbReportsMembers.Name = "mbReportsMembers";
-            this.mbReportsMembers.Width = 150;
             // 
             // repositoryItemLookUpEditCRRep
             // 
@@ -563,7 +559,7 @@ namespace Members
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.OK)});
             this.repositoryItemLookUpEditCRRep.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("RepCaption", "«”„ «· ﬁ—Ì—", 50, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("RepCaption", "«”„ «· ﬁ—Ì—", 50, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.repositoryItemLookUpEditCRRep.Name = "repositoryItemLookUpEditCRRep";
             this.repositoryItemLookUpEditCRRep.NullText = "";
             this.repositoryItemLookUpEditCRRep.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
@@ -575,8 +571,8 @@ namespace Members
             this.mbMembersCDGov.Description = "«÷«›…,  ⁄œÌ·, Õ–› „Õ«›ŸÂ";
             this.mbMembersCDGov.Hint = "«÷«›…,  ⁄œÌ·, Õ–› „Õ«›ŸÂ";
             this.mbMembersCDGov.Id = 81;
-            this.mbMembersCDGov.ImageIndex = 4;
-            this.mbMembersCDGov.LargeImageIndex = 4;
+            this.mbMembersCDGov.ImageOptions.ImageIndex = 4;
+            this.mbMembersCDGov.ImageOptions.LargeImageIndex = 4;
             this.mbMembersCDGov.Name = "mbMembersCDGov";
             this.mbMembersCDGov.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDGov_ItemClick);
             // 
@@ -586,8 +582,8 @@ namespace Members
             this.mbMembersCDMarkez.Description = "«÷«›…,  ⁄œÌ·, Õ–› „—ﬂ“ «Ê ﬁ”„";
             this.mbMembersCDMarkez.Hint = "«÷«›…,  ⁄œÌ·, Õ–› „—ﬂ“ «Ê ﬁ”„";
             this.mbMembersCDMarkez.Id = 82;
-            this.mbMembersCDMarkez.ImageIndex = 5;
-            this.mbMembersCDMarkez.LargeImageIndex = 5;
+            this.mbMembersCDMarkez.ImageOptions.ImageIndex = 5;
+            this.mbMembersCDMarkez.ImageOptions.LargeImageIndex = 5;
             this.mbMembersCDMarkez.Name = "mbMembersCDMarkez";
             this.mbMembersCDMarkez.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDMarkez_ItemClick);
             // 
@@ -597,8 +593,8 @@ namespace Members
             this.mbMembersCDSyndicate.Description = "«÷«›…,  ⁄œÌ·, Õ–› ‰ﬁ«»Â ›—⁄ÌÂ";
             this.mbMembersCDSyndicate.Hint = "«÷«›…,  ⁄œÌ·, Õ–› ‰ﬁ«»Â ›—⁄ÌÂ";
             this.mbMembersCDSyndicate.Id = 83;
-            this.mbMembersCDSyndicate.ImageIndex = 6;
-            this.mbMembersCDSyndicate.LargeImageIndex = 6;
+            this.mbMembersCDSyndicate.ImageOptions.ImageIndex = 6;
+            this.mbMembersCDSyndicate.ImageOptions.LargeImageIndex = 6;
             this.mbMembersCDSyndicate.Name = "mbMembersCDSyndicate";
             this.mbMembersCDSyndicate.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDSyndicate_ItemClick);
             // 
@@ -608,8 +604,8 @@ namespace Members
             this.mbMembersCDSubCommitte.Description = "«÷«›…,  ⁄œÌ·, Õ–› ·Ã‰Â ‰ﬁ«»ÌÂ";
             this.mbMembersCDSubCommitte.Hint = "«÷«›…,  ⁄œÌ·, Õ–› ·Ã‰Â ‰ﬁ«»ÌÂ";
             this.mbMembersCDSubCommitte.Id = 84;
-            this.mbMembersCDSubCommitte.ImageIndex = 7;
-            this.mbMembersCDSubCommitte.LargeImageIndex = 7;
+            this.mbMembersCDSubCommitte.ImageOptions.ImageIndex = 7;
+            this.mbMembersCDSubCommitte.ImageOptions.LargeImageIndex = 7;
             this.mbMembersCDSubCommitte.Name = "mbMembersCDSubCommitte";
             this.mbMembersCDSubCommitte.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDSubCommitte_ItemClick);
             // 
@@ -619,8 +615,8 @@ namespace Members
             this.mbMembersCDJop.Description = "«÷«›…,  ⁄œÌ·, Õ–› ÊŸÌ›Â";
             this.mbMembersCDJop.Hint = "«÷«›…,  ⁄œÌ·, Õ–› ÊŸÌ›Â";
             this.mbMembersCDJop.Id = 85;
-            this.mbMembersCDJop.ImageIndex = 9;
-            this.mbMembersCDJop.LargeImageIndex = 9;
+            this.mbMembersCDJop.ImageOptions.ImageIndex = 9;
+            this.mbMembersCDJop.ImageOptions.LargeImageIndex = 9;
             this.mbMembersCDJop.Name = "mbMembersCDJop";
             this.mbMembersCDJop.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDJop_ItemClick);
             // 
@@ -630,8 +626,8 @@ namespace Members
             this.mbMembersCDBirthPlace.Description = "«÷«›…,  ⁄œÌ·, Õ–› „Õ· „Ì·«œ";
             this.mbMembersCDBirthPlace.Hint = "«÷«›…,  ⁄œÌ·, Õ–› „Õ· „Ì·«œ";
             this.mbMembersCDBirthPlace.Id = 86;
-            this.mbMembersCDBirthPlace.ImageIndex = 8;
-            this.mbMembersCDBirthPlace.LargeImageIndex = 8;
+            this.mbMembersCDBirthPlace.ImageOptions.ImageIndex = 8;
+            this.mbMembersCDBirthPlace.ImageOptions.LargeImageIndex = 8;
             this.mbMembersCDBirthPlace.Name = "mbMembersCDBirthPlace";
             this.mbMembersCDBirthPlace.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDBirthPlace_ItemClick);
             // 
@@ -641,8 +637,8 @@ namespace Members
             this.mbMembersCDJobDescription.Description = "«÷«›…,  ⁄œÌ·, Õ–› Ê’› ÊŸÌ›Ì";
             this.mbMembersCDJobDescription.Hint = "«÷«›…,  ⁄œÌ·, Õ–› Ê’› ÊŸÌ›Ì";
             this.mbMembersCDJobDescription.Id = 87;
-            this.mbMembersCDJobDescription.ImageIndex = 10;
-            this.mbMembersCDJobDescription.LargeImageIndex = 10;
+            this.mbMembersCDJobDescription.ImageOptions.ImageIndex = 10;
+            this.mbMembersCDJobDescription.ImageOptions.LargeImageIndex = 10;
             this.mbMembersCDJobDescription.Name = "mbMembersCDJobDescription";
             this.mbMembersCDJobDescription.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDJobDescription_ItemClick);
             // 
@@ -652,8 +648,8 @@ namespace Members
             this.mbMembersCDGehaType.Description = "«÷«›…,  ⁄œÌ·, Õ–› ÃÂ… ⁄„·";
             this.mbMembersCDGehaType.Hint = "«÷«›…,  ⁄œÌ·, Õ–› ÃÂ… ⁄„·";
             this.mbMembersCDGehaType.Id = 88;
-            this.mbMembersCDGehaType.ImageIndex = 11;
-            this.mbMembersCDGehaType.LargeImageIndex = 11;
+            this.mbMembersCDGehaType.ImageOptions.ImageIndex = 11;
+            this.mbMembersCDGehaType.ImageOptions.LargeImageIndex = 11;
             this.mbMembersCDGehaType.Name = "mbMembersCDGehaType";
             this.mbMembersCDGehaType.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDGehaType_ItemClick);
             // 
@@ -663,8 +659,8 @@ namespace Members
             this.mbMembersCDModerea.Description = "«÷«›…,  ⁄œÌ·, Õ–› „œ—ÌÂ";
             this.mbMembersCDModerea.Hint = "«÷«›…,  ⁄œÌ·, Õ–› „œ—ÌÂ";
             this.mbMembersCDModerea.Id = 89;
-            this.mbMembersCDModerea.ImageIndex = 12;
-            this.mbMembersCDModerea.LargeImageIndex = 12;
+            this.mbMembersCDModerea.ImageOptions.ImageIndex = 12;
+            this.mbMembersCDModerea.ImageOptions.LargeImageIndex = 12;
             this.mbMembersCDModerea.Name = "mbMembersCDModerea";
             this.mbMembersCDModerea.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDModerea_ItemClick);
             // 
@@ -674,8 +670,8 @@ namespace Members
             this.mbMembersCDGeha.Description = "«÷«›…,  ⁄œÌ·, Õ–› ÃÂ… ⁄„·";
             this.mbMembersCDGeha.Hint = "«÷«›…,  ⁄œÌ·, Õ–› ÃÂ… ⁄„·";
             this.mbMembersCDGeha.Id = 90;
-            this.mbMembersCDGeha.ImageIndex = 14;
-            this.mbMembersCDGeha.LargeImageIndex = 14;
+            this.mbMembersCDGeha.ImageOptions.ImageIndex = 14;
+            this.mbMembersCDGeha.ImageOptions.LargeImageIndex = 14;
             this.mbMembersCDGeha.Name = "mbMembersCDGeha";
             this.mbMembersCDGeha.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDGeha_ItemClick);
             // 
@@ -685,8 +681,8 @@ namespace Members
             this.mbMembersCDQualification.Description = "«÷«›…,  ⁄œÌ·, Õ–› „ƒÂ·";
             this.mbMembersCDQualification.Hint = "«÷«›…,  ⁄œÌ·, Õ–› „ƒÂ·";
             this.mbMembersCDQualification.Id = 91;
-            this.mbMembersCDQualification.ImageIndex = 15;
-            this.mbMembersCDQualification.LargeImageIndex = 15;
+            this.mbMembersCDQualification.ImageOptions.ImageIndex = 15;
+            this.mbMembersCDQualification.ImageOptions.LargeImageIndex = 15;
             this.mbMembersCDQualification.Name = "mbMembersCDQualification";
             this.mbMembersCDQualification.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDQualification_ItemClick);
             // 
@@ -696,8 +692,8 @@ namespace Members
             this.mbMembersCDSpecialization.Description = "«÷«›…,  ⁄œÌ·, Õ–›  Œ’’ „ƒÂ·";
             this.mbMembersCDSpecialization.Hint = "«÷«›…,  ⁄œÌ·, Õ–›  Œ’’ „ƒÂ·";
             this.mbMembersCDSpecialization.Id = 92;
-            this.mbMembersCDSpecialization.ImageIndex = 16;
-            this.mbMembersCDSpecialization.LargeImageIndex = 16;
+            this.mbMembersCDSpecialization.ImageOptions.ImageIndex = 16;
+            this.mbMembersCDSpecialization.ImageOptions.LargeImageIndex = 16;
             this.mbMembersCDSpecialization.Name = "mbMembersCDSpecialization";
             this.mbMembersCDSpecialization.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDSpecialization_ItemClick);
             // 
@@ -707,8 +703,8 @@ namespace Members
             this.mbMembersCDEDARET.Description = "«÷«›…,  ⁄œÌ·, Õ–› «œ«—Â";
             this.mbMembersCDEDARET.Hint = "«÷«›…,  ⁄œÌ·, Õ–› «œ«—Â";
             this.mbMembersCDEDARET.Id = 93;
-            this.mbMembersCDEDARET.ImageIndex = 13;
-            this.mbMembersCDEDARET.LargeImageIndex = 13;
+            this.mbMembersCDEDARET.ImageOptions.ImageIndex = 13;
+            this.mbMembersCDEDARET.ImageOptions.LargeImageIndex = 13;
             this.mbMembersCDEDARET.Name = "mbMembersCDEDARET";
             this.mbMembersCDEDARET.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDEDARET_ItemClick);
             // 
@@ -718,8 +714,8 @@ namespace Members
             this.mbMembersCDEstefaaKed.Description = "«÷«›…,  ⁄œÌ·, Õ–› «” Ì›«¡ ⁄÷ÊÌÂ";
             this.mbMembersCDEstefaaKed.Hint = "«÷«›…,  ⁄œÌ·, Õ–› «” Ì›«¡ ⁄÷ÊÌÂ";
             this.mbMembersCDEstefaaKed.Id = 95;
-            this.mbMembersCDEstefaaKed.ImageIndex = 18;
-            this.mbMembersCDEstefaaKed.LargeImageIndex = 18;
+            this.mbMembersCDEstefaaKed.ImageOptions.ImageIndex = 18;
+            this.mbMembersCDEstefaaKed.ImageOptions.LargeImageIndex = 18;
             this.mbMembersCDEstefaaKed.Name = "mbMembersCDEstefaaKed";
             this.mbMembersCDEstefaaKed.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDEstefaaKed_ItemClick);
             // 
@@ -731,7 +727,7 @@ namespace Members
             this.mbMembersQry1.Hint = "«” ⁄·«„ «·«”„  «—ÌŒ «·„Ì·«œ «·ÊŸÌ›…  «—ÌŒ «· ⁄ÌÌ‰ «··Ã‰… «·‰ﬁ«»Ì… «·‰ﬁ«»… «·›—⁄Ì…" +
     " ÃÂ… «·⁄„·";
             this.mbMembersQry1.Id = 96;
-            this.mbMembersQry1.ImageIndex = 19;
+            this.mbMembersQry1.ImageOptions.ImageIndex = 19;
             this.mbMembersQry1.Name = "mbMembersQry1";
             this.mbMembersQry1.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry1_ItemClick);
@@ -742,8 +738,8 @@ namespace Members
             this.mbMembersTBLHafza.Description = "«÷«›…,  ⁄œÌ·, Õ–› Õ«›Ÿ…";
             this.mbMembersTBLHafza.Hint = "«÷«›…,  ⁄œÌ·, Õ–› Õ«›Ÿ…";
             this.mbMembersTBLHafza.Id = 97;
-            this.mbMembersTBLHafza.ImageIndex = 20;
-            this.mbMembersTBLHafza.LargeImageIndex = 20;
+            this.mbMembersTBLHafza.ImageOptions.ImageIndex = 20;
+            this.mbMembersTBLHafza.ImageOptions.LargeImageIndex = 20;
             this.mbMembersTBLHafza.Name = "mbMembersTBLHafza";
             this.mbMembersTBLHafza.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLHafza_ItemClick);
             // 
@@ -755,7 +751,7 @@ namespace Members
             this.mbMembersQry3.Hint = "—ﬁ„ «·Õ«›Ÿ… Ê  «—ÌŒ Ê «·Õ«›Ÿ… Ê «·«”„ Ê «·ÊŸÌ›… Ê ÃÂ… «·⁄„· Ê „Ê»Ì· Ê  «—ÌŒ  ﬁœÌ„" +
     " «·ÿ·» Ê «··Ã‰… «·‰ﬁ«»Ì… Ê «·‰ﬁ«»… «·›—⁄Ì… Ê  «—ÌŒ «” ·«„ «·ﬂ«‰ÌÂ Ê «·„” ·„";
             this.mbMembersQry3.Id = 99;
-            this.mbMembersQry3.ImageIndex = 19;
+            this.mbMembersQry3.ImageOptions.ImageIndex = 19;
             this.mbMembersQry3.Name = "mbMembersQry3";
             this.mbMembersQry3.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry3_ItemClick);
@@ -766,8 +762,8 @@ namespace Members
             this.mbMembersTBLMemberCard.Description = "«÷«›…,  ⁄œÌ·, Õ–› ﬂ—‰ÌÂ";
             this.mbMembersTBLMemberCard.Hint = "«÷«›…,  ⁄œÌ·, Õ–› ﬂ—‰ÌÂ";
             this.mbMembersTBLMemberCard.Id = 100;
-            this.mbMembersTBLMemberCard.ImageIndex = 21;
-            this.mbMembersTBLMemberCard.LargeImageIndex = 21;
+            this.mbMembersTBLMemberCard.ImageOptions.ImageIndex = 21;
+            this.mbMembersTBLMemberCard.ImageOptions.LargeImageIndex = 21;
             this.mbMembersTBLMemberCard.Name = "mbMembersTBLMemberCard";
             this.mbMembersTBLMemberCard.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.mbMembersTBLMemberCard.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
@@ -779,8 +775,8 @@ namespace Members
             this.mbMembersTBLPrintCard.Caption = "ÿ»«⁄…";
             this.mbMembersTBLPrintCard.Description = "ÿ»«⁄… ﬂ«—‰ÌÂ« ";
             this.mbMembersTBLPrintCard.Id = 101;
-            this.mbMembersTBLPrintCard.ImageIndex = 22;
-            this.mbMembersTBLPrintCard.LargeImageIndex = 22;
+            this.mbMembersTBLPrintCard.ImageOptions.ImageIndex = 22;
+            this.mbMembersTBLPrintCard.ImageOptions.LargeImageIndex = 22;
             this.mbMembersTBLPrintCard.Name = "mbMembersTBLPrintCard";
             this.mbMembersTBLPrintCard.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.mbMembersTBLPrintCard.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
@@ -794,8 +790,8 @@ namespace Members
             this.mbMembersTBLMembersFast.Enabled = false;
             this.mbMembersTBLMembersFast.Hint = "«÷«›…,  ⁄œÌ·, Õ–› »Ì«‰«  ⁄÷Ê";
             this.mbMembersTBLMembersFast.Id = 105;
-            this.mbMembersTBLMembersFast.ImageIndex = 17;
-            this.mbMembersTBLMembersFast.LargeImageIndex = 17;
+            this.mbMembersTBLMembersFast.ImageOptions.ImageIndex = 17;
+            this.mbMembersTBLMembersFast.ImageOptions.LargeImageIndex = 17;
             this.mbMembersTBLMembersFast.Name = "mbMembersTBLMembersFast";
             this.mbMembersTBLMembersFast.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLMembersFast_ItemClick);
             // 
@@ -804,8 +800,8 @@ namespace Members
             this.mbMembersTBLPrintCardRe.Caption = "«⁄«œ… ÿ»«⁄…";
             this.mbMembersTBLPrintCardRe.Description = "«⁄«œ… ÿ»«⁄… «·ﬂ«—‰ÌÂ« ";
             this.mbMembersTBLPrintCardRe.Id = 106;
-            this.mbMembersTBLPrintCardRe.ImageIndex = 22;
-            this.mbMembersTBLPrintCardRe.LargeImageIndex = 22;
+            this.mbMembersTBLPrintCardRe.ImageOptions.ImageIndex = 22;
+            this.mbMembersTBLPrintCardRe.ImageOptions.LargeImageIndex = 22;
             this.mbMembersTBLPrintCardRe.Name = "mbMembersTBLPrintCardRe";
             this.mbMembersTBLPrintCardRe.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.mbMembersTBLPrintCardRe.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
@@ -816,7 +812,7 @@ namespace Members
             // 
             this.mbMembersQry5.Caption = "„œŒ·Ì‰ «·«⁄÷«¡";
             this.mbMembersQry5.Id = 115;
-            this.mbMembersQry5.ImageIndex = 19;
+            this.mbMembersQry5.ImageOptions.ImageIndex = 19;
             this.mbMembersQry5.Name = "mbMembersQry5";
             this.mbMembersQry5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry5_ItemClick);
             // 
@@ -824,7 +820,7 @@ namespace Members
             // 
             this.mbMembersQry6.Caption = "«” ⁄·«„ «” Œ—«Ã «·ﬂ—‰ÌÂ« ";
             this.mbMembersQry6.Id = 116;
-            this.mbMembersQry6.ImageIndex = 19;
+            this.mbMembersQry6.ImageOptions.ImageIndex = 19;
             this.mbMembersQry6.Name = "mbMembersQry6";
             this.mbMembersQry6.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry6_ItemClick);
@@ -833,20 +829,29 @@ namespace Members
             // 
             this.mbMembersPrintCard.Caption = "ÿ»«⁄… «·ﬂ—‰ÌÂ« ";
             this.mbMembersPrintCard.Id = 117;
-            this.mbMembersPrintCard.ImageIndex = 22;
-            this.mbMembersPrintCard.LargeImageIndex = 22;
+            this.mbMembersPrintCard.ImageOptions.ImageIndex = 22;
+            this.mbMembersPrintCard.ImageOptions.LargeImageIndex = 22;
             this.mbMembersPrintCard.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLPrintCard),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLPrintCardRe),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLPrintCardFawry)});
             this.mbMembersPrintCard.Name = "mbMembersPrintCard";
             // 
+            // mbMembersTBLPrintCardFawry
+            // 
+            this.mbMembersTBLPrintCardFawry.Caption = "ÿ»«⁄… «·ﬂ—‰ÌÂ«  «·›Ê—Ì";
+            this.mbMembersTBLPrintCardFawry.Id = 201;
+            this.mbMembersTBLPrintCardFawry.ImageOptions.ImageIndex = 22;
+            this.mbMembersTBLPrintCardFawry.ImageOptions.LargeImageIndex = 22;
+            this.mbMembersTBLPrintCardFawry.Name = "mbMembersTBLPrintCardFawry";
+            this.mbMembersTBLPrintCardFawry.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLPrintCardFawry_ItemClick);
+            // 
             // mbMembersDataMember
             // 
             this.mbMembersDataMember.Caption = "»Ì«‰«  «·«⁄÷«¡";
             this.mbMembersDataMember.Id = 118;
-            this.mbMembersDataMember.ImageIndex = 17;
-            this.mbMembersDataMember.LargeImageIndex = 17;
+            this.mbMembersDataMember.ImageOptions.ImageIndex = 17;
+            this.mbMembersDataMember.ImageOptions.LargeImageIndex = 17;
             this.mbMembersDataMember.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLMembersFast2),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLMembersFastKid),
@@ -860,8 +865,8 @@ namespace Members
             this.mbMembersTBLMembersFast2.Description = "«÷«›…,  ⁄œÌ·, Õ–› »Ì«‰«  ⁄÷Ê";
             this.mbMembersTBLMembersFast2.Hint = "«÷«›…,  ⁄œÌ·, Õ–› »Ì«‰«  ⁄÷Ê";
             this.mbMembersTBLMembersFast2.Id = 119;
-            this.mbMembersTBLMembersFast2.ImageIndex = 17;
-            this.mbMembersTBLMembersFast2.LargeImageIndex = 17;
+            this.mbMembersTBLMembersFast2.ImageOptions.ImageIndex = 17;
+            this.mbMembersTBLMembersFast2.ImageOptions.LargeImageIndex = 17;
             this.mbMembersTBLMembersFast2.Name = "mbMembersTBLMembersFast2";
             this.mbMembersTBLMembersFast2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLMembersFast2_ItemClick);
             // 
@@ -869,8 +874,8 @@ namespace Members
             // 
             this.mbMembersTBLMembersFastKid.Caption = "„Õ ’— ··ﬁÌœ";
             this.mbMembersTBLMembersFastKid.Id = 187;
-            this.mbMembersTBLMembersFastKid.ImageIndex = 17;
-            this.mbMembersTBLMembersFastKid.LargeImageIndex = 17;
+            this.mbMembersTBLMembersFastKid.ImageOptions.ImageIndex = 17;
+            this.mbMembersTBLMembersFastKid.ImageOptions.LargeImageIndex = 17;
             this.mbMembersTBLMembersFastKid.Name = "mbMembersTBLMembersFastKid";
             this.mbMembersTBLMembersFastKid.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLMembersFastKid_ItemClick);
             // 
@@ -878,8 +883,8 @@ namespace Members
             // 
             this.mbMembersTBLMembersFastMaashat.Caption = "„Œ ’— „⁄«‘« ";
             this.mbMembersTBLMembersFastMaashat.Id = 189;
-            this.mbMembersTBLMembersFastMaashat.ImageIndex = 17;
-            this.mbMembersTBLMembersFastMaashat.LargeImageIndex = 17;
+            this.mbMembersTBLMembersFastMaashat.ImageOptions.ImageIndex = 17;
+            this.mbMembersTBLMembersFastMaashat.ImageOptions.LargeImageIndex = 17;
             this.mbMembersTBLMembersFastMaashat.Name = "mbMembersTBLMembersFastMaashat";
             this.mbMembersTBLMembersFastMaashat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLMembersFastMaashat_ItemClick);
             // 
@@ -887,8 +892,8 @@ namespace Members
             // 
             this.mbTBLMembersFast3.Caption = " ⁄œÌ· „Ê»Ì· «·«⁄÷«¡";
             this.mbTBLMembersFast3.Id = 197;
-            this.mbTBLMembersFast3.ImageIndex = 17;
-            this.mbTBLMembersFast3.LargeImageIndex = 17;
+            this.mbTBLMembersFast3.ImageOptions.ImageIndex = 17;
+            this.mbTBLMembersFast3.ImageOptions.LargeImageIndex = 17;
             this.mbTBLMembersFast3.Name = "mbTBLMembersFast3";
             this.mbTBLMembersFast3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbTBLMembersFast3_ItemClick);
             // 
@@ -898,8 +903,8 @@ namespace Members
             this.mbMembersJobs.Description = "«÷«›…,  ⁄œÌ·, Õ–› ÊŸÌ›Â";
             this.mbMembersJobs.Hint = "«÷«›…,  ⁄œÌ·, Õ–› ÊŸÌ›Â";
             this.mbMembersJobs.Id = 120;
-            this.mbMembersJobs.ImageIndex = 9;
-            this.mbMembersJobs.LargeImageIndex = 9;
+            this.mbMembersJobs.ImageOptions.ImageIndex = 9;
+            this.mbMembersJobs.ImageOptions.LargeImageIndex = 9;
             this.mbMembersJobs.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersCDJop),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersCDJobtitle),
@@ -912,8 +917,8 @@ namespace Members
             this.mbMembersCDJobtitle.Description = "«÷«›…,  ⁄œÌ·, Õ–› ÊŸÌ›Â";
             this.mbMembersCDJobtitle.Hint = "«÷«›…,  ⁄œÌ·, Õ–› ÊŸÌ›Â";
             this.mbMembersCDJobtitle.Id = 121;
-            this.mbMembersCDJobtitle.ImageIndex = 9;
-            this.mbMembersCDJobtitle.LargeImageIndex = 9;
+            this.mbMembersCDJobtitle.ImageOptions.ImageIndex = 9;
+            this.mbMembersCDJobtitle.ImageOptions.LargeImageIndex = 9;
             this.mbMembersCDJobtitle.Name = "mbMembersCDJobtitle";
             this.mbMembersCDJobtitle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDJobtitle_ItemClick);
             // 
@@ -923,7 +928,7 @@ namespace Members
             this.mbMembersQry7.Description = "⁄œœ „—«  «œŒ«· »Ì«‰«  «·«⁄÷«¡";
             this.mbMembersQry7.Hint = "⁄œœ „—«  «œŒ«· »Ì«‰«  «·«⁄÷«¡";
             this.mbMembersQry7.Id = 122;
-            this.mbMembersQry7.ImageIndex = 19;
+            this.mbMembersQry7.ImageOptions.ImageIndex = 19;
             this.mbMembersQry7.Name = "mbMembersQry7";
             this.mbMembersQry7.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry7_ItemClick);
@@ -932,8 +937,8 @@ namespace Members
             // 
             this.mbMembersTBLMandoop.Caption = "„‰œÊ»Ì «·›—⁄Ì« ";
             this.mbMembersTBLMandoop.Id = 123;
-            this.mbMembersTBLMandoop.ImageIndex = 23;
-            this.mbMembersTBLMandoop.LargeImageIndex = 23;
+            this.mbMembersTBLMandoop.ImageOptions.ImageIndex = 23;
+            this.mbMembersTBLMandoop.ImageOptions.LargeImageIndex = 23;
             this.mbMembersTBLMandoop.Name = "mbMembersTBLMandoop";
             this.mbMembersTBLMandoop.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLMandoop_ItemClick);
             // 
@@ -941,8 +946,8 @@ namespace Members
             // 
             this.mbMembersTBLHafzaTasleem.Caption = "Õ«›Ÿ…  ”·Ì„";
             this.mbMembersTBLHafzaTasleem.Id = 125;
-            this.mbMembersTBLHafzaTasleem.ImageIndex = 20;
-            this.mbMembersTBLHafzaTasleem.LargeImageIndex = 20;
+            this.mbMembersTBLHafzaTasleem.ImageOptions.ImageIndex = 20;
+            this.mbMembersTBLHafzaTasleem.ImageOptions.LargeImageIndex = 20;
             this.mbMembersTBLHafzaTasleem.Name = "mbMembersTBLHafzaTasleem";
             this.mbMembersTBLHafzaTasleem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLHafzaTasleem_ItemClick);
             // 
@@ -950,7 +955,7 @@ namespace Members
             // 
             this.mbMembersQry8.Caption = "«—ﬁ«„ «·ﬁÌœ «·„ﬂ——Â";
             this.mbMembersQry8.Id = 126;
-            this.mbMembersQry8.ImageIndex = 19;
+            this.mbMembersQry8.ImageOptions.ImageIndex = 19;
             this.mbMembersQry8.Name = "mbMembersQry8";
             this.mbMembersQry8.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry8_ItemClick);
@@ -959,7 +964,7 @@ namespace Members
             // 
             this.mbMembersXRep02.Caption = "«” Œ—«Ã «·ﬂ—‰ÌÂ« ";
             this.mbMembersXRep02.Id = 127;
-            this.mbMembersXRep02.ImageIndex = 24;
+            this.mbMembersXRep02.ImageOptions.ImageIndex = 24;
             this.mbMembersXRep02.Name = "mbMembersXRep02";
             this.mbMembersXRep02.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersXRep02_ItemClick);
             // 
@@ -967,7 +972,7 @@ namespace Members
             // 
             this.mbMembersXRep03.Caption = "„Ã„Ê⁄ «·ﬂ«—‰ÌÂ«  Õ”» «·«Ì’«· ›Ì › —Â";
             this.mbMembersXRep03.Id = 128;
-            this.mbMembersXRep03.ImageIndex = 24;
+            this.mbMembersXRep03.ImageOptions.ImageIndex = 24;
             this.mbMembersXRep03.Name = "mbMembersXRep03";
             this.mbMembersXRep03.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersXRep03_ItemClick);
             // 
@@ -975,7 +980,7 @@ namespace Members
             // 
             this.mbMembersXRep04.Caption = "„Ã„Ê⁄ «·ﬂ«—‰ÌÂ«  Õ”» «·›—⁄Ì… ›Ì › —Â";
             this.mbMembersXRep04.Id = 129;
-            this.mbMembersXRep04.ImageIndex = 24;
+            this.mbMembersXRep04.ImageOptions.ImageIndex = 24;
             this.mbMembersXRep04.Name = "mbMembersXRep04";
             this.mbMembersXRep04.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersXRep04_ItemClick);
             // 
@@ -983,7 +988,7 @@ namespace Members
             // 
             this.mbMembersXRep05.Caption = "„Ã„Ê⁄ «·«œŒ«· Õ”» «·«Ì’«· ›Ì › —Â";
             this.mbMembersXRep05.Id = 130;
-            this.mbMembersXRep05.ImageIndex = 24;
+            this.mbMembersXRep05.ImageOptions.ImageIndex = 24;
             this.mbMembersXRep05.Name = "mbMembersXRep05";
             this.mbMembersXRep05.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersXRep05_ItemClick);
             // 
@@ -991,7 +996,7 @@ namespace Members
             // 
             this.mbMembersXRep06.Caption = "„Ã„Ê⁄ «·«œŒ«· Õ”» «·›—⁄Ì… ›Ì › —Â";
             this.mbMembersXRep06.Id = 131;
-            this.mbMembersXRep06.ImageIndex = 24;
+            this.mbMembersXRep06.ImageOptions.ImageIndex = 24;
             this.mbMembersXRep06.Name = "mbMembersXRep06";
             this.mbMembersXRep06.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersXRep06_ItemClick);
             // 
@@ -999,8 +1004,8 @@ namespace Members
             // 
             this.mbMembersXRepBarcodeTester.Caption = "«Œ »«— «·»«—ﬂÊœ";
             this.mbMembersXRepBarcodeTester.Id = 132;
-            this.mbMembersXRepBarcodeTester.ImageIndex = 2;
-            this.mbMembersXRepBarcodeTester.LargeImageIndex = 2;
+            this.mbMembersXRepBarcodeTester.ImageOptions.ImageIndex = 2;
+            this.mbMembersXRepBarcodeTester.ImageOptions.LargeImageIndex = 2;
             this.mbMembersXRepBarcodeTester.Name = "mbMembersXRepBarcodeTester";
             this.mbMembersXRepBarcodeTester.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemXRepBarcodeTester_ItemClick);
             // 
@@ -1008,8 +1013,8 @@ namespace Members
             // 
             this.mbMembersTBLPrintCard3.Caption = "ÿ»«⁄… «· ﬁ”Ìÿ";
             this.mbMembersTBLPrintCard3.Id = 134;
-            this.mbMembersTBLPrintCard3.ImageIndex = 22;
-            this.mbMembersTBLPrintCard3.LargeImageIndex = 22;
+            this.mbMembersTBLPrintCard3.ImageOptions.ImageIndex = 22;
+            this.mbMembersTBLPrintCard3.ImageOptions.LargeImageIndex = 22;
             this.mbMembersTBLPrintCard3.Name = "mbMembersTBLPrintCard3";
             this.mbMembersTBLPrintCard3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLPrintCard3_ItemClick);
             // 
@@ -1017,8 +1022,8 @@ namespace Members
             // 
             this.mbMembersTBLPrintCardRe3.Caption = "«⁄«œ… ÿ»«⁄… «· ﬁ”Ìÿ";
             this.mbMembersTBLPrintCardRe3.Id = 135;
-            this.mbMembersTBLPrintCardRe3.ImageIndex = 22;
-            this.mbMembersTBLPrintCardRe3.LargeImageIndex = 22;
+            this.mbMembersTBLPrintCardRe3.ImageOptions.ImageIndex = 22;
+            this.mbMembersTBLPrintCardRe3.ImageOptions.LargeImageIndex = 22;
             this.mbMembersTBLPrintCardRe3.Name = "mbMembersTBLPrintCardRe3";
             this.mbMembersTBLPrintCardRe3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLPrintCardRe3_ItemClick);
             // 
@@ -1026,8 +1031,8 @@ namespace Members
             // 
             this.mbMembersReceipts.Caption = "«—ﬁ«„ «·«Ì’«·« ";
             this.mbMembersReceipts.Id = 136;
-            this.mbMembersReceipts.ImageIndex = 25;
-            this.mbMembersReceipts.LargeImageIndex = 25;
+            this.mbMembersReceipts.ImageOptions.ImageIndex = 25;
+            this.mbMembersReceipts.ImageOptions.LargeImageIndex = 25;
             this.mbMembersReceipts.Name = "mbMembersReceipts";
             this.mbMembersReceipts.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersReceipts_ItemClick);
             // 
@@ -1035,8 +1040,8 @@ namespace Members
             // 
             this.mbMembersTblMemberAttach.Caption = "„—›ﬁ«  «·«⁄÷«¡";
             this.mbMembersTblMemberAttach.Id = 137;
-            this.mbMembersTblMemberAttach.ImageIndex = 26;
-            this.mbMembersTblMemberAttach.LargeImageIndex = 26;
+            this.mbMembersTblMemberAttach.ImageOptions.ImageIndex = 26;
+            this.mbMembersTblMemberAttach.ImageOptions.LargeImageIndex = 26;
             this.mbMembersTblMemberAttach.Name = "mbMembersTblMemberAttach";
             this.mbMembersTblMemberAttach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTblMemberAttach_ItemClick);
             // 
@@ -1044,8 +1049,8 @@ namespace Members
             // 
             this.mbMembersCDAttachmentType.Caption = "«‰Ê«⁄ «·„—›ﬁ« ";
             this.mbMembersCDAttachmentType.Id = 138;
-            this.mbMembersCDAttachmentType.ImageIndex = 27;
-            this.mbMembersCDAttachmentType.LargeImageIndex = 27;
+            this.mbMembersCDAttachmentType.ImageOptions.ImageIndex = 27;
+            this.mbMembersCDAttachmentType.ImageOptions.LargeImageIndex = 27;
             this.mbMembersCDAttachmentType.Name = "mbMembersCDAttachmentType";
             this.mbMembersCDAttachmentType.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersCDAttachmentType_ItemClick);
             // 
@@ -1053,8 +1058,8 @@ namespace Members
             // 
             this.mbMembersTBLHafzaweb.Caption = "Õ«›Ÿ… ÊÌ»";
             this.mbMembersTBLHafzaweb.Id = 139;
-            this.mbMembersTBLHafzaweb.ImageIndex = 20;
-            this.mbMembersTBLHafzaweb.LargeImageIndex = 20;
+            this.mbMembersTBLHafzaweb.ImageOptions.ImageIndex = 20;
+            this.mbMembersTBLHafzaweb.ImageOptions.LargeImageIndex = 20;
             this.mbMembersTBLHafzaweb.Name = "mbMembersTBLHafzaweb";
             this.mbMembersTBLHafzaweb.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLHafzaweb_ItemClick);
             // 
@@ -1063,8 +1068,8 @@ namespace Members
             this.mbMembersTBLMemberWeb.Caption = "«⁄÷«¡ «·«‰ —‰ ";
             this.mbMembersTBLMemberWeb.Enabled = false;
             this.mbMembersTBLMemberWeb.Id = 140;
-            this.mbMembersTBLMemberWeb.ImageIndex = 17;
-            this.mbMembersTBLMemberWeb.LargeImageIndex = 17;
+            this.mbMembersTBLMemberWeb.ImageOptions.ImageIndex = 17;
+            this.mbMembersTBLMemberWeb.ImageOptions.LargeImageIndex = 17;
             this.mbMembersTBLMemberWeb.Name = "mbMembersTBLMemberWeb";
             this.mbMembersTBLMemberWeb.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLMemberWeb_ItemClick);
             // 
@@ -1072,8 +1077,8 @@ namespace Members
             // 
             this.mbMembersImportFromWeb.Caption = "«” Ì—«œ »Ì«‰« ";
             this.mbMembersImportFromWeb.Id = 141;
-            this.mbMembersImportFromWeb.ImageIndex = 28;
-            this.mbMembersImportFromWeb.LargeImageIndex = 28;
+            this.mbMembersImportFromWeb.ImageOptions.ImageIndex = 28;
+            this.mbMembersImportFromWeb.ImageOptions.LargeImageIndex = 28;
             this.mbMembersImportFromWeb.Name = "mbMembersImportFromWeb";
             this.mbMembersImportFromWeb.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersImportFromWeb_ItemClick);
             // 
@@ -1081,8 +1086,8 @@ namespace Members
             // 
             this.mbMembersRoles.Caption = "«·’·«ÕÌ« ";
             this.mbMembersRoles.Id = 142;
-            this.mbMembersRoles.ImageIndex = 30;
-            this.mbMembersRoles.LargeImageIndex = 30;
+            this.mbMembersRoles.ImageOptions.ImageIndex = 30;
+            this.mbMembersRoles.ImageOptions.LargeImageIndex = 30;
             this.mbMembersRoles.Name = "mbMembersRoles";
             this.mbMembersRoles.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersRoles_ItemClick);
             // 
@@ -1090,8 +1095,8 @@ namespace Members
             // 
             this.mbMembersUsers.Caption = "«·„” Œœ„Ì‰";
             this.mbMembersUsers.Id = 143;
-            this.mbMembersUsers.ImageIndex = 29;
-            this.mbMembersUsers.LargeImageIndex = 29;
+            this.mbMembersUsers.ImageOptions.ImageIndex = 29;
+            this.mbMembersUsers.ImageOptions.LargeImageIndex = 29;
             this.mbMembersUsers.Name = "mbMembersUsers";
             this.mbMembersUsers.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersUsers_ItemClick);
             // 
@@ -1099,8 +1104,8 @@ namespace Members
             // 
             this.mbMembersUserRoles.Caption = "’·«ÕÌ«  «·„” Œœ„Ì‰";
             this.mbMembersUserRoles.Id = 144;
-            this.mbMembersUserRoles.ImageIndex = 32;
-            this.mbMembersUserRoles.LargeImageIndex = 32;
+            this.mbMembersUserRoles.ImageOptions.ImageIndex = 32;
+            this.mbMembersUserRoles.ImageOptions.LargeImageIndex = 32;
             this.mbMembersUserRoles.Name = "mbMembersUserRoles";
             this.mbMembersUserRoles.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersUserRoles_ItemClick);
             // 
@@ -1108,8 +1113,8 @@ namespace Members
             // 
             this.mbMembersRoleDetail.Caption = " ›«’Ì· «·’·«ÕÌ« ";
             this.mbMembersRoleDetail.Id = 145;
-            this.mbMembersRoleDetail.ImageIndex = 31;
-            this.mbMembersRoleDetail.LargeImageIndex = 31;
+            this.mbMembersRoleDetail.ImageOptions.ImageIndex = 31;
+            this.mbMembersRoleDetail.ImageOptions.LargeImageIndex = 31;
             this.mbMembersRoleDetail.Name = "mbMembersRoleDetail";
             this.mbMembersRoleDetail.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersRoleDetail_ItemClick);
             // 
@@ -1117,7 +1122,7 @@ namespace Members
             // 
             this.mbMembersQry9.Caption = "„—›ﬁ«  «·«⁄÷«¡";
             this.mbMembersQry9.Id = 146;
-            this.mbMembersQry9.ImageIndex = 19;
+            this.mbMembersQry9.ImageOptions.ImageIndex = 19;
             this.mbMembersQry9.Name = "mbMembersQry9";
             this.mbMembersQry9.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry9_ItemClick);
@@ -1126,7 +1131,7 @@ namespace Members
             // 
             this.mbMembersQry10.Caption = "ﬂ«—‰ÌÂ«  ·„  ÿ»⁄";
             this.mbMembersQry10.Id = 147;
-            this.mbMembersQry10.ImageIndex = 19;
+            this.mbMembersQry10.ImageOptions.ImageIndex = 19;
             this.mbMembersQry10.Name = "mbMembersQry10";
             this.mbMembersQry10.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry10_ItemClick);
@@ -1135,7 +1140,7 @@ namespace Members
             // 
             this.mbMembersQry11.Caption = "ﬂ«—‰ÌÂ«   „ ÿ»⁄Â«";
             this.mbMembersQry11.Id = 148;
-            this.mbMembersQry11.ImageIndex = 19;
+            this.mbMembersQry11.ImageOptions.ImageIndex = 19;
             this.mbMembersQry11.Name = "mbMembersQry11";
             this.mbMembersQry11.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry11.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry11_ItemClick);
@@ -1144,7 +1149,7 @@ namespace Members
             // 
             this.mbMembersQry12.Caption = "«·«” Ì›«¡ ··ÊÌ»";
             this.mbMembersQry12.Id = 150;
-            this.mbMembersQry12.ImageIndex = 19;
+            this.mbMembersQry12.ImageOptions.ImageIndex = 19;
             this.mbMembersQry12.Name = "mbMembersQry12";
             this.mbMembersQry12.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry12.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry12_ItemClick);
@@ -1153,8 +1158,8 @@ namespace Members
             // 
             this.mbMembersTBLManualArsheef.Caption = "«·«—‘Ì› «·ÌœÊÌ";
             this.mbMembersTBLManualArsheef.Id = 151;
-            this.mbMembersTBLManualArsheef.ImageIndex = 32;
-            this.mbMembersTBLManualArsheef.LargeImageIndex = 32;
+            this.mbMembersTBLManualArsheef.ImageOptions.ImageIndex = 32;
+            this.mbMembersTBLManualArsheef.ImageOptions.LargeImageIndex = 32;
             this.mbMembersTBLManualArsheef.Name = "mbMembersTBLManualArsheef";
             this.mbMembersTBLManualArsheef.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLManualArsheef_ItemClick);
             // 
@@ -1162,7 +1167,7 @@ namespace Members
             // 
             this.mbMembersQry13.Caption = " ›«’Ì· «·«—‘Ì› «·ÌœÊÌ";
             this.mbMembersQry13.Id = 152;
-            this.mbMembersQry13.ImageIndex = 19;
+            this.mbMembersQry13.ImageOptions.ImageIndex = 19;
             this.mbMembersQry13.Name = "mbMembersQry13";
             this.mbMembersQry13.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry13.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry13_ItemClick);
@@ -1171,7 +1176,7 @@ namespace Members
             // 
             this.mbMembersQry14.Caption = "«” ⁄·«„ Õ«›Ÿ… «· ”·Ì„";
             this.mbMembersQry14.Id = 153;
-            this.mbMembersQry14.ImageIndex = 19;
+            this.mbMembersQry14.ImageOptions.ImageIndex = 19;
             this.mbMembersQry14.Name = "mbMembersQry14";
             this.mbMembersQry14.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry14.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry14_ItemClick);
@@ -1180,7 +1185,7 @@ namespace Members
             // 
             this.mbMembersQry15.Caption = "«·«—‘Ì› «·ÌœÊÌ";
             this.mbMembersQry15.Id = 154;
-            this.mbMembersQry15.ImageIndex = 19;
+            this.mbMembersQry15.ImageOptions.ImageIndex = 19;
             this.mbMembersQry15.Name = "mbMembersQry15";
             this.mbMembersQry15.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry15.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry15_ItemClick);
@@ -1189,8 +1194,8 @@ namespace Members
             // 
             this.mbMembersTBLHafzawebNoTarhelEdit.Caption = "Õ«›Ÿ… ÊÌ» ··ﬁÌœ  ⁄œÌ·";
             this.mbMembersTBLHafzawebNoTarhelEdit.Id = 155;
-            this.mbMembersTBLHafzawebNoTarhelEdit.ImageIndex = 20;
-            this.mbMembersTBLHafzawebNoTarhelEdit.LargeImageIndex = 20;
+            this.mbMembersTBLHafzawebNoTarhelEdit.ImageOptions.ImageIndex = 20;
+            this.mbMembersTBLHafzawebNoTarhelEdit.ImageOptions.LargeImageIndex = 20;
             this.mbMembersTBLHafzawebNoTarhelEdit.Name = "mbMembersTBLHafzawebNoTarhelEdit";
             this.mbMembersTBLHafzawebNoTarhelEdit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLHafzawebNoTarhelEdit_ItemClick);
             // 
@@ -1198,8 +1203,8 @@ namespace Members
             // 
             this.mbMembersHafza.Caption = "«·Õ«›Ÿ…";
             this.mbMembersHafza.Id = 158;
-            this.mbMembersHafza.ImageIndex = 20;
-            this.mbMembersHafza.LargeImageIndex = 20;
+            this.mbMembersHafza.ImageOptions.ImageIndex = 20;
+            this.mbMembersHafza.ImageOptions.LargeImageIndex = 20;
             this.mbMembersHafza.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLHafza),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLHafzaTasleem),
@@ -1211,8 +1216,8 @@ namespace Members
             // 
             this.mbMembersTBLMemberOld.Caption = "«œŒ«· ﬁœÌ„";
             this.mbMembersTBLMemberOld.Id = 160;
-            this.mbMembersTBLMemberOld.ImageIndex = 17;
-            this.mbMembersTBLMemberOld.LargeImageIndex = 17;
+            this.mbMembersTBLMemberOld.ImageOptions.ImageIndex = 17;
+            this.mbMembersTBLMemberOld.ImageOptions.LargeImageIndex = 17;
             this.mbMembersTBLMemberOld.Name = "mbMembersTBLMemberOld";
             this.mbMembersTBLMemberOld.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLMemberOld_ItemClick);
             // 
@@ -1220,7 +1225,7 @@ namespace Members
             // 
             this.mbMembersQry16.Caption = "«œŒ«· ﬁœÌ„";
             this.mbMembersQry16.Id = 161;
-            this.mbMembersQry16.ImageIndex = 19;
+            this.mbMembersQry16.ImageOptions.ImageIndex = 19;
             this.mbMembersQry16.Name = "mbMembersQry16";
             this.mbMembersQry16.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry16.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry16_ItemClick);
@@ -1229,7 +1234,7 @@ namespace Members
             // 
             this.mbMembersQry17.Caption = "«⁄÷«¡ «·ÊÌ»";
             this.mbMembersQry17.Id = 162;
-            this.mbMembersQry17.ImageIndex = 19;
+            this.mbMembersQry17.ImageOptions.ImageIndex = 19;
             this.mbMembersQry17.Name = "mbMembersQry17";
             this.mbMembersQry17.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry17.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry17_ItemClick);
@@ -1238,7 +1243,7 @@ namespace Members
             // 
             this.mbMembersQry18.Caption = "Õ«›Ÿ«  ÊÌ»";
             this.mbMembersQry18.Id = 163;
-            this.mbMembersQry18.ImageIndex = 19;
+            this.mbMembersQry18.ImageOptions.ImageIndex = 19;
             this.mbMembersQry18.Name = "mbMembersQry18";
             this.mbMembersQry18.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry18.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry18_ItemClick);
@@ -1247,8 +1252,8 @@ namespace Members
             // 
             this.mbMembersTBLMemberEsalat.Caption = "«Ì’«·«  «·«⁄÷«¡";
             this.mbMembersTBLMemberEsalat.Id = 164;
-            this.mbMembersTBLMemberEsalat.ImageIndex = 25;
-            this.mbMembersTBLMemberEsalat.LargeImageIndex = 25;
+            this.mbMembersTBLMemberEsalat.ImageOptions.ImageIndex = 25;
+            this.mbMembersTBLMemberEsalat.ImageOptions.LargeImageIndex = 25;
             this.mbMembersTBLMemberEsalat.Name = "mbMembersTBLMemberEsalat";
             this.mbMembersTBLMemberEsalat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLMemberEsalat_ItemClick);
             // 
@@ -1256,7 +1261,7 @@ namespace Members
             // 
             this.mbMembersQry19.Caption = "«Ì’«·«  «·«⁄÷«¡";
             this.mbMembersQry19.Id = 165;
-            this.mbMembersQry19.ImageIndex = 19;
+            this.mbMembersQry19.ImageOptions.ImageIndex = 19;
             this.mbMembersQry19.Name = "mbMembersQry19";
             this.mbMembersQry19.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry19.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry19_ItemClick);
@@ -1265,7 +1270,7 @@ namespace Members
             // 
             this.mbMembersXRep07.Caption = "Õ«›Ÿ… «·ﬂ —Ê‰Ì…";
             this.mbMembersXRep07.Id = 166;
-            this.mbMembersXRep07.ImageIndex = 24;
+            this.mbMembersXRep07.ImageOptions.ImageIndex = 24;
             this.mbMembersXRep07.Name = "mbMembersXRep07";
             this.mbMembersXRep07.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersXRep07_ItemClick);
             // 
@@ -1273,8 +1278,8 @@ namespace Members
             // 
             this.mbMembersTBLAksat.Caption = "«·«ﬁ”«ÿ ÃœÊ·Ì";
             this.mbMembersTBLAksat.Id = 167;
-            this.mbMembersTBLAksat.ImageIndex = 34;
-            this.mbMembersTBLAksat.LargeImageIndex = 34;
+            this.mbMembersTBLAksat.ImageOptions.ImageIndex = 34;
+            this.mbMembersTBLAksat.ImageOptions.LargeImageIndex = 34;
             this.mbMembersTBLAksat.Name = "mbMembersTBLAksat";
             this.mbMembersTBLAksat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLAksat_ItemClick);
             // 
@@ -1282,7 +1287,7 @@ namespace Members
             // 
             this.mbMembersQry20.Caption = "’Ê— «·«⁄÷«¡ «·„›ﬁÊœ…";
             this.mbMembersQry20.Id = 168;
-            this.mbMembersQry20.ImageIndex = 19;
+            this.mbMembersQry20.ImageOptions.ImageIndex = 19;
             this.mbMembersQry20.Name = "mbMembersQry20";
             this.mbMembersQry20.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry20.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry20_ItemClick);
@@ -1291,8 +1296,8 @@ namespace Members
             // 
             this.mbMembersAksat.Caption = "«·«ﬁ”«ÿ";
             this.mbMembersAksat.Id = 169;
-            this.mbMembersAksat.ImageIndex = 34;
-            this.mbMembersAksat.LargeImageIndex = 34;
+            this.mbMembersAksat.ImageOptions.ImageIndex = 34;
+            this.mbMembersAksat.ImageOptions.LargeImageIndex = 34;
             this.mbMembersAksat.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLAksat),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersTBLAksatWindow)});
@@ -1302,8 +1307,8 @@ namespace Members
             // 
             this.mbMembersTBLAksatWindow.Caption = "«·«ﬁ”«ÿ  ›’Ì·Ì";
             this.mbMembersTBLAksatWindow.Id = 170;
-            this.mbMembersTBLAksatWindow.ImageIndex = 34;
-            this.mbMembersTBLAksatWindow.LargeImageIndex = 34;
+            this.mbMembersTBLAksatWindow.ImageOptions.ImageIndex = 34;
+            this.mbMembersTBLAksatWindow.ImageOptions.LargeImageIndex = 34;
             this.mbMembersTBLAksatWindow.Name = "mbMembersTBLAksatWindow";
             this.mbMembersTBLAksatWindow.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLAksatWindow_ItemClick);
             // 
@@ -1311,7 +1316,7 @@ namespace Members
             // 
             this.mbMembersQry21.Caption = "„”«—«  «·ÊÌ» «·„›ﬁÊœ…";
             this.mbMembersQry21.Id = 171;
-            this.mbMembersQry21.ImageIndex = 19;
+            this.mbMembersQry21.ImageOptions.ImageIndex = 19;
             this.mbMembersQry21.Name = "mbMembersQry21";
             this.mbMembersQry21.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry21.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry21_ItemClick);
@@ -1320,7 +1325,7 @@ namespace Members
             // 
             this.mbMembersRep08.Caption = "«—ﬁ«„ «·ﬁÌœ";
             this.mbMembersRep08.Id = 172;
-            this.mbMembersRep08.ImageIndex = 24;
+            this.mbMembersRep08.ImageOptions.ImageIndex = 24;
             this.mbMembersRep08.Name = "mbMembersRep08";
             this.mbMembersRep08.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersRep08_ItemClick);
             // 
@@ -1328,8 +1333,8 @@ namespace Members
             // 
             this.mbMembersTBLEmpWork.Caption = "«·„Â«„";
             this.mbMembersTBLEmpWork.Id = 173;
-            this.mbMembersTBLEmpWork.ImageIndex = 35;
-            this.mbMembersTBLEmpWork.LargeImageIndex = 35;
+            this.mbMembersTBLEmpWork.ImageOptions.ImageIndex = 35;
+            this.mbMembersTBLEmpWork.ImageOptions.LargeImageIndex = 35;
             this.mbMembersTBLEmpWork.Name = "mbMembersTBLEmpWork";
             this.mbMembersTBLEmpWork.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLEmpWork_ItemClick);
             // 
@@ -1337,7 +1342,7 @@ namespace Members
             // 
             this.mbMembersQry22.Caption = "«·„Â«„";
             this.mbMembersQry22.Id = 174;
-            this.mbMembersQry22.ImageIndex = 19;
+            this.mbMembersQry22.ImageOptions.ImageIndex = 19;
             this.mbMembersQry22.Name = "mbMembersQry22";
             this.mbMembersQry22.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry22.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry22_ItemClick);
@@ -1346,7 +1351,7 @@ namespace Members
             // 
             this.mbMembersQry23.Caption = "⁄œœ «·«œŒ«· »«·‘Â— Ê «·”‰…";
             this.mbMembersQry23.Id = 175;
-            this.mbMembersQry23.ImageIndex = 19;
+            this.mbMembersQry23.ImageOptions.ImageIndex = 19;
             this.mbMembersQry23.Name = "mbMembersQry23";
             this.mbMembersQry23.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry23.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry23_ItemClick);
@@ -1355,7 +1360,7 @@ namespace Members
             // 
             this.mbMembersQry24.Caption = "⁄œœ «·«œŒ«· »«·‘Â— Ê «·”‰…";
             this.mbMembersQry24.Id = 176;
-            this.mbMembersQry24.ImageIndex = 19;
+            this.mbMembersQry24.ImageOptions.ImageIndex = 19;
             this.mbMembersQry24.Name = "mbMembersQry24";
             this.mbMembersQry24.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry24.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry24_ItemClick);
@@ -1364,7 +1369,7 @@ namespace Members
             // 
             this.mbMembersQry25.Caption = "⁄œœ «œŒ«· «·«⁄÷«¡ ··›—⁄Ì«  ›Ì › —…";
             this.mbMembersQry25.Id = 177;
-            this.mbMembersQry25.ImageIndex = 19;
+            this.mbMembersQry25.ImageOptions.ImageIndex = 19;
             this.mbMembersQry25.Name = "mbMembersQry25";
             this.mbMembersQry25.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry25.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry25_ItemClick);
@@ -1373,7 +1378,7 @@ namespace Members
             // 
             this.mbMembersQry26.Caption = "«·«Ì’«·« ";
             this.mbMembersQry26.Id = 179;
-            this.mbMembersQry26.ImageIndex = 19;
+            this.mbMembersQry26.ImageOptions.ImageIndex = 19;
             this.mbMembersQry26.Name = "mbMembersQry26";
             this.mbMembersQry26.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry26.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry26_ItemClick);
@@ -1382,7 +1387,7 @@ namespace Members
             // 
             this.mbMembersQry27.Caption = "«·„Â«„ ›Ì › —…";
             this.mbMembersQry27.Id = 180;
-            this.mbMembersQry27.ImageIndex = 19;
+            this.mbMembersQry27.ImageOptions.ImageIndex = 19;
             this.mbMembersQry27.Name = "mbMembersQry27";
             this.mbMembersQry27.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry27.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry27_ItemClick);
@@ -1391,7 +1396,7 @@ namespace Members
             // 
             this.mbMembersQry28.Caption = "«·«Ì’«·«  „‰ «·«⁄÷«¡";
             this.mbMembersQry28.Id = 181;
-            this.mbMembersQry28.ImageIndex = 19;
+            this.mbMembersQry28.ImageOptions.ImageIndex = 19;
             this.mbMembersQry28.Name = "mbMembersQry28";
             this.mbMembersQry28.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry28.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry28_ItemClick);
@@ -1400,8 +1405,8 @@ namespace Members
             // 
             this.mbMembersFiximgPath.Caption = "„⁄«·Ã… „”«—«  Œ«ÿ∆… ··«⁄÷«¡";
             this.mbMembersFiximgPath.Id = 182;
-            this.mbMembersFiximgPath.ImageIndex = 2;
-            this.mbMembersFiximgPath.LargeImageIndex = 2;
+            this.mbMembersFiximgPath.ImageOptions.ImageIndex = 2;
+            this.mbMembersFiximgPath.ImageOptions.LargeImageIndex = 2;
             this.mbMembersFiximgPath.Name = "mbMembersFiximgPath";
             this.mbMembersFiximgPath.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersFiximgPath_ItemClick);
             // 
@@ -1409,8 +1414,8 @@ namespace Members
             // 
             this.mbMembersTBLUserMistake.Caption = "«Œÿ«¡ «·⁄«„·Ì‰";
             this.mbMembersTBLUserMistake.Id = 183;
-            this.mbMembersTBLUserMistake.ImageIndex = 36;
-            this.mbMembersTBLUserMistake.LargeImageIndex = 36;
+            this.mbMembersTBLUserMistake.ImageOptions.ImageIndex = 36;
+            this.mbMembersTBLUserMistake.ImageOptions.LargeImageIndex = 36;
             this.mbMembersTBLUserMistake.Name = "mbMembersTBLUserMistake";
             this.mbMembersTBLUserMistake.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLUserMistake_ItemClick);
             // 
@@ -1418,8 +1423,8 @@ namespace Members
             // 
             this.mbMembersFixs.Caption = "«’·«Õ« ";
             this.mbMembersFixs.Id = 184;
-            this.mbMembersFixs.ImageIndex = 37;
-            this.mbMembersFixs.LargeImageIndex = 37;
+            this.mbMembersFixs.ImageOptions.ImageIndex = 37;
+            this.mbMembersFixs.ImageOptions.LargeImageIndex = 37;
             this.mbMembersFixs.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersFixesalnoTBLMembers),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersFixesalnoTBLMemberWeb)});
@@ -1429,8 +1434,8 @@ namespace Members
             // 
             this.mbMembersFixesalnoTBLMembers.Caption = " ⁄œÌ· «Ì’«· «·«⁄÷«¡";
             this.mbMembersFixesalnoTBLMembers.Id = 185;
-            this.mbMembersFixesalnoTBLMembers.ImageIndex = 37;
-            this.mbMembersFixesalnoTBLMembers.LargeImageIndex = 37;
+            this.mbMembersFixesalnoTBLMembers.ImageOptions.ImageIndex = 37;
+            this.mbMembersFixesalnoTBLMembers.ImageOptions.LargeImageIndex = 37;
             this.mbMembersFixesalnoTBLMembers.Name = "mbMembersFixesalnoTBLMembers";
             this.mbMembersFixesalnoTBLMembers.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersFixesalnoTBLMembers_ItemClick);
             // 
@@ -1438,8 +1443,8 @@ namespace Members
             // 
             this.mbMembersFixesalnoTBLMemberWeb.Caption = " ⁄œÌ· «Ì’«· «⁄÷«¡ «·ÊÌ»";
             this.mbMembersFixesalnoTBLMemberWeb.Id = 186;
-            this.mbMembersFixesalnoTBLMemberWeb.ImageIndex = 37;
-            this.mbMembersFixesalnoTBLMemberWeb.LargeImageIndex = 37;
+            this.mbMembersFixesalnoTBLMemberWeb.ImageOptions.ImageIndex = 37;
+            this.mbMembersFixesalnoTBLMemberWeb.ImageOptions.LargeImageIndex = 37;
             this.mbMembersFixesalnoTBLMemberWeb.Name = "mbMembersFixesalnoTBLMemberWeb";
             this.mbMembersFixesalnoTBLMemberWeb.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersFixesalnoTBLMemberWeb_ItemClick);
             // 
@@ -1447,7 +1452,7 @@ namespace Members
             // 
             this.mbMembersQry29.Caption = "«·«Ì’«·«  Ê «·„Ÿ«—Ì›";
             this.mbMembersQry29.Id = 190;
-            this.mbMembersQry29.ImageIndex = 19;
+            this.mbMembersQry29.ImageOptions.ImageIndex = 19;
             this.mbMembersQry29.Name = "mbMembersQry29";
             this.mbMembersQry29.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mbMembersQry29.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry29_ItemClick);
@@ -1456,7 +1461,7 @@ namespace Members
             // 
             this.mbMembersQry5a.Caption = "»Ì«‰«  «·«⁄÷«¡ „Œ ’—";
             this.mbMembersQry5a.Id = 192;
-            this.mbMembersQry5a.ImageIndex = 19;
+            this.mbMembersQry5a.ImageOptions.ImageIndex = 19;
             this.mbMembersQry5a.Name = "mbMembersQry5a";
             this.mbMembersQry5a.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry5a_ItemClick);
             // 
@@ -1464,7 +1469,7 @@ namespace Members
             // 
             this.mbMembersQry30.Caption = "«·„‰œÊ»Ì‰ ··ﬁÌœ";
             this.mbMembersQry30.Id = 193;
-            this.mbMembersQry30.ImageIndex = 19;
+            this.mbMembersQry30.ImageOptions.ImageIndex = 19;
             this.mbMembersQry30.Name = "mbMembersQry30";
             this.mbMembersQry30.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry30_ItemClick);
             // 
@@ -1472,8 +1477,8 @@ namespace Members
             // 
             this.mbMembersQryEshtrakat.Caption = "«·«‘ —«ﬂ« ";
             this.mbMembersQryEshtrakat.Id = 194;
-            this.mbMembersQryEshtrakat.ImageIndex = 19;
-            this.mbMembersQryEshtrakat.LargeImageIndex = 19;
+            this.mbMembersQryEshtrakat.ImageOptions.ImageIndex = 19;
+            this.mbMembersQryEshtrakat.ImageOptions.LargeImageIndex = 19;
             this.mbMembersQryEshtrakat.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersQry1),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersQry3),
@@ -1509,8 +1514,8 @@ namespace Members
             // 
             this.mbMembersQry31.Caption = "«·«ﬁ”«ÿ";
             this.mbMembersQry31.Id = 196;
-            this.mbMembersQry31.ImageIndex = 19;
-            this.mbMembersQry31.LargeImageIndex = 19;
+            this.mbMembersQry31.ImageOptions.ImageIndex = 19;
+            this.mbMembersQry31.ImageOptions.LargeImageIndex = 19;
             this.mbMembersQry31.Name = "mbMembersQry31";
             this.mbMembersQry31.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry31_ItemClick);
             // 
@@ -1518,8 +1523,8 @@ namespace Members
             // 
             this.mbMembersQry33.Caption = " ›«’Ì· ‘€· «·«Ì’«·« ";
             this.mbMembersQry33.Id = 200;
-            this.mbMembersQry33.ImageIndex = 19;
-            this.mbMembersQry33.LargeImageIndex = 19;
+            this.mbMembersQry33.ImageOptions.ImageIndex = 19;
+            this.mbMembersQry33.ImageOptions.LargeImageIndex = 19;
             this.mbMembersQry33.Name = "mbMembersQry33";
             this.mbMembersQry33.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry33_ItemClick);
             // 
@@ -1527,8 +1532,8 @@ namespace Members
             // 
             this.mbMembersQryKeed.Caption = "«·ﬁÌ‹‹‹‹‹‹œ";
             this.mbMembersQryKeed.Id = 195;
-            this.mbMembersQryKeed.ImageIndex = 19;
-            this.mbMembersQryKeed.LargeImageIndex = 19;
+            this.mbMembersQryKeed.ImageOptions.ImageIndex = 19;
+            this.mbMembersQryKeed.ImageOptions.LargeImageIndex = 19;
             this.mbMembersQryKeed.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersQry30),
             new DevExpress.XtraBars.LinkPersistInfo(this.mbMembersQry32),
@@ -1539,8 +1544,8 @@ namespace Members
             // 
             this.mbMembersQry32.Caption = "«—ﬁ«„ „Ê»Ì· «·«⁄÷«¡";
             this.mbMembersQry32.Id = 198;
-            this.mbMembersQry32.ImageIndex = 19;
-            this.mbMembersQry32.LargeImageIndex = 19;
+            this.mbMembersQry32.ImageOptions.ImageIndex = 19;
+            this.mbMembersQry32.ImageOptions.LargeImageIndex = 19;
             this.mbMembersQry32.Name = "mbMembersQry32";
             this.mbMembersQry32.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersQry32_ItemClick);
             // 
@@ -1548,8 +1553,8 @@ namespace Members
             // 
             this.mbMembersSPro_0001.Caption = "»Ì«‰«  «·«⁄÷«¡ »«·ﬁÿ«⁄";
             this.mbMembersSPro_0001.Id = 199;
-            this.mbMembersSPro_0001.ImageIndex = 19;
-            this.mbMembersSPro_0001.LargeImageIndex = 19;
+            this.mbMembersSPro_0001.ImageOptions.ImageIndex = 19;
+            this.mbMembersSPro_0001.ImageOptions.LargeImageIndex = 19;
             this.mbMembersSPro_0001.Name = "mbMembersSPro_0001";
             this.mbMembersSPro_0001.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersSPro_0001_ItemClick);
             // 
@@ -1710,7 +1715,6 @@ namespace Members
             // 
             // ReportribbonPageGroup
             // 
-            this.ReportribbonPageGroup.AllowMinimize = false;
             this.ReportribbonPageGroup.AllowTextClipping = false;
             this.ReportribbonPageGroup.ItemLinks.Add(this.mbMembersXRep02);
             this.ReportribbonPageGroup.ItemLinks.Add(this.mbMembersXRep03);
@@ -1720,6 +1724,7 @@ namespace Members
             this.ReportribbonPageGroup.ItemLinks.Add(this.mbMembersXRep07);
             this.ReportribbonPageGroup.ItemLinks.Add(this.mbMembersRep08);
             this.ReportribbonPageGroup.Name = "ReportribbonPageGroup";
+            this.ReportribbonPageGroup.State = DevExpress.XtraBars.Ribbon.RibbonPageGroupState.Expanded;
             this.ReportribbonPageGroup.Text = "«· ﬁ«—Ì—";
             // 
             // PremissionribbonPage
@@ -1842,15 +1847,6 @@ namespace Members
             this.popupMenu2.Name = "popupMenu2";
             this.popupMenu2.Ribbon = this.ribbonControl;
             // 
-            // mbMembersTBLPrintCardFawry
-            // 
-            this.mbMembersTBLPrintCardFawry.Caption = "ÿ»«⁄… «·ﬂ—‰ÌÂ«  «·›Ê—Ì";
-            this.mbMembersTBLPrintCardFawry.Id = 201;
-            this.mbMembersTBLPrintCardFawry.ImageIndex = 22;
-            this.mbMembersTBLPrintCardFawry.LargeImageIndex = 22;
-            this.mbMembersTBLPrintCardFawry.Name = "mbMembersTBLPrintCardFawry";
-            this.mbMembersTBLPrintCardFawry.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mbMembersTBLPrintCardFawry_ItemClick);
-            // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1886,6 +1882,7 @@ namespace Members
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
