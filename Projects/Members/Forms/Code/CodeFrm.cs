@@ -115,7 +115,7 @@ namespace Members
                     break;
                 case TableNames.CDJobtitle:
                     gridControlCode.MainView = gridViewCDJobtitle;
-                    gridControlCode.Enabled = false;
+                    //gridControlCode.Enabled = false;
                     LoadData(TableNames.CDJobtitle);
                     Text += " وظائف الاعضاء";
                     break;
