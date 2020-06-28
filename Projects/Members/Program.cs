@@ -55,7 +55,7 @@ namespace Members
             WindowsFormsSettings.AllowAutoFilterConditionChange = DefaultBoolean.False;
             WindowsFormsSettings.ColumnAutoFilterMode = ColumnAutoFilterMode.Text;
 
-            if (FXFW.SqlDB.LoadSqlDBPath("TeachersUnion") && Authentication())
+            if (FXFW.SqlDB.LoadSqlDBPath("TeachersUnion"))// && Authentication())
             {
                 LoadAppSetting();
                 FXFW.SqlDB.LoadSQLReports();
@@ -230,7 +230,7 @@ namespace Members
         }
         private static bool CheckExpiration()
         {
-            DateTime periodDate = new DateTime(2019, 12, 31);
+            DateTime periodDate = new DateTime(2020, 12, 31);
             bool ReturnMe = false;
             DataSources.dsTeachersUnionQuery ds = new DataSources.dsTeachersUnionQuery();
             DataSources.dsTeachersUnionQueryTableAdapters.ServerDateTimeTableAdapter adp = new DataSources.dsTeachersUnionQueryTableAdapters.ServerDateTimeTableAdapter();
