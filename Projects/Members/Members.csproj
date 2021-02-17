@@ -250,7 +250,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\FalseX\FXFW\Releases\x86\FXFW.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -898,6 +900,7 @@
     <EmbeddedResource Include="Forms\Qry\Qry5aFrm.resx">
       <DependentUpon>Qry5aFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
     <EmbeddedResource Include="XtraForm1.resx">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>

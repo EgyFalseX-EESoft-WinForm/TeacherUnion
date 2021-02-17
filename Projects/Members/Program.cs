@@ -230,7 +230,7 @@ namespace Members
         }
         private static bool CheckExpiration()
         {
-            DateTime periodDate = new DateTime(2020, 12, 31);
+            DateTime periodDate = new DateTime(2021, 12, 31);
             bool ReturnMe = false;
             DataSources.dsTeachersUnionQuery ds = new DataSources.dsTeachersUnionQuery();
             DataSources.dsTeachersUnionQueryTableAdapters.ServerDateTimeTableAdapter adp = new DataSources.dsTeachersUnionQueryTableAdapters.ServerDateTimeTableAdapter();
