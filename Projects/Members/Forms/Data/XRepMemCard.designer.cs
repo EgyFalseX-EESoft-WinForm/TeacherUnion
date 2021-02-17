@@ -161,9 +161,10 @@
             // xrTableCell18
             // 
             this.xrTableCell18.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "calcDate", "{0:yyyy-MM-dd}")});
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "calcDate")});
             this.xrTableCell18.Name = "xrTableCell18";
             this.xrTableCell18.Text = "[calcDate]";
+            this.xrTableCell18.TextFormatString = "{0:yyyy/MM/dd}";
             this.xrTableCell18.Weight = 1.3874590283001256D;
             this.xrTableCell18.WordWrap = false;
             // 
@@ -455,7 +456,7 @@
             // 
             // xrPictureBox1
             // 
-            this.xrPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("xrPictureBox1.Image")));
+            this.xrPictureBox1.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox1.ImageSource"));
             this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(44.0416F, 147F);
             this.xrPictureBox1.Name = "xrPictureBox1";
             this.xrPictureBox1.SizeF = new System.Drawing.SizeF(60F, 20F);
@@ -562,7 +563,7 @@
             this.PageWidth = 328;
             this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
             this.ReportPrintOptions.DetailCountOnEmptyDataSource = 10;
-            this.Version = "12.2";
+            this.Version = "19.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).EndInit();

@@ -103,6 +103,47 @@ namespace Members.Misc
 
         }
 
+        public static string ChangeNumToAr(string val)
+        {
+            System.Text.StringBuilder strBuilder = new System.Text.StringBuilder(val);
+            for (int i = 0; i < strBuilder.Length; i++)
+            {
+                switch (val[i])
+                {
+                    case '0':
+                        strBuilder[i] = '٠';
+                        break;
+                    case '1':
+                        strBuilder[i] = '١';
+                        break;
+                    case '2':
+                        strBuilder[i] = '٢';
+                        break;
+                    case '3':
+                        strBuilder[i] = '٣';
+                        break;
+                    case '4':
+                        strBuilder[i] = '٤';
+                        break;
+                    case '5':
+                        strBuilder[i] = '٥';
+                        break;
+                    case '6':
+                        strBuilder[i] = '٦';
+                        break;
+                    case '7':
+                        strBuilder[i] = '٧';
+                        break;
+                    case '8':
+                        strBuilder[i] = '٨';
+                        break;
+                    case '9':
+                        strBuilder[i] = '٩';
+                        break;
+                }
+            }
+            return strBuilder.ToString();
+        }
 
     }
 }

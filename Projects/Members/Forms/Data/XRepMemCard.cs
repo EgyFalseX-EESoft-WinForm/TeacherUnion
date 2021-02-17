@@ -14,7 +14,19 @@ namespace Members
         public XRepMemCard()
         {
             InitializeComponent();
+
+            foreach (var ctr in AllControls<XRLabel>())
+            {
+                ctr.BeforePrint += (s, e) => 
+                {
+                    XRLabel lbl = (XRLabel)s;
+                    lbl.Text = Misc.Misc.ChangeNumToAr(lbl.Text);
+                };
+            }
         }
+
+        
+
         private void CustomFont()
         {
             Font customFont = Members.Misc.Misc.LoadCustomFont(Properties.Resources.SULTAN_BOOLD);
