@@ -28,19 +28,20 @@ namespace Members
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFrm));
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu();
-            this.popupControlContainer2 = new DevExpress.XtraBars.PopupControlContainer();
+            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
+            this.popupControlContainer2 = new DevExpress.XtraBars.PopupControlContainer(this.components);
             this.buttonEdit = new DevExpress.XtraEditors.ButtonEdit();
             this.mbMembersDBChange = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersAppOptions = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersPasswordChanger = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersExit = new DevExpress.XtraBars.BarButtonItem();
-            this.popupControlContainer1 = new DevExpress.XtraBars.PopupControlContainer();
+            this.popupControlContainer1 = new DevExpress.XtraBars.PopupControlContainer(this.components);
             this.someLabelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.someLabelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.ribbonImageCollection = new DevExpress.Utils.ImageCollection();
+            this.ribbonImageCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.mbMembersHelp = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersAbout = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersStatus = new DevExpress.XtraBars.BarStaticItem();
@@ -147,7 +148,7 @@ namespace Members
             this.mbMembersQryKeed = new DevExpress.XtraBars.BarSubItem();
             this.mbMembersQry32 = new DevExpress.XtraBars.BarButtonItem();
             this.mbMembersSPro_0001 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection();
+            this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
             this.DataribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.DataribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupDataCards = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -177,8 +178,8 @@ namespace Members
             this.alignButtonGroup = new DevExpress.XtraBars.BarButtonGroup();
             this.fileRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.PBBackground = new System.Windows.Forms.PictureBox();
-            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu();
-            this.popupMenu2 = new DevExpress.XtraBars.PopupMenu();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.popupMenu2 = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer2)).BeginInit();
@@ -206,6 +207,7 @@ namespace Members
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.Images = this.ribbonImageCollection;
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl.SearchEditItem,
             this.ribbonControl.ExpandCollapseItem,
             this.mbMembersExit,
             this.mbMembersHelp,

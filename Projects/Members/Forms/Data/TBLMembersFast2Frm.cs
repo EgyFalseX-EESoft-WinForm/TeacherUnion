@@ -214,7 +214,12 @@ namespace Members
                 tbMemberMobil.EditValue = row.MemberMobil.ToString();
             else
                 tbMemberMobil.EditValue = null;
-           
+
+            if (!row.IsNull("CardExpireDate"))
+                deCardExpireDate.EditValue = row.CardExpireDate;
+            else
+                deCardExpireDate.EditValue = null;
+
             if (!row.IsNull("esalno"))
                 tbesalno.EditValue = row.esalno;
             else
@@ -325,6 +330,7 @@ namespace Members
             dedateend.EditValue = null;
             ceInstallment.EditValue = false;
             tbMemberMobil.EditValue = string.Empty;
+            deCardExpireDate.EditValue = null;
 
             peImg.Image = null;
             peImg.EditValue = null;
@@ -721,6 +727,11 @@ namespace Members
                 row.MemberMobil = tbMemberMobil.EditValue.ToString();
             else
                 row.MemberMobil = string.Empty;
+
+            if (deCardExpireDate.EditValue != null)
+                row.CardExpireDate = Convert.ToDateTime(deCardExpireDate.EditValue);
+            else
+                row.SetCardExpireDateNull();
 
             if (tbMemberNId.EditValue != null)
             {

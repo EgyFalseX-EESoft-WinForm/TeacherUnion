@@ -49,14 +49,14 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.LUEEmp = new DevExpress.XtraEditors.GridLookUpEdit();
             this.dsServerMembers = new DevExpress.Xpo.XPServerCollectionSource(this.components);
-            this.repositoryItemLookUpEditSyndicateId = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.cDSyndicateBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dsTeachersUnion = new Members.DataSources.dsTeachersUnion();
             this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colKideNumber = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colesalno1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemLookUpEditSyndicateId = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.cDSyndicateBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsTeachersUnion = new Members.DataSources.dsTeachersUnion();
             this.tbesalno = new DevExpress.XtraEditors.GridLookUpEdit();
             this.receiptsListBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dsTeachersUnionQuery = new Members.DataSources.dsTeachersUnionQuery();
@@ -87,7 +87,11 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabControlMain = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPageMain = new DevExpress.XtraTab.XtraTabPage();
+            this.tbMemberMobil = new DevExpress.XtraEditors.TextEdit();
+            this.deCardExpireDate = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.tbMemberNId = new DevExpress.XtraEditors.TextEdit();
             this.xtraTabPageRemarks = new DevExpress.XtraTab.XtraTabPage();
             this.gridControlRemark = new DevExpress.XtraGrid.GridControl();
@@ -121,17 +125,15 @@
             this.receiptsListTableAdapter = new Members.DataSources.dsTeachersUnionQueryTableAdapters.ReceiptsListTableAdapter();
             this.cDSyndicateTableAdapter = new Members.DataSources.dsTeachersUnionTableAdapters.CDSyndicateTableAdapter();
             this.sessionData = new DevExpress.Xpo.Session(this.components);
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
-            this.tbMemberMobil = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlMain)).BeginInit();
             this.groupControlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cefawry.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LUEEmp.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsServerMembers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditSyndicateId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDSyndicateBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbesalno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.receiptsListBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).BeginInit();
@@ -144,7 +146,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbKideNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peImg.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LUEJobtitleID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dedateend.Properties.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dedateend.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dedateend.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
@@ -154,6 +156,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControlMain)).BeginInit();
             this.xtraTabControlMain.SuspendLayout();
             this.xtraTabPageMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMemberMobil.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deCardExpireDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deCardExpireDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMemberNId.Properties)).BeginInit();
             this.xtraTabPageRemarks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlRemark)).BeginInit();
@@ -165,16 +170,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbesalnoIns.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbmadfoaa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbmostahk.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.deesaldate.Properties.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deesaldate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deesaldate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dekestenddate.Properties.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dekestenddate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dekestenddate.Properties)).BeginInit();
             this.xtraTabPageAdmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cemEdited.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProviderMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProviderInstallment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sessionData)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMemberMobil.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControlMain
@@ -204,6 +208,7 @@
             // 
             this.labelControl3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(487, 88);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl3.Name = "labelControl3";
@@ -228,7 +233,7 @@
             this.btnDelete.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.btnDelete.Appearance.Options.UseFont = true;
             this.btnDelete.Enabled = false;
-            this.btnDelete.Image = global::Members.Properties.Resources.DeleteObject;
+            this.btnDelete.ImageOptions.Image = global::Members.Properties.Resources.DeleteObject;
             this.btnDelete.Location = new System.Drawing.Point(188, 35);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(0);
             this.btnDelete.Name = "btnDelete";
@@ -262,6 +267,7 @@
             // 
             this.labelControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(512, 31);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl1.Name = "labelControl1";
@@ -280,11 +286,11 @@
             this.LUEEmp.Properties.DataSource = this.dsServerMembers;
             this.LUEEmp.Properties.DisplayMember = "MemberName";
             this.LUEEmp.Properties.NullText = "";
+            this.LUEEmp.Properties.PopupView = this.gridLookUpEdit1View;
             this.LUEEmp.Properties.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEditSyndicateId});
             this.LUEEmp.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.LUEEmp.Properties.ValueMember = "MemberId";
-            this.LUEEmp.Properties.View = this.gridLookUpEdit1View;
             this.LUEEmp.Size = new System.Drawing.Size(231, 20);
             this.LUEEmp.TabIndex = 0;
             this.LUEEmp.EditValueChanged += new System.EventHandler(this.LUEEmp_EditValueChanged);
@@ -292,30 +298,6 @@
             // dsServerMembers
             // 
             this.dsServerMembers.ObjectType = typeof(Members.DataSources.dsTeachersUnion.TBLMembersDataTable);
-            // 
-            // repositoryItemLookUpEditSyndicateId
-            // 
-            this.repositoryItemLookUpEditSyndicateId.AutoHeight = false;
-            this.repositoryItemLookUpEditSyndicateId.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemLookUpEditSyndicateId.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Syndicate", "الفرعية", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center)});
-            this.repositoryItemLookUpEditSyndicateId.DataSource = this.cDSyndicateBindingSource;
-            this.repositoryItemLookUpEditSyndicateId.DisplayMember = "Syndicate";
-            this.repositoryItemLookUpEditSyndicateId.Name = "repositoryItemLookUpEditSyndicateId";
-            this.repositoryItemLookUpEditSyndicateId.NullText = "";
-            this.repositoryItemLookUpEditSyndicateId.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.repositoryItemLookUpEditSyndicateId.ValueMember = "SyndicateId";
-            // 
-            // cDSyndicateBindingSource
-            // 
-            this.cDSyndicateBindingSource.DataMember = "CDSyndicate";
-            this.cDSyndicateBindingSource.DataSource = this.dsTeachersUnion;
-            // 
-            // dsTeachersUnion
-            // 
-            this.dsTeachersUnion.DataSetName = "dsTeachersUnion";
-            this.dsTeachersUnion.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gridLookUpEdit1View
             // 
@@ -385,6 +367,30 @@
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 3;
             // 
+            // repositoryItemLookUpEditSyndicateId
+            // 
+            this.repositoryItemLookUpEditSyndicateId.AutoHeight = false;
+            this.repositoryItemLookUpEditSyndicateId.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemLookUpEditSyndicateId.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Syndicate", "الفرعية", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            this.repositoryItemLookUpEditSyndicateId.DataSource = this.cDSyndicateBindingSource;
+            this.repositoryItemLookUpEditSyndicateId.DisplayMember = "Syndicate";
+            this.repositoryItemLookUpEditSyndicateId.Name = "repositoryItemLookUpEditSyndicateId";
+            this.repositoryItemLookUpEditSyndicateId.NullText = "";
+            this.repositoryItemLookUpEditSyndicateId.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.repositoryItemLookUpEditSyndicateId.ValueMember = "SyndicateId";
+            // 
+            // cDSyndicateBindingSource
+            // 
+            this.cDSyndicateBindingSource.DataMember = "CDSyndicate";
+            this.cDSyndicateBindingSource.DataSource = this.dsTeachersUnion;
+            // 
+            // dsTeachersUnion
+            // 
+            this.dsTeachersUnion.DataSetName = "dsTeachersUnion";
+            this.dsTeachersUnion.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tbesalno
             // 
             this.tbesalno.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -398,9 +404,9 @@
             this.tbesalno.Properties.DisplayMember = "ReceiptNo";
             this.tbesalno.Properties.MaxLength = 12;
             this.tbesalno.Properties.NullText = "";
+            this.tbesalno.Properties.PopupView = this.gridView1;
             this.tbesalno.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.tbesalno.Properties.ValueMember = "ReceiptNo";
-            this.tbesalno.Properties.View = this.gridView1;
             this.tbesalno.Size = new System.Drawing.Size(121, 20);
             this.tbesalno.TabIndex = 2;
             this.tbesalno.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.tbesalno_ButtonClick);
@@ -455,6 +461,8 @@
             this.labelControl2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
             this.labelControl2.Location = new System.Drawing.Point(651, 6);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl2.Name = "labelControl2";
@@ -537,6 +545,8 @@
             this.labelControl21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl21.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.labelControl21.Appearance.Options.UseFont = true;
+            this.labelControl21.Appearance.Options.UseForeColor = true;
             this.labelControl21.Location = new System.Drawing.Point(334, 39);
             this.labelControl21.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl21.Name = "labelControl21";
@@ -549,6 +559,8 @@
             this.labelControl11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl11.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.labelControl11.Appearance.Options.UseForeColor = true;
             this.labelControl11.Location = new System.Drawing.Point(605, 41);
             this.labelControl11.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl11.Name = "labelControl11";
@@ -567,7 +579,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus)});
             this.LUESubCommitteId.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SubCommitte", "الاسم", 40, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SubCommitte", "الاسم", 40, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.LUESubCommitteId.Properties.NullText = "";
             this.LUESubCommitteId.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.LUESubCommitteId.Size = new System.Drawing.Size(162, 20);
@@ -589,7 +601,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus)});
             this.LUESyndicateId.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Syndicate", "الاسم", 40, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Syndicate", "الاسم", 40, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.LUESyndicateId.Properties.NullText = "";
             this.LUESyndicateId.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.LUESyndicateId.Size = new System.Drawing.Size(161, 20);
@@ -605,6 +617,7 @@
             // 
             this.labelControl9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.labelControl9.Appearance.Options.UseFont = true;
             this.labelControl9.Location = new System.Drawing.Point(643, 76);
             this.labelControl9.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl9.Name = "labelControl9";
@@ -639,6 +652,8 @@
             this.labelControl20.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelControl20.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl20.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.labelControl20.Appearance.Options.UseFont = true;
+            this.labelControl20.Appearance.Options.UseForeColor = true;
             this.labelControl20.Location = new System.Drawing.Point(360, 76);
             this.labelControl20.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl20.Name = "labelControl20";
@@ -672,7 +687,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus)});
             this.LUEJobtitleID.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Jobtitle", "الاسم", 40, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Jobtitle", "الاسم", 40, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.LUEJobtitleID.Properties.NullText = "";
             this.LUEJobtitleID.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.LUEJobtitleID.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.LUECDJobtitle_Properties_ButtonClick);
@@ -705,6 +720,8 @@
             this.labelControl4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Appearance.Options.UseForeColor = true;
             this.labelControl4.Location = new System.Drawing.Point(173, 80);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl4.Name = "labelControl4";
@@ -719,13 +736,13 @@
             this.dedateend.Name = "dedateend";
             this.dedateend.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dedateend.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.dedateend.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.dedateend.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.dedateend.Properties.EditFormat.FormatString = "dd/MM/yyyy";
             this.dedateend.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.dedateend.Properties.Mask.EditMask = "dd/MM/yyyy";
-            this.dedateend.Properties.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.dedateend.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dedateend.Size = new System.Drawing.Size(161, 20);
             this.dedateend.TabIndex = 1;
@@ -758,7 +775,7 @@
             this.tbtype.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.tbtype.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Cardtype", "الاسم", 40, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Cardtype", "الاسم", 40, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.tbtype.Properties.DataSource = this.cDCardtypeBindingSource;
             this.tbtype.Properties.DisplayMember = "Cardtype";
             this.tbtype.Properties.NullText = "";
@@ -792,6 +809,8 @@
             this.labelControl5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl5.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Appearance.Options.UseForeColor = true;
             this.labelControl5.Location = new System.Drawing.Point(177, 44);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl5.Name = "labelControl5";
@@ -821,6 +840,8 @@
             this.xtraTabPageMain.Controls.Add(this.tbMemberMobil);
             this.xtraTabPageMain.Controls.Add(this.tbMemberName);
             this.xtraTabPageMain.Controls.Add(this.groupControl2);
+            this.xtraTabPageMain.Controls.Add(this.deCardExpireDate);
+            this.xtraTabPageMain.Controls.Add(this.labelControl15);
             this.xtraTabPageMain.Controls.Add(this.LUESubCommitteId);
             this.xtraTabPageMain.Controls.Add(this.btnImage);
             this.xtraTabPageMain.Controls.Add(this.labelControl13);
@@ -839,17 +860,78 @@
             this.xtraTabPageMain.Size = new System.Drawing.Size(804, 246);
             this.xtraTabPageMain.Text = "بيانات اساسية";
             // 
+            // tbMemberMobil
+            // 
+            this.tbMemberMobil.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tbMemberMobil.EnterMoveNextControl = true;
+            this.tbMemberMobil.Location = new System.Drawing.Point(427, 144);
+            this.tbMemberMobil.Margin = new System.Windows.Forms.Padding(0);
+            this.tbMemberMobil.Name = "tbMemberMobil";
+            this.tbMemberMobil.Size = new System.Drawing.Size(161, 20);
+            this.tbMemberMobil.TabIndex = 7;
+            this.tbMemberMobil.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ActiveKeyDownEvent);
+            // 
+            // deCardExpireDate
+            // 
+            this.deCardExpireDate.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.deCardExpireDate.EditValue = null;
+            this.deCardExpireDate.Location = new System.Drawing.Point(427, 180);
+            this.deCardExpireDate.Name = "deCardExpireDate";
+            this.deCardExpireDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.deCardExpireDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.deCardExpireDate.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.deCardExpireDate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.deCardExpireDate.Properties.EditFormat.FormatString = "dd/MM/yyyy";
+            this.deCardExpireDate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.deCardExpireDate.Properties.Mask.EditMask = "dd/MM/yyyy";
+            this.deCardExpireDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.deCardExpireDate.Size = new System.Drawing.Size(161, 20);
+            this.deCardExpireDate.TabIndex = 7;
+            this.deCardExpireDate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ActiveKeyDownEvent);
+            // 
+            // labelControl15
+            // 
+            this.labelControl15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.labelControl15.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.labelControl15.Appearance.Options.UseFont = true;
+            this.labelControl15.Appearance.Options.UseForeColor = true;
+            this.labelControl15.Location = new System.Drawing.Point(591, 181);
+            this.labelControl15.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl15.Name = "labelControl15";
+            this.labelControl15.Size = new System.Drawing.Size(104, 17);
+            this.labelControl15.TabIndex = 35;
+            this.labelControl15.Text = "تاريخ انتهاء الكارنية";
+            // 
             // labelControl13
             // 
             this.labelControl13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl13.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.labelControl13.Appearance.Options.UseFont = true;
+            this.labelControl13.Appearance.Options.UseForeColor = true;
             this.labelControl13.Location = new System.Drawing.Point(613, 111);
             this.labelControl13.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(74, 17);
             this.labelControl13.TabIndex = 35;
             this.labelControl13.Text = "الرقم القومي";
+            // 
+            // labelControl14
+            // 
+            this.labelControl14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.labelControl14.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.labelControl14.Appearance.Options.UseFont = true;
+            this.labelControl14.Appearance.Options.UseForeColor = true;
+            this.labelControl14.Location = new System.Drawing.Point(653, 143);
+            this.labelControl14.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl14.Name = "labelControl14";
+            this.labelControl14.Size = new System.Drawing.Size(32, 17);
+            this.labelControl14.TabIndex = 0;
+            this.labelControl14.Text = "موبيل";
             // 
             // tbMemberNId
             // 
@@ -992,6 +1074,8 @@
             this.labelControl10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl10.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.Appearance.Options.UseForeColor = true;
             this.labelControl10.Location = new System.Drawing.Point(329, 86);
             this.labelControl10.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl10.Name = "labelControl10";
@@ -1004,6 +1088,8 @@
             this.labelControl8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl8.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.labelControl8.Appearance.Options.UseFont = true;
+            this.labelControl8.Appearance.Options.UseForeColor = true;
             this.labelControl8.Location = new System.Drawing.Point(602, 87);
             this.labelControl8.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl8.Name = "labelControl8";
@@ -1016,6 +1102,8 @@
             this.labelControl7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl7.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Appearance.Options.UseForeColor = true;
             this.labelControl7.Location = new System.Drawing.Point(329, 44);
             this.labelControl7.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl7.Name = "labelControl7";
@@ -1088,13 +1176,13 @@
             this.deesaldate.Name = "deesaldate";
             this.deesaldate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.deesaldate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.deesaldate.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.deesaldate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.deesaldate.Properties.EditFormat.FormatString = "dd/MM/yyyy";
             this.deesaldate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.deesaldate.Properties.Mask.EditMask = "dd/MM/yyyy";
-            this.deesaldate.Properties.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.deesaldate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.deesaldate.Size = new System.Drawing.Size(161, 20);
             this.deesaldate.TabIndex = 4;
@@ -1109,6 +1197,8 @@
             this.labelControl12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl12.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.labelControl12.Appearance.Options.UseFont = true;
+            this.labelControl12.Appearance.Options.UseForeColor = true;
             this.labelControl12.Location = new System.Drawing.Point(453, 131);
             this.labelControl12.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl12.Name = "labelControl12";
@@ -1124,13 +1214,13 @@
             this.dekestenddate.Name = "dekestenddate";
             this.dekestenddate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dekestenddate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.dekestenddate.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.dekestenddate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.dekestenddate.Properties.EditFormat.FormatString = "dd/MM/yyyy";
             this.dekestenddate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.dekestenddate.Properties.Mask.EditMask = "dd/MM/yyyy";
-            this.dekestenddate.Properties.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.dekestenddate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dekestenddate.Size = new System.Drawing.Size(161, 20);
             this.dekestenddate.TabIndex = 0;
@@ -1145,6 +1235,8 @@
             this.labelControl6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl6.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Appearance.Options.UseForeColor = true;
             this.labelControl6.Location = new System.Drawing.Point(576, 45);
             this.labelControl6.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl6.Name = "labelControl6";
@@ -1180,7 +1272,7 @@
             this.cemEdited.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.cemEdited.Properties.Appearance.Options.UseFont = true;
             this.cemEdited.Properties.Caption = "حفظ المستخدم الاصلي";
-            this.cemEdited.Size = new System.Drawing.Size(162, 22);
+            this.cemEdited.Size = new System.Drawing.Size(162, 21);
             this.cemEdited.TabIndex = 0;
             // 
             // tBLMemberRemarkTableAdapter
@@ -1209,30 +1301,8 @@
             // 
             // sessionData
             // 
+            this.sessionData.IsObjectModifiedOnNonPersistentPropertyChange = null;
             this.sessionData.TrackPropertiesModifications = false;
-            // 
-            // labelControl14
-            // 
-            this.labelControl14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.labelControl14.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            this.labelControl14.Location = new System.Drawing.Point(653, 143);
-            this.labelControl14.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(32, 17);
-            this.labelControl14.TabIndex = 0;
-            this.labelControl14.Text = "موبيل";
-            // 
-            // tbMemberMobil
-            // 
-            this.tbMemberMobil.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tbMemberMobil.EnterMoveNextControl = true;
-            this.tbMemberMobil.Location = new System.Drawing.Point(427, 144);
-            this.tbMemberMobil.Margin = new System.Windows.Forms.Padding(0);
-            this.tbMemberMobil.Name = "tbMemberMobil";
-            this.tbMemberMobil.Size = new System.Drawing.Size(161, 20);
-            this.tbMemberMobil.TabIndex = 7;
-            this.tbMemberMobil.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ActiveKeyDownEvent);
             // 
             // TBLMembersFast2Frm
             // 
@@ -1252,10 +1322,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.cefawry.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LUEEmp.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsServerMembers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditSyndicateId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cDSyndicateBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbesalno.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.receiptsListBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsTeachersUnionQuery)).EndInit();
@@ -1268,7 +1338,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbKideNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.peImg.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LUEJobtitleID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dedateend.Properties.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dedateend.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dedateend.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
@@ -1280,6 +1350,9 @@
             this.xtraTabControlMain.ResumeLayout(false);
             this.xtraTabPageMain.ResumeLayout(false);
             this.xtraTabPageMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMemberMobil.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deCardExpireDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deCardExpireDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMemberNId.Properties)).EndInit();
             this.xtraTabPageRemarks.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlRemark)).EndInit();
@@ -1292,16 +1365,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbesalnoIns.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbmadfoaa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbmostahk.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.deesaldate.Properties.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deesaldate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deesaldate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dekestenddate.Properties.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dekestenddate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dekestenddate.Properties)).EndInit();
             this.xtraTabPageAdmin.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cemEdited.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProviderMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProviderInstallment)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sessionData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMemberMobil.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1390,5 +1462,7 @@
         private DevExpress.XtraEditors.CheckButton cbUnMember;
         private DevExpress.XtraEditors.TextEdit tbMemberMobil;
         private DevExpress.XtraEditors.LabelControl labelControl14;
+        private DevExpress.XtraEditors.DateEdit deCardExpireDate;
+        private DevExpress.XtraEditors.LabelControl labelControl15;
     }
 }
